@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Webpage</title>
+    <meta charset="UTF-8">
+    <title>Navigation Panel Example</title>
+    <style>
+        /* Add your CSS styles here */
+        #navigation {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        #navigation ul {
+            list-style-type: none;
+        }
+        #navigation li {
+            margin-bottom: 5px;
+        }
+        #navigation a {
+            text-decoration: none;
+            color: black;
+        }
+        #navigation a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>Welcome to my webpage.</p>
+
+<div id="navigation">
+    <h2>Navigation Panel</h2>
+    <ul>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <ul>
+            <li><a href="#research-team-one">The Research Team– Kelly O’Neil</a></li>
+            <li><a href="#research-team-two">The Research Team– Vivian Wei</a></li>
+        </ul>
+        <li><a href="#original-dataset">Original Dataset</a></li>
+        <li><a href="#pivotal-phases">Pivotal Phases</a></li>
+        <ul>
+            <li><a href="#exploratory-findings">Exploratory Findings & Historical Contextualization</a></li>
+            <li><a href="#relational-database">Relational Database</a></li>
+            <li><a href="#machine-learning-model">Machine Learning Model</a></li>
+            <li><a href="#publication">Publication and Dissemination</a></li>
+        </ul>
+        <li><a href="#final-deliverables">Final Deliverables</a></li>
+    </ul>
+</div>
+
+<!-- Add the rest of your page content here -->
+
 </body>
 </html>
