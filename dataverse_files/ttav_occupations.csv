@@ -1,0 +1,682 @@
+﻿occID,occ_nm,occ_ctg,occ_grp
+1,ACCOUNTANT,Credit and public commercial institutions,Trade and commerce
+2,"ACTOR, ACTRESS","Science, literature, and art","Arts, entertainment, sports"
+3,ADJUSTER,Credit and public commercial institutions,Trade and commerce
+4,ADVOCATE,"Administration, courts and police",Government
+5,AGENT,"Private activity and service; servants, day laborers",Estate and household labor
+6,"AGRICULTURIST, AGRICULTURALIST",Agriculture,Agriculture
+7,AMBASSADOR,"Administration, courts and police",Government
+8,APOTHECARY,Medical and health services,Service and hospitality
+9,APPRENTICE,Manufacture not included in above or undetermined,Manufacturing and mining
+10,ARCHITECT,"Construction, repair and maintenance of residences and general construction work",Construction
+11,ARMY,Armed forces,Government
+12,ARMY OFFICER,Armed forces,Government
+13,ARTIFICIAL FLOWERS MAKER,Garment making,"Leather, textiles, garments"
+14,ARTISAN,Manufacture not included in above or undetermined,Manufacturing and mining
+15,"ARTIST, SCENIC ARTIST","Science, literature, and art","Arts, entertainment, sports"
+16,ASSISTANT,"Administration, courts and police",Government
+17,ASTRONOMER,"Science, literature, and art","Education, sciences"
+18,AUTHOR,"Science, literature, and art","Arts, entertainment, sports"
+19,BAGGER,Undetermined,NA
+20,BAKER,Processing of plant and animal food products,Production of food and drink
+21,BANK CLERK,Credit and public commercial institutions,Trade and commerce
+22,BANKER,Credit and public commercial institutions,Trade and commerce
+23,BAR KEEPER,Drinking establishments,Service and hospitality
+24,"BAR MAN, BARTENDER",Drinking establishments,Service and hospitality
+25,BARBER,Establishments providing bathing and personal hygiene services,Service and hospitality
+26,BARKER,"Science, literature, and art","Arts, entertainment, sports"
+27,BARON/BARONET,Member of privileged class,No occupation
+28,BASKET MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+29,"BATHER, BATHMAKER",Manufacture not included in above or undetermined,Manufacturing and mining
+30,BATTER,Processing of fibrous materials,"Leather, textiles, garments"
+31,BCKM,Undetermined,NA
+32,BEAD MAKER,Garment making,"Leather, textiles, garments"
+33,BICYCLE MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+34,BINDER,Printing,Printing and journalism
+35,BIRD MAN,Trade in other articles,Trade and commerce
+36,BIRD SELLER,Trade in other articles,Trade and commerce
+37,BISHOP,Ministry in the Orthodox faith,Faith-related
+38,BIT MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+39,BLACKING MAKER,Garment making,"Leather, textiles, garments"
+40,BLACKSMITH,Processing of metals,Manufacturing and mining
+41,BLEACHER,Processing of fibrous materials,"Leather, textiles, garments"
+42,BLOCK MAKER,Processing of mineral substances (ceramics),Manufacturing and mining
+43,BLUEDYER,Processing of fibrous materials,"Leather, textiles, garments"
+44,BOARDINGHOUSE KEEPER,"Private activity and service; servants, day laborers",Service and hospitality
+45,BOATMAN,Water transport,Transportation and communication
+46,BOBBIN MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+47,BOILER MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+48,BONNET MAKER,Garment making,"Leather, textiles, garments"
+49,BOOK DEALER,"Trade in articles of luxury, science, art, culture, etc.",Trade and commerce
+50,BOOK-KEEPER,Credit and public commercial institutions,Trade and commerce
+51,BOOKBINDER,Printing,Printing and journalism
+52,"BOOKMAKER, BOOKFOLDER",Printing,Printing and journalism
+53,BOOKMAN,Printing,Printing and journalism
+54,BOOKSELLER,"Trade in articles of luxury, science, art, culture, etc.",Trade and commerce
+55,BOOT & SHOE MAKER,Garment making,"Leather, textiles, garments"
+56,BOOTBLACK/BLACKER,"Private activity and service; servants, day laborers",Service and hospitality
+57,BOTTLE MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+58,BOX MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+59,BRAID MAKER/WEAVER,Processing of fibrous materials,"Leather, textiles, garments"
+60,BRASS FINISHER,Processing of metals,Manufacturing and mining
+61,BRASS FOUNDER,Processing of metals,Manufacturing and mining
+62,BRASS MOULDER,Processing of metals,Manufacturing and mining
+63,BRASS WORKER,Processing of metals,Manufacturing and mining
+64,BRAZIER,Processing of metals,Manufacturing and mining
+65,BREAD BAKER,Processing of plant and animal food products,Production of food and drink
+66,BREAD DEALER,Trade in other agricultural products,Trade and commerce
+67,BREWER,"Distilling, brewing and honey fermenting",Production of food and drink
+68,BRICK MAKER/MANUFACTURER,Processing of mineral substances (ceramics),Manufacturing and mining
+69,"BRICKLAYER, MAURER","Construction, repair and maintenance of residences and general construction work",Construction
+70,"BROKER, SHARE BROKER",Commercial brokerage services,Trade and commerce
+71,BROOM MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+72,BRUSH MAKER,Processing of animal products,"Leather, textiles, garments"
+73,BUILDER,"Construction, repair and maintenance of residences and general construction work",Construction
+74,BUTCHER,Processing of plant and animal food products,Production of food and drink
+75,BUTLER,"Private activity and service; servants, day laborers",Estate and household labor
+76,BUTTON MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+77,CABINET MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+78,"CABLEMAN, CABLER","Mail, telegraph, and telephone",Transportation and communication
+79,"CABMAN, CABDRIVER",Carrier trade,Transportation and communication
+80,CADET,Armed forces,Government
+81,CANAL MAN,Water transport,Transportation and communication
+82,CANDLE MAKER,Production of chemicals and related production,Manufacturing and mining
+83,CANDY MAKER,Processing of plant and animal food products,Production of food and drink
+84,CANTOR,Ministry in other Christian faiths,Faith-related
+85,CAP MAKER,Garment making,"Leather, textiles, garments"
+86,CAPITALIST,"Subsisting on income from capital, real estate or funds from parents and relatives",No occupation
+87,"CAPTAIN, SEA/SHIP CAPTAIN",Water transport,Transportation and communication
+88,CAR BUILDER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+89,CAR MAN,Railroads,Transportation and communication
+90,CARPENTER,Processing of wood,Manufacturing and mining
+91,CARPET MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+92,CARRIAGE BUILDER/MAKER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+93,CARRIER,Other overland transport and means of transport,Transportation and communication
+94,CART MAKER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+95,CARTER,Other overland transport and means of transport,Transportation and communication
+96,CARTMAN,Other overland transport and means of transport,Transportation and communication
+97,CARTWRIGHT,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+98,CARVER,Processing of animal products,"Leather, textiles, garments"
+99,CASHIER,Credit and public commercial institutions,Trade and commerce
+100,CASKMAKER,Processing of wood,Manufacturing and mining
+101,CATTLE DRIVER,Other overland transport and means of transport,Transportation and communication
+102,CATTLE MAN,Livestock farming,Agriculture
+103,CELLAR MAN,"Distilling, brewing and honey fermenting",Production of food and drink
+104,CHAIN MAKER,Processing of metals,Manufacturing and mining
+105,CHAIR MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+106,CHAMBER MAID,"Private activity and service; servants, day laborers",Estate and household labor
+107,CHARGER,Trade in other articles,Trade and commerce
+108,CHECKER,Trade in other articles,Trade and commerce
+109,CHEESE MAKER,Processing of plant and animal food products,Production of food and drink
+110,CHEMIST,Production of chemicals and related production,Manufacturing and mining
+111,CHESS PLAYER,"Science, literature, and art","Arts, entertainment, sports"
+112,CHILD MAID,"Private activity and service; servants, day laborers",Estate and household labor
+113,CHIMNEY SWEEPER,"Construction, repair and maintenance of residences and general construction work",Construction
+114,CIGAR MAKER,Tobacco and tobacco products,Production of food and drink
+115,CIGAR TWISTER,Tobacco and tobacco products,Production of food and drink
+116,CIVIL SERVICE,"Administration, courts and police",Government
+117,"CLERGYMAN, REVEREND",Ministry in other Christian faiths,Faith-related
+118,CLERK,"Administration, courts and police",Government
+119,CLICKER,Garment making,"Leather, textiles, garments"
+120,CLOCK MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+121,CLOCK MERCHANT,Trade in household articles,Trade and commerce
+122,CLOG AND BUTTON MAKER,Garment making,"Leather, textiles, garments"
+123,CLOGMAKER,Garment making,"Leather, textiles, garments"
+124,CLOTH MAKER/MANUFACTURER,Garment making,"Leather, textiles, garments"
+125,CLOTH WORKER,Garment making,"Leather, textiles, garments"
+126,CLOTHIER,Garment making,"Leather, textiles, garments"
+127,CMHT,Undetermined,NA
+128,COACH MAKER/BUILDER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+129,COACHMAN,Other overland transport and means of transport,Transportation and communication
+130,"COAL DEALER, COAL MERCHANT",Trade in construction materials and fuels,Trade and commerce
+131,"COALMAN, COAL BURNER",Trade in construction materials and fuels,Trade and commerce
+132,COBBLER,Garment making,"Leather, textiles, garments"
+133,COFFIN MAKER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+134,COLLECTOR,Credit and public commercial institutions,Trade and commerce
+135,COLLIER,Mining and quarrying,Manufacturing and mining
+136,COLONIST,"Administration, courts and police",Government
+137,COLOR MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+138,COMEDIAN,"Science, literature, and art","Arts, entertainment, sports"
+139,COMMERCE MAN,Trade overall,Trade and commerce
+140,COMMERCIAL TRAVELLER,Undetermined,NA
+141,COMMISSION AGENT,Commercial brokerage services,Trade and commerce
+142,COMMISSIONER,"Administration, courts and police",Government
+143,COMMODORE,Water transport,Transportation and communication
+144,COMPOSER,"Science, literature, and art","Arts, entertainment, sports"
+145,COMPOSITOR,Printing,Printing and journalism
+146,"CONDUCTOR, CHORUS MASTER","Science, literature, and art","Arts, entertainment, sports"
+147,CONFECTIONER,Processing of plant and animal food products,Production of food and drink
+148,CONSUL,"Administration, courts and police",Government
+149,CONSULTANT,Commercial brokerage services,Trade and commerce
+150,COOK,"Private activity and service; servants, day laborers",Estate and household labor
+151,COOK MAID,"Private activity and service; servants, day laborers",Estate and household labor
+152,COOK-BAKER,"Private activity and service; servants, day laborers",Estate and household labor
+153,COOPER,Processing of wood,Manufacturing and mining
+154,COPPERSMITH,Processing of metals,Manufacturing and mining
+155,CORK CUTTER,Processing of wood,Manufacturing and mining
+156,COUCH LACE MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+157,COUCH MAKER,Processing of wood,Manufacturing and mining
+158,COUNTRY WOMAN,Agriculture,Agriculture
+159,COW FEEDER,Livestock farming,Agriculture
+160,CULTIVATOR,Agriculture,Agriculture
+161,CURRIER,Processing of animal products,"Leather, textiles, garments"
+162,CUTLER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+163,CUTTER,Manufacture not included in above or undetermined,Manufacturing and mining
+164,DAIRY MAN/WOMAN,Processing of plant and animal food products,Production of food and drink
+165,DAIRYMAID,Processing of plant and animal food products,Production of food and drink
+166,DANCER,"Science, literature, and art","Arts, entertainment, sports"
+167,DEALER,Trade overall,Trade and commerce
+168,DECORATOR,"Construction, repair and maintenance of residences and general construction work",Construction
+169,DELEGATE,"Administration, courts and police",Government
+170,DELIVERY MAN,Carrier trade,Transportation and communication
+171,DENTIST,Medical and health services,Service and hospitality
+172,DESIGNER,Undetermined,Service and hospitality
+173,DIAMOND CUTTER,"Jewelry making, painting, manufacture of cultural, luxury items, etc.",Manufacturing and mining
+174,DIGGER,"Construction, repair and maintenance of residences and general construction work",Construction
+175,DIPLOMAT,"Administration, courts and police",Government
+176,DIRECTOR,"Science, literature, and art","Arts, entertainment, sports"
+177,DISH MAKER,Processing of metals,Manufacturing and mining
+178,"DISTILLER, LIQUOR MAKER","Distilling, brewing and honey fermenting",Production of food and drink
+179,DOCTOR,Medical and health services,Service and hospitality
+180,DOCTOR OF MEDICINE,Medical and health services,Service and hospitality
+181,DOMESTIC,"Private activity and service; servants, day laborers",Estate and household labor
+182,DRAFTSMAN,Undetermined,NA
+183,DRAPER,Trade in fabrics and garments,Trade and commerce
+184,"DRESSER, STEAMDRESSER","Private activity and service; servants, day laborers",Estate and household labor
+185,DRESSMAKER,Garment making,"Leather, textiles, garments"
+186,DRILLER,Extraction of oil,Manufacturing and mining
+187,DRIVER,Other overland transport and means of transport,Transportation and communication
+188,DROVER,Other overland transport and means of transport,Transportation and communication
+189,DRUGGIST,Medical and health services,Service and hospitality
+190,DRUMMER,"Science, literature, and art","Arts, entertainment, sports"
+191,DRY GOODS,Trade in other articles,Trade and commerce
+192,DYE SINKER,Processing of fibrous materials,"Leather, textiles, garments"
+193,DYER,Processing of fibrous materials,"Leather, textiles, garments"
+194,ECONOMIST,"Science, literature, and art","Education, sciences"
+195,EDITOR,"Science, literature, and art",Printing and journalism
+196,ELECTRICIAN,"Construction, repair and maintenance of residences and general construction work",Construction
+197,EMBROIDERER,Processing of fibrous materials,"Leather, textiles, garments"
+198,EMPLOYEE,Undetermined,NA
+199,ENGINE DRIVER,Railroads,Transportation and communication
+200,ENGINE FITTER,Railroads,Transportation and communication
+201,ENGINE MAN,Railroads,Transportation and communication
+202,ENGINEER,Railroads,Transportation and communication
+203,ENGRAVER,Printing,Printing and journalism
+204,EQUESTRIAN,"Science, literature, and art","Arts, entertainment, sports"
+205,FABRICANT,Processing of metals,Manufacturing and mining
+206,FACTOR,Commercial brokerage services,Trade and commerce
+207,FANNER,Processing of plant and animal food products,Production of food and drink
+208,FARM HAND,Agriculture,Agriculture
+209,"FARM LABORER, FARMBOY",Agriculture,Agriculture
+210,FARMER,Agriculture,Agriculture
+211,FARRIER,Livestock farming,Agriculture
+212,FEATHER MAKER,Processing of animal products,"Leather, textiles, garments"
+213,FELLMONGER,"Trade in leather, fur, etc.",Trade and commerce
+214,FELT MAKER,Processing of animal products,"Leather, textiles, garments"
+215,FILE CUTTER,Processing of metals,Manufacturing and mining
+216,FILE SMITH,Processing of metals,Manufacturing and mining
+217,FILER,Processing of metals,Manufacturing and mining
+218,FINISHER,Processing of metals,Manufacturing and mining
+219,FINSMITH,Fishing and hunting,Agriculture
+220,FIREMAN,"Administration, courts and police",Government
+221,FISH MONGER,Trade in other agricultural products,Trade and commerce
+222,FISHERMAN,Fishing and hunting,Agriculture
+223,FITTER,Processing of wood,Manufacturing and mining
+224,FLAX DRESSER,Processing of fibrous materials,"Leather, textiles, garments"
+225,FLESHER,Processing of plant and animal food products,Production of food and drink
+226,FLOCK MAKER,Livestock farming,Agriculture
+227,FLORIST,Trade in other agricultural products,Trade and commerce
+228,FLOWER MAKER,Garment making,"Leather, textiles, garments"
+229,FOREMAN,Manufacture not included in above or undetermined,Manufacturing and mining
+230,FORESTER,"Forestry, forest industries",Agriculture
+231,FORGE MAN,Processing of metals,Manufacturing and mining
+232,FOUNDER/FOUNDRYMAN,Smelting of metals,Manufacturing and mining
+233,FRAME MAKER,Processing of wood,Manufacturing and mining
+234,FRAME WORKER,Processing of wood,Manufacturing and mining
+235,FRIAR,Ministry in other Christian faiths,Faith-related
+236,FRUIT GROWER,Agriculture,Agriculture
+237,FULLER,Processing of animal products,"Leather, textiles, garments"
+238,FUR DRESSER,Processing of animal products,"Leather, textiles, garments"
+239,FUR DYER,Processing of animal products,"Leather, textiles, garments"
+240,FUR SKIN DRESSER,Processing of animal products,"Leather, textiles, garments"
+241,FURNISHER,Processing of wood,Manufacturing and mining
+242,FURNITURE MAKER,Processing of wood,Manufacturing and mining
+243,FURRIER,"Trade in leather, fur, etc.",Trade and commerce
+244,GALVANIZER,Processing of metals,Manufacturing and mining
+245,"GARDENER, GROWER",Agriculture,Agriculture
+246,GAS MAN,Manufacture not included in above or undetermined,Manufacturing and mining
+247,GASFITTER,Manufacture not included in above or undetermined,Manufacturing and mining
+248,GENERAL,Armed forces,Government
+249,GENTLEMAN,"Subsisting on income from capital, real estate or funds from parents and relatives",No occupation
+250,GEOLOGIST,"Science, literature, and art","Education, sciences"
+251,GILDER,Printing,Printing and journalism
+252,GINGER MAKER,Processing of plant and animal food products,Production of food and drink
+253,GIRDLER,Processing of animal products,"Leather, textiles, garments"
+254,GLASS BLOWER,Processing of mineral substances (ceramics),Manufacturing and mining
+255,GLASS CUTTER,Processing of mineral substances (ceramics),Manufacturing and mining
+256,GLASS GRINDER,Processing of mineral substances (ceramics),Manufacturing and mining
+257,GLASS MAKER/MANUFACTURER,Processing of mineral substances (ceramics),Manufacturing and mining
+258,GLASS WORKER,Processing of mineral substances (ceramics),Manufacturing and mining
+259,GLAZIER,Processing of mineral substances (ceramics),Manufacturing and mining
+260,GLOVE MAKER,Garment making,"Leather, textiles, garments"
+261,GLOVER,Garment making,"Leather, textiles, garments"
+262,GLUE MAKER,Processing of animal products,Manufacturing and mining
+263,GOLDBEATER,"Jewelry making, painting, manufacture of cultural, luxury items, etc.",Manufacturing and mining
+264,GOLDSMITH,"Jewelry making, painting, manufacture of cultural, luxury items, etc.",Manufacturing and mining
+265,GOLDWORKER,"Jewelry making, painting, manufacture of cultural, luxury items, etc.",Manufacturing and mining
+266,"GOVERNESS, GOVERNER","Private activity and service; servants, day laborers",Estate and household labor
+267,GOVERNMENT OFFICER,"Administration, courts and police",Government
+268,GOVERNMENT SERVICE,"Administration, courts and police",Government
+269,GRAINER,Processing of wood,Manufacturing and mining
+270,GRATE MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+271,GRAVER,"Construction, repair and maintenance of residences and general construction work",Construction
+272,GRINDER,Processing of mineral substances (ceramics),Manufacturing and mining
+273,GROCER,Trade in other agricultural products,Trade and commerce
+274,GROOM,Livestock farming,Agriculture
+275,GUN MAKER,Processing of metals,Manufacturing and mining
+276,GYMNAST,"Science, literature, and art","Arts, entertainment, sports"
+277,GYPSER,"Cement industry, manufacture of artificial stone",Manufacturing and mining
+278,HABERDASHER,Garment making,"Leather, textiles, garments"
+279,HACKER,Processing of wood,Manufacturing and mining
+280,HAINES MAKER,Undetermined,NA
+281,HAIR CUTTER,Establishments providing bathing and personal hygiene services,Service and hospitality
+282,HAIR DRESSER,Establishments providing bathing and personal hygiene services,Service and hospitality
+283,HAKPR,Undetermined,NA
+284,HAMMER MAN,Processing of metals,Manufacturing and mining
+285,HANDYMAN,"Private activity and service; servants, day laborers",Estate and household labor
+286,HARNESS BAKER,Processing of animal products,Manufacturing and mining
+287,"HARNESS MAKER, BRIDLE CUTTER",Processing of animal products,Manufacturing and mining
+288,HAT MAKER/MANUFACTURER,Garment making,"Leather, textiles, garments"
+289,HATDRESSER,Garment making,"Leather, textiles, garments"
+290,HATTER,Garment making,"Leather, textiles, garments"
+291,HAWKER,"Peddling, street hawking",Trade and commerce
+292,HEATOR,"Construction, repair and maintenance of residences and general construction work",Construction
+293,HELPER,Undetermined,NA
+294,"HERDSMAN, HERDER",Livestock farming,Agriculture
+295,HOE MAKER,Processing of metals,Manufacturing and mining
+296,HORSE DEALER,Trade in livestock,Trade and commerce
+297,HORSE KEEPER,Livestock farming,Agriculture
+298,HORSEMAN,Livestock farming,Agriculture
+299,HOSIER,Processing of fibrous materials,"Leather, textiles, garments"
+300,HOSTLER,Livestock farming,Agriculture
+301,HOTEL KEEPER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+302,HOUSE CARPENTER,"Construction, repair and maintenance of residences and general construction work",Construction
+303,HOUSE MAID,"Private activity and service; servants, day laborers",Estate and household labor
+304,HOUSE PAINTER,"Construction, repair and maintenance of residences and general construction work",Construction
+305,HOUSE STEWARD,"Private activity and service; servants, day laborers",Estate and household labor
+306,HOUSE WOMAN,"Private activity and service; servants, day laborers",Estate and household labor
+307,HOUSEKEEPER,"Private activity and service; servants, day laborers",Estate and household labor
+308,HUNTER,Fishing and hunting,Agriculture
+309,IMPORTER,Trade overall,Trade and commerce
+310,INDEPENDENT,Undetermined,NA
+311,INN KEEPER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+312,INSPECTOR,"Public (rural, urban) and estates service",Government
+313,INSTRUMENT MAKER/MANUFACTURER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+314,INSURANCE AGENT,Credit and public commercial institutions,Trade and commerce
+315,INTERPRETER,Undetermined,Service and hospitality
+316,IRON FOUNDER,Processing of metals,Manufacturing and mining
+317,IRON MAKER,Processing of metals,Manufacturing and mining
+318,IRON MERCHANT,Processing of metals,Manufacturing and mining
+319,IRON MONGER,Processing of metals,Manufacturing and mining
+320,IRON MOULDER,Processing of metals,Manufacturing and mining
+321,IRON WORKER,Processing of metals,Manufacturing and mining
+322,IRONER,Establishments providing bathing and personal hygiene services,Service and hospitality
+323,JAILER,"Administration, courts and police",Government
+324,JANITOR,"Private activity and service; servants, day laborers",Estate and household labor
+325,JEWELER,"Jewelry making, painting, manufacture of cultural, luxury items, etc.",Manufacturing and mining
+326,JNT,Undetermined,NA
+327,"JOBBER, JOBBER SMITH",Trade overall,Trade and commerce
+328,JOCKEY,"Inns, hotels, rooming houses and clubs","Arts, entertainment, sports"
+329,JOINER,Processing of wood,Manufacturing and mining
+330,JOSS PAPER MAKER,Production of chemicals and related production,Manufacturing and mining
+331,JOURNALIST,"Science, literature, and art",Printing and journalism
+332,JOURNEYMAN,Manufacture not included in above or undetermined,Manufacturing and mining
+333,JUDGE,"Administration, courts and police",Government
+334,JUGGLER,"Inns, hotels, rooming houses and clubs","Arts, entertainment, sports"
+335,KEEPER,"Private activity and service; servants, day laborers",Estate and household labor
+336,KENNELMAN,Livestock farming,Agriculture
+337,KEY MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+338,KITCHEN MAID,"Private activity and service; servants, day laborers",Estate and household labor
+339,KNIFESMITH,Processing of metals,Manufacturing and mining
+340,KNITTING MILL WORKER,Processing of fibrous materials,"Leather, textiles, garments"
+341,LAB,"Private activity and service; servants, day laborers",Estate and household labor
+342,LABORER,"Private activity and service; servants, day laborers",Estate and household labor
+343,LACE MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+344,LADY,"Subsisting on income from capital, real estate or funds from parents and relatives",No occupation
+345,LADY'S MAID,"Private activity and service; servants, day laborers",Estate and household labor
+346,LAMP LIGHTER,"Public (rural, urban) and estates service",Government
+347,LAMP MAKER,Processing of metals,Manufacturing and mining
+348,"LAND OWNER, LAND PROPRIETER","Subsisting on income from capital, real estate or funds from parents and relatives",No occupation
+349,LAND SERVANT,"Private activity and service; servants, day laborers",Estate and household labor
+350,LANDLORD,"Subsisting on income from capital, real estate or funds from parents and relatives",No occupation
+351,LAPPER,Processing of fibrous materials,"Leather, textiles, garments"
+352,LAST MAKER,Garment making,"Leather, textiles, garments"
+353,"LAUNDRYMAID, LAUNDRY WOMAN",Establishments providing bathing and personal hygiene services,Service and hospitality
+354,LAWYER,Private legal services,Service and hospitality
+355,LEATHER CUTTER,Processing of animal products,"Leather, textiles, garments"
+356,LEATHER DEALER,"Trade in leather, fur, etc.",Trade and commerce
+357,LEATHER DRESSER,Processing of animal products,"Leather, textiles, garments"
+358,LEATHER MANUFACTURER,Processing of animal products,"Leather, textiles, garments"
+359,"LENDER, BACKER",Credit and public commercial institutions,Trade and commerce
+360,LETTER CUTTER,Printing,Printing and journalism
+361,LINEN MAKER/MANUFACTURER,Processing of fibrous materials,"Leather, textiles, garments"
+362,LINEN MERCHANT,Trade in other agricultural products,Trade and commerce
+363,LINEN WORKER,Processing of fibrous materials,"Leather, textiles, garments"
+364,LITHOGRAPHER,Printing,Printing and journalism
+365,LOCKSMITH,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+366,MACHINE MAKER,Processing of metals,Manufacturing and mining
+367,MACHINIST TAILOR,Processing of fibrous materials,"Leather, textiles, garments"
+368,"MACHINIST, MACHINE OPERATOR",Processing of metals,Manufacturing and mining
+369,MAID SERVANT,"Private activity and service; servants, day laborers",Estate and household labor
+370,MALTSTER,Other beverages and fermented substances,Production of food and drink
+371,MANAGER,"Administration, courts and police",Government
+372,MANGLER,Processing of animal products,"Leather, textiles, garments"
+373,MANSERVANT,"Private activity and service; servants, day laborers",Estate and household labor
+374,MANTLE MAKER,Garment making,"Leather, textiles, garments"
+375,MANUFACTURER,Manufacture not included in above or undetermined,Manufacturing and mining
+376,MARBLE MERCHANT,Trade in construction materials and fuels,Trade and commerce
+377,MARBLE WORKER,"Construction, repair and maintenance of residences and general construction work",Construction
+378,"MARINER, MARINE",Water transport,Transportation and communication
+379,MARRIER,Undetermined,NA
+380,MASON,"Construction, repair and maintenance of residences and general construction work",Construction
+381,MASTER,Manufacture not included in above or undetermined,Manufacturing and mining
+382,MATCHMAKER,Production of chemicals and related production,Manufacturing and mining
+383,MATRON,Medical and health services,Service and hospitality
+384,"MATTRESS MAKER, MATMAKER",Manufacture not included in above or undetermined,Manufacturing and mining
+385,MAYOR,"Administration, courts and police",Government
+386,MCHR,Undetermined,NA
+387,MEALER,Agriculture,Agriculture
+388,MECHANIC,Manufacture not included in above or undetermined,Manufacturing and mining
+389,MEDICAL STUDENT,Medical and health services,Service and hospitality
+390,MERCHANT,Trade overall,Trade and commerce
+391,METAL MOLDER,Processing of metals,Manufacturing and mining
+392,METAL WORKER,Processing of metals,Manufacturing and mining
+393,MIDWIFE,Medical and health services,Service and hospitality
+394,MILITARY,Armed forces,Government
+395,MILK MAN / WOMAN,Livestock farming,Agriculture
+396,MILL HAND,Processing of plant and animal food products,Production of food and drink
+397,MILL WORKER,Processing of plant and animal food products,Production of food and drink
+398,MILLER,Processing of plant and animal food products,Production of food and drink
+399,MILLINER,Trade in fabrics and garments,Trade and commerce
+400,MILLWRIGHT,Manufacture not included in above or undetermined,Manufacturing and mining
+401,MINER,Mining and quarrying,Manufacturing and mining
+402,MINISTER,Ministry in other Christian faiths,Faith-related
+403,MISSIONARY,"Officials at churches, mosques, synagogues, prayer houses, cemetaries, etc., their servants and caretakers",Faith-related
+404,MODEL BUILDER/MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+405,MONK,Ministry in other Christian faiths,Faith-related
+406,MOULDER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+407,MUSIC MASTER,"Science, literature, and art","Arts, entertainment, sports"
+408,MUSICIAN,"Science, literature, and art","Arts, entertainment, sports"
+409,NAILER,Processing of metals,Manufacturing and mining
+410,NAILSMITH,Processing of metals,Manufacturing and mining
+411,NATURALIST,"Science, literature, and art","Education, sciences"
+412,NAVY,Armed forces,Government
+413,NEEDLE MAKER/MANUFACTURER,Processing of metals,Manufacturing and mining
+414,NEWSPAPER MAN,"Science, literature, and art",Printing and journalism
+415,NEWSPAPER REPORTER,"Science, literature, and art",Printing and journalism
+416,NOBLEMAN,Member of privileged class,No occupation
+417,NONE,Unemployeed,No occupation
+418,NOTARY PUBLIC,"Administration, courts and police",Government
+419,"NURSE, SICK NURSE",Medical and health services,Service and hospitality
+420,OFFICER,Armed forces,Government
+421,OPERA SINGER,"Science, literature, and art","Arts, entertainment, sports"
+422,OPERATIVE,Manufacture not included in above or undetermined,Manufacturing and mining
+423,OPTICIAN,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+424,ORGAN BUILDER/MAKER,"Science, literature, and art","Arts, entertainment, sports"
+425,ORGANIST,"Science, literature, and art","Arts, entertainment, sports"
+426,OUTFITTER,Trade in fabrics and garments,Trade and commerce
+427,PACKER,Undetermined,NA
+428,PAINTER,"Construction, repair and maintenance of residences and general construction work",Construction
+429,PAINTER AND GILDER,Printing,Printing and journalism
+430,PAPER HANGER,"Construction, repair and maintenance of residences and general construction work",Construction
+431,PAPER MAKER/MANUFACTURER,Production of chemicals and related production,Manufacturing and mining
+432,PARTNER,Undetermined,NA
+433,PASTOR,Ministry in other Christian faiths,Faith-related
+434,PATTERN MAKER,Garment making,"Leather, textiles, garments"
+435,PAVER,"Construction, repair and maintenance of residences and general construction work",Construction
+436,PAWN BROKER,Commercial brokerage services,Trade and commerce
+437,PEASANT,Agriculture,Agriculture
+438,PEDDLER,Trade overall,Trade and commerce
+439,PENSIONER,"Subsisting at expense of public treasury, social institutions and private individuals",No occupation
+440,PERFUMER,Production of chemicals and related production,Manufacturing and mining
+441,PHARMACIST,Medical and health services,Service and hospitality
+442,PHILOSOPHER,"Science, literature, and art","Education, sciences"
+443,PHOTOGRAPHER,Printing,Printing and journalism
+444,PIANIST,"Science, literature, and art","Arts, entertainment, sports"
+445,PIANO MAKER/MANUFACTURER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+446,PIANO TUNER,"Science, literature, and art","Arts, entertainment, sports"
+447,PIPE LAYER,"Construction, repair and maintenance of residences and general construction work",Construction
+448,PIPE MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+449,PIPER,"Science, literature, and art","Arts, entertainment, sports"
+450,PLAITER,Garment making,"Leather, textiles, garments"
+451,PLANER,Processing of wood,Manufacturing and mining
+452,PLANTER,Agriculture,Agriculture
+453,PLASTERER,"Construction, repair and maintenance of residences and general construction work",Construction
+454,PLATE LAYER,Railroads,Transportation and communication
+455,PLATE WORKER,Processing of metals,Manufacturing and mining
+456,PLOW HOLDER,Agriculture,Agriculture
+457,PLUMBER,"Construction, repair and maintenance of residences and general construction work",Construction
+458,"POINT CUTTER, POINTER","Construction, repair and maintenance of residences and general construction work",Construction
+459,POLICEMAN,"Administration, courts and police",Government
+460,PORTER,Other overland transport and means of transport,Transportation and communication
+461,PORTMANTEAU MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+462,PORTRAIT PAINTER,"Science, literature, and art","Arts, entertainment, sports"
+463,POST OFFICER,Carrier trade,Transportation and communication
+464,"POTTER, POT MAKER",Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+465,PREACHER,Ministry in other Christian faiths,Faith-related
+466,PRESIDENT,"Administration, courts and police",Government
+467,PRESSER,Printing,Printing and journalism
+468,PRESSMAN,Printing,Printing and journalism
+469,PRIEST,Ministry in other Christian faiths,Faith-related
+470,PRINT DYER,Printing,Printing and journalism
+471,PRINT WORKER,Printing,Printing and journalism
+472,PRINTER,Printing,Printing and journalism
+473,PRIVATE MAN,"Private activity and service; servants, day laborers",Estate and household labor
+474,PRIVATE WOMAN,"Private activity and service; servants, day laborers",Estate and household labor
+475,PRIVATEER,Armed forces,Government
+476,PROFESSIONAL,Undetermined,NA
+477,PROFESSOR,Education services,"Education, sciences"
+478,PROPRIETOR,Undetermined,NA
+479,PUBLICAN,"Inns, hotels, rooming houses and clubs",Service and hospitality
+480,PUBLISHER,"Trade in articles of luxury, science, art, culture, etc.",Trade and commerce
+481,PURSE MAKER,Garment making,"Leather, textiles, garments"
+482,PURSER,Other overland transport and means of transport,Transportation and communication
+483,PUTTER,Undetermined,NA
+484,QUARRYMAN,Mining and quarrying,Manufacturing and mining
+485,QUAY WORKER,Water transport,Transportation and communication
+486,RABBI,Ministry in non-Christian faiths,Faith-related
+487,RAILROAD WORKER,Railroads,Transportation and communication
+488,RAILWAY OFFICER,Railroads,Transportation and communication
+489,RANGER,"Forestry, forest industries",Agriculture
+490,REAL ESTATE AGENT,Credit and public commercial institutions,Trade and commerce
+491,REFG,Undetermined,NA
+492,REFINER,Smelting of metals,Manufacturing and mining
+493,RELIGIOUS,"Officials at churches, mosques, synagogues, prayer houses, cemetaries, etc., their servants and caretakers",Faith-related
+494,RENTER,Agriculture,Agriculture
+495,RENTIER,Agriculture,Agriculture
+496,REPORTER,"Science, literature, and art",Printing and journalism
+497,RESTAURANT KEEPER/OWNER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+498,RIGGER,Water transport,Transportation and communication
+499,RIVETER,Processing of metals,Manufacturing and mining
+500,"ROOFER, ROOF MAKER","Construction, repair and maintenance of residences and general construction work",Construction
+501,ROPE MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+502,SADDLE MAKER,Processing of animal products,Manufacturing and mining
+503,SADDLER,Processing of animal products,Manufacturing and mining
+504,SAIL MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+505,SAILOR,Water transport,Transportation and communication
+506,"SALESMAN, SALESPERSON",Trade overall,Trade and commerce
+507,SALON KEEPER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+508,SALTER,Trade in other articles,Trade and commerce
+509,SATTLER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+510,"SAW MAKER, SAW FILER",Processing of metals,Manufacturing and mining
+511,SAW MILL WORKER,Manufacture not included in above or undetermined,Manufacturing and mining
+512,SAWER,Processing of wood,Manufacturing and mining
+513,SCALE MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+514,SCHOLAR,Education services,"Education, sciences"
+515,SCHOOL MASTER,Education services,"Education, sciences"
+516,SCOURER,"Private activity and service; servants, day laborers",Estate and household labor
+517,"SCRIBBLER, SCRIPTWRITER","Science, literature, and art","Arts, entertainment, sports"
+518,"SCULPTOR, SCULPTURER","Science, literature, and art","Arts, entertainment, sports"
+519,SEAMAN,Water transport,Transportation and communication
+520,SEAMSTRESS,Processing of fibrous materials,"Leather, textiles, garments"
+521,SECRETARY,"Private activity and service; servants, day laborers",Estate and household labor
+522,SEMINARIAN,Ministry in other Christian faiths,Faith-related
+523,SENATOR,"Administration, courts and police",Government
+524,"SERVANT, GENTLEMAN'S SERVANT","Private activity and service; servants, day laborers",Estate and household labor
+525,SETMAKER,Processing of metals,Manufacturing and mining
+526,SETTLER,Agriculture,Agriculture
+527,SHAVER,Establishments providing bathing and personal hygiene services,Service and hospitality
+528,SHEARER,Processing of animal products,"Leather, textiles, garments"
+529,SHEPHERD,Livestock farming,Agriculture
+530,SHINER,"Distilling, brewing and honey fermenting",Production of food and drink
+531,SHINGLER,"Construction, repair and maintenance of residences and general construction work",Construction
+532,SHIP BROKER,Water transport,Transportation and communication
+533,"SHIP BUILDER, SHIP MAKER",Processing of metals,Manufacturing and mining
+534,SHIP CARPENTER,Processing of metals,Manufacturing and mining
+535,SHIP CHANDLER,Water transport,Transportation and communication
+536,SHIPPING WORKER,Water transport,Transportation and communication
+537,SHIRT MAKER,Garment making,"Leather, textiles, garments"
+538,SHOE MANUFACTURER,Garment making,"Leather, textiles, garments"
+539,SHOEMAKER,Garment making,"Leather, textiles, garments"
+540,SHOP APRENTICE,Trade overall,Trade and commerce
+541,SHOP ASSISTANT,Trade overall,Trade and commerce
+542,SHOP KEEPER,Trade overall,Trade and commerce
+543,SHOPMAN,Trade overall,Trade and commerce
+544,SHOWMAN,"Science, literature, and art","Arts, entertainment, sports"
+545,SHPC,Undetermined,NA
+546,SILK DYER,Processing of fibrous materials,"Leather, textiles, garments"
+547,SILK TWISTER,Processing of fibrous materials,"Leather, textiles, garments"
+548,SILK WEAVER,Processing of fibrous materials,"Leather, textiles, garments"
+549,SILK WORKER,Processing of fibrous materials,"Leather, textiles, garments"
+550,SILVERSMITH,Processing of metals,Manufacturing and mining
+551,SINGER,"Science, literature, and art","Arts, entertainment, sports"
+552,SISTER OF MERCY,Ministry in other Christian faiths,Faith-related
+553,SKIN DRESSER,Processing of animal products,"Leather, textiles, garments"
+554,SKINNER,"Trade in leather, fur, etc.",Trade and commerce
+555,SLATER,"Construction, repair and maintenance of residences and general construction work",Construction
+556,SLEIGH MAKER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+557,SLIPPER MAKER,Garment making,"Leather, textiles, garments"
+558,SMITH,Manufacture not included in above or undetermined,Manufacturing and mining
+559,SOAP BOILER,Production of chemicals and related production,Manufacturing and mining
+560,SOAP DEALER,Trade in other articles,Trade and commerce
+561,SOAP MAKER/MANUFACTURER,Production of chemicals and related production,Manufacturing and mining
+562,SOLDIER,Armed forces,Government
+563,SPADE MAKER,Processing of metals,Manufacturing and mining
+564,SPINDLE MAKER,Processing of metals,Manufacturing and mining
+565,SPINNER,Processing of fibrous materials,"Leather, textiles, garments"
+566,SPOON MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+567,STABLEMAN/OSTLER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+568,STAMP MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+569,STATIONER,Trade in other articles,Trade and commerce
+570,STATUARY,"Science, literature, and art","Arts, entertainment, sports"
+571,STEWARD,"Private activity and service; servants, day laborers",Estate and household labor
+572,STICK MAKER,Processing of wood,Manufacturing and mining
+573,STOCKING MENDER,Garment making,"Leather, textiles, garments"
+574,STOCKING WEAVER,Garment making,"Leather, textiles, garments"
+575,STONE CUTTER,Processing of mineral substances (ceramics),Manufacturing and mining
+576,STONE MASON,Processing of mineral substances (ceramics),Manufacturing and mining
+577,STONER,Processing of mineral substances (ceramics),Manufacturing and mining
+578,STORE CLERK,Trade overall,Trade and commerce
+579,STORE KEEPER,Trade overall,Trade and commerce
+580,STRAP PRESSER,"Private activity and service; servants, day laborers",Estate and household labor
+581,STRAW WORKER,"Construction, repair and maintenance of residences and general construction work",Construction
+582,STRIKER,Processing of metals,Manufacturing and mining
+583,STUDENT/SCHOLASTIC,Education services,"Education, sciences"
+584,SUGAR BOILER,Processing of plant and animal food products,Production of food and drink
+585,SUGAR MAKER,Processing of plant and animal food products,Production of food and drink
+586,SUGAR REFINER,Processing of plant and animal food products,Production of food and drink
+587,SURGEON,Medical and health services,Service and hospitality
+588,SWEEPER,"Construction, repair and maintenance of residences and general construction work",Construction
+589,T,Undetermined,NA
+590,TABLE MAKER,Processing of wood,Manufacturing and mining
+591,TAILOR,Garment making,"Leather, textiles, garments"
+592,TANNER,Processing of plant and animal food products,"Leather, textiles, garments"
+593,TAPE MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+594,TAPESTRY MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+595,TEA DEALER,Trade in other agricultural products,Trade and commerce
+596,TEACHER,Education services,"Education, sciences"
+597,TECHNICIAN,Manufacture not included in above or undetermined,Manufacturing and mining
+598,TELEGRAPHER,"Mail, telegraph, and telephone",Transportation and communication
+599,TENOR,"Science, literature, and art","Arts, entertainment, sports"
+600,TENTER,Processing of animal products,"Leather, textiles, garments"
+601,THATCHER,"Construction, repair and maintenance of residences and general construction work",Construction
+602,THEATRICAL AGENT,"Science, literature, and art","Arts, entertainment, sports"
+603,THEOLOGIAN,"Science, literature, and art","Education, sciences"
+604,THREAD MAKER,Processing of fibrous materials,"Leather, textiles, garments"
+605,TILE MAKER,Processing of mineral substances (ceramics),Manufacturing and mining
+606,TILER,Processing of mineral substances (ceramics),Manufacturing and mining
+607,TIMBER MERCHANT,Trade overall,Trade and commerce
+608,TIN MAKER,Processing of metals,Manufacturing and mining
+609,TINKER,Processing of metals,Manufacturing and mining
+610,TINMAN-IRON WORKER,Processing of metals,Manufacturing and mining
+611,TINNER/TINMAN,Processing of metals,Manufacturing and mining
+612,TINPLATE WORKER,Processing of metals,Manufacturing and mining
+613,TINSMITH,Processing of metals,Manufacturing and mining
+614,TLE,Undetermined,NA
+615,TOBACCO DEALER/MERCHANT,Tobacco and tobacco products,Production of food and drink
+616,TOBACCO MANUFACTURER,Tobacco and tobacco products,Production of food and drink
+617,TOBACCO SPINNER,Tobacco and tobacco products,Production of food and drink
+618,TOBACCO WORKER,Tobacco and tobacco products,Production of food and drink
+619,TOBACCONIST,Tobacco and tobacco products,Production of food and drink
+620,TOURIST,Undetermined,NA
+621,TRADER,Trade overall,Trade and commerce
+622,TRADESMAN,Trade overall,Trade and commerce
+623,TRADLER,Trade overall,Trade and commerce
+624,TRANSLATOR,Undetermined,Service and hospitality
+625,TRAVELER,Undetermined,NA
+626,TRIMMER,"Construction, repair and maintenance of residences and general construction work",Construction
+627,TRIMMING MAKER,"Construction, repair and maintenance of residences and general construction work",Construction
+628,TRUNK MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+629,TRUSS MAKER,Manufacture not included in above or undetermined,Manufacturing and mining
+630,TURF CUTTER,Agriculture,Agriculture
+631,TURNER,Processing of wood,Manufacturing and mining
+632,TUTOR,Education services,"Education, sciences"
+633,TWISTER,Processing of fibrous materials,"Leather, textiles, garments"
+634,TYPE FOUNDER,Processing of metals,Manufacturing and mining
+635,TYPESETTER,Printing,Printing and journalism
+636,TYPOGRAPHER,Printing,Printing and journalism
+637,UMBRELLA MAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+638,UNKNOWN,Occupation unknown,NA
+639,UPHOLSTERER,"Construction, repair and maintenance of residences and general construction work",Construction
+640,VALET,"Private activity and service; servants, day laborers",Estate and household labor
+641,VELVET WORKER,Processing of fibrous materials,"Leather, textiles, garments"
+642,VENDOR,Trade overall,Trade and commerce
+643,"VETERINARIAN, COW DOCTOR",Medical and health services,Service and hospitality
+644,VINE-DRESSER,Agriculture,Agriculture
+645,VINTNER,Agriculture,Agriculture
+646,VIOLINIST,"Science, literature, and art","Arts, entertainment, sports"
+647,WAGON MAKER,Manufacture of carriages and construction of wooden vessels,Manufacturing and mining
+648,WAGONER,Other overland transport and means of transport,Transportation and communication
+649,WAITER,"Inns, hotels, rooming houses and clubs",Service and hospitality
+650,WAITRESS,"Inns, hotels, rooming houses and clubs",Service and hospitality
+651,WARPER,Processing of fibrous materials,"Leather, textiles, garments"
+652,WASHER,"Private activity and service; servants, day laborers",Estate and household labor
+653,WATCHGLASS MAKER,Processing of mineral substances (ceramics),Manufacturing and mining
+654,WATCHMAKER,"Manufacture of instruments (physical, optical, surgical), watches, toys",Manufacturing and mining
+655,WATCHMAN,"Private activity and service; servants, day laborers",Estate and household labor
+656,WATERMAN,Water transport,Transportation and communication
+657,WATERPROOFER,"Construction, repair and maintenance of residences and general construction work",Construction
+658,WEAVER,Processing of fibrous materials,"Leather, textiles, garments"
+659,WEIGHER,Railroads,Transportation and communication
+660,WHEELER,Processing of wood,Manufacturing and mining
+661,WHEELWRIGHT,Processing of wood,Manufacturing and mining
+662,WIG MAKER,Garment making,"Leather, textiles, garments"
+663,WINDER,Processing of metals,Manufacturing and mining
+664,WINE MERCHANT,Drinking establishments,Service and hospitality
+665,WINE PORTER,Drinking establishments,Service and hospitality
+666,WIRE MAKER,Processing of metals,Manufacturing and mining
+667,WIRE WORKER,Processing of metals,Manufacturing and mining
+668,WOOD BURNER,Processing of wood,Manufacturing and mining
+669,WOOD CARVER,Processing of wood,Manufacturing and mining
+670,WOOD CORDER,Processing of wood,Manufacturing and mining
+671,WOOD CUTTER,Processing of wood,Manufacturing and mining
+672,WOOD MAN,Processing of wood,Manufacturing and mining
+673,WOOD TURNER,Processing of wood,Manufacturing and mining
+674,WOOL MERCHANT,Trade in fabrics and garments,Trade and commerce
+675,WOOL SPINNER,Processing of fibrous materials,"Leather, textiles, garments"
+676,WRIGHT,Manufacture not included in above or undetermined,Manufacturing and mining
+677,WRITER,"Science, literature, and art","Arts, entertainment, sports"
+678,WRITING MASTER,"Science, literature, and art","Education, sciences"
+679,YEAST MAKER,Other beverages and fermented substances,Production of food and drink
+680,NO DATA,Occupation unknown,NA
+681,FAMILY RELATIONSHIP DATA,"No occupation given, family relationship specified instead",No occupation

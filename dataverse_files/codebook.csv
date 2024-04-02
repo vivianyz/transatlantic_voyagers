@@ -1,0 +1,54 @@
+﻿attribute,human-readable,note,format,observation type,filename
+gazID,gazetteer ID,unique identifier for a toponym,integer,ascribed,[multiple]
+occID,occupation ID,unique identifier for an occupation,integer,ascribed,[multiple]
+occ_nm,occupation name,-,text,extracted,occupations
+occ_ctg,occupation category,closest match with Level 1 occupational categories listed in 1897 census data published by RISTAT,text,ascribed,occupations
+occ_grp,occupation group,consolidated grouping of occupations based on logic of other statistical publications of the imperial government,text,ascribed,occupations
+portID,port ID,unique identifier for a port,integer,ascribed,ports
+port_nm,port name,-,text,native,ports
+port_mdr,"port name, modern",primary toponym as given in GeoNames,text,ascribed,ports
+type,type,"primary designation: departure, interim, arrival",text,ascribed,ports
+cntry_mdr,"country, modern",-,text,ascribed,ports
+geonm_crd,GeoNames coordinates,coordinate pair as given in GeoNames,decimal degrees,ascribed,[multiple]
+geonm_lat,GeoNames latitude,latitude as given in GeoNames,decimal degrees,ascribed,[multiple]
+geonm_long,GeoNames longitude,longitude as given in GeoNames,decimal degrees,ascribed,[multiple]
+geonm_url,GeoNames URL,item permalink,URL,ascribed,[multiple]
+note,note,explanatory note,text,ascribed,[multiple]
+routeID,route ID,unique identifier for a route,integer,ascribed,[multiple]
+ships,ships,total number of different ships to make the voyage,integer,calculated,routes
+vygs,voyages,number of voyages,integer,calculated,routes
+vygs_ship,voyages per ship,voyages per individual ship,decimal,calculated,routes
+itinry,itinerary,"listing of departure, interim, and arrival ports given in NARA data",text,native,routes
+port_arv,port of arrival,-,text,native,[multiple]
+MID,manifest ID,unique identifier for a ship manifest,integer,native,[multiple]
+shipID,ship ID,unique identifier for a ship,integer,ascribed,[multiple]
+ship,ship name,-,text,native,[multiple]
+start_yr,start year,"earliest voyage year associated with a given ship name; in case of a gap of 10 or more years, ships are considered to constitute separate vessels",date (YYYY),calculated,ships
+end_yr,end year,"latest voyage year associated with a given ship name; in case of a gap of 10 or more years, ships are considered to constitute separate vessels",date (YYYY),calculated,ships
+sail_yrs,years under sail,inclusive of last year listed,integer,calculated,ships
+arv_date,arrival date,-,date (DD/MM/YYYY),native,voyages
+arv_yr,arrival year,-,date (YYYY),native,voyages
+q_psgrs,number of passengers,according to the individual manifest,integer,calculated,voyages
+avg_crss,average crossing,"average crossing time (number of days) as given by Jean-Paul Rodrigue in The Geography of Transport Systems, 5th Edition (2020)",integer,ascribed,voyages
+travel_grpID,travel group ID,unique identifier for a travel group,text,ascribed,travel groups
+travel_grp,travel group,single/a pair/a group of  travelers in a travel group,text,calculated,travel groups
+travel_grp_size,travel group size,the size of the travel group,integer,calculated,travel groups
+ID,passenger ID,unique identifier for a passenger,integer,ascribed,passengers
+ln,last name,-,text,native,passengers
+fn,first name,-,text,native,passengers
+age,age,-,integer,native,passengers
+sex,gender,"only ""male"" and ""female"" values",text,native,passengers
+litr,literacy ,-,text,native,passengers
+lres,last residence,-,text,native,passengers
+fam_role,family role,values extracted from original place in occupation field,text,calculated,passengers
+pasg,passage,passage type: steerage or cabin,text,extracted,passengers
+gndr_ind,gender indication,male/female/neutral values assigned as rough guide,text,ascribed,[multiple]
+lkrID,last known residence ID,,integer,ascribed,[multiple]
+goal,voyage goal,"""immigration"" ""return trip by non-US citizen"" ""return to country of origin"" ""return to US"" ",text,extracted,passengers
+condtn,condition (of passenger),"values: ""alive"" ""dead""",text,extracted,passengers
+resdn,residence,name of last known residence of passengeer,text,native,lkresidences
+count,count,count of records citing each place in the list,integer,calculated,lkresidences
+sptl_unit,spatial unit,,text,ascribed,lkresidences
+tsar_trty,tsarist territory,basic indicator of whether the area was within the boundaries of the Russian Empire in the late 19th century,text,ascribed,lkresidences
+cnfdnc,confidence,"confidence index: 3 = high, 2 = slight reservation, 1 = low confidence (often due to difficulty disambiguating places of same name,) 0 = lack of confidence",integer,ascribed,lkresidences
+resdn_alt,alternative residence name,given in capitals based on the NARA data,text,native,lkresidences

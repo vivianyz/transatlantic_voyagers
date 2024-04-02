@@ -1,0 +1,22 @@
+﻿fam_role,gndr_ind
+BOY,male
+"CHILD, YOUNGSTER",neutral
+FAMILY,neutral
+FATHER,male
+GIRL,female
+GRANDCHILD,neutral
+GRANDPARENT,neutral
+HUSBAND,male
+IN-LAW,neutral
+INFANT,neutral
+MOTHER,female
+"NIECE, NEPHEW",neutral
+RELATIVE,neutral
+SISTER,female
+SON,male
+SPINSTER,female
+STEPDAUGHTER,female
+STEPSON,male
+"WIDOW/WIDOWER, GRASS WIDOW",female
+WIFE,female
+WOMAN,female

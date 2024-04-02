@@ -1,0 +1,3463 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.46816,65.01236 ]
+    },
+    "properties": {
+    "lkrID":222,
+    "resdn":"Uleaborg",
+    "count":18,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"65.01236, 25.46816",
+    "geonm_url":"https://www.geonames.org/643492/oulu.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.5433,64.5401 ]
+    },
+    "properties": {
+    "lkrID":227,
+    "resdn":"Arkhangelsk",
+    "count":12,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"64.5401, 40.5433",
+    "geonm_url":"https://www.geonames.org/581049/arkhangel-sk.html",
+    "cnfdnc":3,
+    "resdn_alt":"ARCHANGELSK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.61577,63.096 ]
+    },
+    "properties": {
+    "lkrID":48,
+    "resdn":"Wasa",
+    "count":1194,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"63.096, 21.61577",
+    "geonm_url":"https://www.geonames.org/632978/vaasa.html",
+    "cnfdnc":3,
+    "resdn_alt":"VASA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.75283,60.70763 ]
+    },
+    "properties": {
+    "lkrID":208,
+    "resdn":"Viborg",
+    "count":28,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"60.70763, 28.75283",
+    "geonm_url":"https://www.geonames.org/470546/vyborg.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.26869,60.45148 ]
+    },
+    "properties": {
+    "lkrID":65,
+    "resdn":"Abo",
+    "count":347,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"60.45148, 22.26869",
+    "geonm_url":"https://www.geonames.org/633679/turku.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.32415,60.39299 ]
+    },
+    "properties": {
+    "lkrID":165,
+    "resdn":"Bergen",
+    "count":75,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"60.39299, 5.32415",
+    "geonm_url":"https://www.geonames.org/3161732/bergen.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20,60.25 ]
+    },
+    "properties": {
+    "lkrID":243,
+    "resdn":"Aland",
+    "count":41,
+    "sptl_unit":"region",
+    "tsar_trty":"yes",
+    "geonm_crd":"60.25, 20",
+    "geonm_url":"https://www.geonames.org/661882/aland-islands.html",
+    "cnfdnc":3,
+    "resdn_alt":"AALAND; ALANO; ALANS",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.93545,60.16952 ]
+    },
+    "properties": {
+    "lkrID":61,
+    "resdn":"Helsingfors",
+    "count":473,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"60.16952, 24.93545",
+    "geonm_url":"https://www.geonames.org/658225/helsinki.html",
+    "cnfdnc":3,
+    "resdn_alt":"HELSINKY; HEBSINGJARS; HELVINGFOR",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.8084,60.0288 ]
+    },
+    "properties": {
+    "lkrID":169,
+    "resdn":"Belzoro",
+    "count":68,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"60.0288, 37.8084",
+    "geonm_url":"https://www.geonames.org/577711/belozersk.html",
+    "cnfdnc":3,
+    "resdn_alt":"BELOZERKOWO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.31413,59.93863 ]
+    },
+    "properties": {
+    "lkrID":44,
+    "resdn":"St. Peterburg",
+    "count":1685,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"59.93863, 30.31413",
+    "geonm_url":"https://www.geonames.org/498817/saint-petersburg.html",
+    "cnfdnc":3,
+    "resdn_alt":"PETERSBURG",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.9,59.88333 ]
+    },
+    "properties": {
+    "lkrID":212,
+    "resdn":"Peterhof",
+    "count":30,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"59.88333, 29.9",
+    "geonm_url":"https://www.geonames.org/510291/peterhof.html",
+    "cnfdnc":1,
+    "resdn_alt":"",
+    "note":"alternate location in Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.95,59.83333 ]
+    },
+    "properties": {
+    "lkrID":130,
+    "resdn":"Hango",
+    "count":141,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"59.83333, 22.95",
+    "geonm_url":"https://www.geonames.org/659101/hanko.html",
+    "cnfdnc":3,
+    "resdn_alt":"HANGA; HANGI; HANGE; HANJO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.75353,59.43696 ]
+    },
+    "properties": {
+    "lkrID":101,
+    "resdn":"Revel",
+    "count":157,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"59.43696, 24.75353",
+    "geonm_url":"https://www.geonames.org/588409/tallinn.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.19028,59.37722 ]
+    },
+    "properties": {
+    "lkrID":199,
+    "resdn":"Narva",
+    "count":35,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"59.37722, 28.19028",
+    "geonm_url":"https://www.geonames.org/590031/narva.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.06871,59.32938 ]
+    },
+    "properties": {
+    "lkrID":64,
+    "resdn":"Stockholm",
+    "count":375,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"59.32938, 18.06871",
+    "geonm_url":"https://www.geonames.org/2673730/stockholm.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.27104,58.52131 ]
+    },
+    "properties": {
+    "lkrID":103,
+    "resdn":"Novgorod",
+    "count":147,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"58.52131, 31.27104",
+    "geonm_url":"https://www.geonames.org/519336/velikiy-novgorod.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.72509,58.38062 ]
+    },
+    "properties": {
+    "lkrID":152,
+    "resdn":"Dorpat",
+    "count":85,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"58.38062, 26.72509",
+    "geonm_url":"https://www.geonames.org/588335/tartu.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 68.25457,58.19807 ]
+    },
+    "properties": {
+    "lkrID":135,
+    "resdn":"Tobolsk",
+    "count":103,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"58.19807, 68.25457",
+    "geonm_url":"https://www.geonames.org/1489530/tobolsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"TOMOLSK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 56.25017,58.01046 ]
+    },
+    "properties": {
+    "lkrID":187,
+    "resdn":"Perm",
+    "count":46,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"58.01046, 56.25017",
+    "geonm_url":"https://www.geonames.org/511196/perm.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.3496,57.8136 ]
+    },
+    "properties": {
+    "lkrID":217,
+    "resdn":"Pskov",
+    "count":20,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"57.8136, 28.3496",
+    "geonm_url":"https://www.geonames.org/504341/pskov.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.96679,57.70716 ]
+    },
+    "properties": {
+    "lkrID":57,
+    "resdn":"Gottenburg",
+    "count":528,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"57.70716, 11.96679",
+    "geonm_url":"https://www.geonames.org/2711537/goeteborg.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.87368,57.62987 ]
+    },
+    "properties": {
+    "lkrID":191,
+    "resdn":"Jaroslaw",
+    "count":44,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"57.62987, 39.87368",
+    "geonm_url":"https://www.geonames.org/468902/yaroslavl.html",
+    "cnfdnc":3,
+    "resdn_alt":"JAROESLAWITZ",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.41394,57.1914 ]
+    },
+    "properties": {
+    "lkrID":120,
+    "resdn":"Rostov",
+    "count":120,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"57.1914, 39.41394",
+    "geonm_url":"https://www.geonames.org/501183/rostov.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.95721,56.97399 ]
+    },
+    "properties": {
+    "lkrID":118,
+    "resdn":"Goldingen",
+    "count":116,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.97399, 21.95721",
+    "geonm_url":"https://www.geonames.org/458460/kuldiga.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.10589,56.946 ]
+    },
+    "properties": {
+    "lkrID":42,
+    "resdn":"Riga",
+    "count":2256,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.946, 24.10589",
+    "geonm_url":"https://www.geonames.org/456172/riga.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.90057,56.85836 ]
+    },
+    "properties": {
+    "lkrID":188,
+    "resdn":"Tver",
+    "count":46,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.85836, 35.90057",
+    "geonm_url":"https://www.geonames.org/480060/tver.html",
+    "cnfdnc":3,
+    "resdn_alt":"TWER",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.71278,56.65 ]
+    },
+    "properties": {
+    "lkrID":79,
+    "resdn":"Mitawa",
+    "count":216,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.65, 23.71278",
+    "geonm_url":"https://www.geonames.org/459279/jelgava.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.08316,56.61319 ]
+    },
+    "properties": {
+    "lkrID":108,
+    "resdn":"Friedrichstadt",
+    "count":134,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.61319, 25.08316",
+    "geonm_url":"https://www.geonames.org/459402/jaunjelgava.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":"alternate locations in Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.01085,56.50474 ]
+    },
+    "properties": {
+    "lkrID":50,
+    "resdn":"Libau",
+    "count":766,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.50474, 21.01085",
+    "geonm_url":"https://www.geonames.org/457954/liepaja.html",
+    "cnfdnc":3,
+    "resdn_alt":"LIBAVA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 84.97437,56.49771 ]
+    },
+    "properties": {
+    "lkrID":214,
+    "resdn":"Tomsk",
+    "count":22,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.49771, 84.97437",
+    "geonm_url":"https://www.geonames.org/1489425/tomsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 53.79782,56.47633 ]
+    },
+    "properties": {
+    "lkrID":173,
+    "resdn":"Sarapul",
+    "count":60,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.47633, 53.79782",
+    "geonm_url":"https://www.geonames.org/498687/sarapul.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 38.71216,56.39516 ]
+    },
+    "properties": {
+    "lkrID":117,
+    "resdn":"Alexandrowo",
+    "count":120,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.39516, 38.71216",
+    "geonm_url":"https://www.geonames.org/583350/aleksandrov.html",
+    "cnfdnc":3,
+    "resdn_alt":"ALEKSANDROWO; ALEXANDROWA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.00205,56.32867 ]
+    },
+    "properties": {
+    "lkrID":207,
+    "resdn":"Nizhni Novgorod",
+    "count":28,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"56.32867, 44.00205",
+    "geonm_url":"https://www.geonames.org/520555/nizhniy-novgorod.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.24722,55.98139 ]
+    },
+    "properties": {
+    "lkrID":149,
+    "resdn":"Telschen",
+    "count":102,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.98139, 22.24722",
+    "geonm_url":"https://www.geonames.org/593926/telsiai.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.31667,55.93333 ]
+    },
+    "properties": {
+    "lkrID":84,
+    "resdn":"Schaulen",
+    "count":196,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.93333, 23.31667",
+    "geonm_url":"https://www.geonames.org/594739/siauliai.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.06861,55.9175 ]
+    },
+    "properties": {
+    "lkrID":228,
+    "resdn":"Palanga",
+    "count":29,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.9175, 21.06861",
+    "geonm_url":"https://www.geonames.org/596238/palanga.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.53333,55.88333 ]
+    },
+    "properties": {
+    "lkrID":66,
+    "resdn":"Dunaburg",
+    "count":327,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.88333, 26.53333",
+    "geonm_url":"https://www.geonames.org/460413/daugavpils.html",
+    "cnfdnc":3,
+    "resdn_alt":"DUENABURG",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.25763,55.86515 ]
+    },
+    "properties": {
+    "lkrID":77,
+    "resdn":"Glasgow",
+    "count":215,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"55.86515, -4.25763",
+    "geonm_url":"https://www.geonames.org/2648579/glasgow.html",
+    "cnfdnc":3,
+    "resdn_alt":"GALSGOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.12214,55.78874 ]
+    },
+    "properties": {
+    "lkrID":128,
+    "resdn":"Kazan",
+    "count":107,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.78874, 49.12214",
+    "geonm_url":"https://www.geonames.org/551487/kazan.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.61556,55.75222 ]
+    },
+    "properties": {
+    "lkrID":38,
+    "resdn":"Moscow",
+    "count":3513,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.75222, 37.61556",
+    "geonm_url":"https://www.geonames.org/524901/moscow.html",
+    "cnfdnc":3,
+    "resdn_alt":"MOSKAU",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.7856,55.4879 ]
+    },
+    "properties": {
+    "lkrID":211,
+    "resdn":"Polotsk",
+    "count":26,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.4879, 28.7856",
+    "geonm_url":"https://www.geonames.org/623317/polatsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.9845,55.4624 ]
+    },
+    "properties": {
+    "lkrID":176,
+    "resdn":"Gorodok",
+    "count":54,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.4624, 29.9845",
+    "geonm_url":"https://www.geonames.org/628155/haradok.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.55472,55.42419 ]
+    },
+    "properties": {
+    "lkrID":68,
+    "resdn":"Podolsk",
+    "count":305,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.42419, 37.55472",
+    "geonm_url":"https://www.geonames.org/508101/podolsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"PADOLSK; POSALSK; PODOLE",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.12386,55.37973 ]
+    },
+    "properties": {
+    "lkrID":168,
+    "resdn":"Rossiani",
+    "count":167,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.37973, 23.12386",
+    "geonm_url":"https://www.geonames.org/595378/raseiniai.html",
+    "cnfdnc":3,
+    "resdn_alt":"ROSSEIN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.75,55.25 ]
+    },
+    "properties": {
+    "lkrID":115,
+    "resdn":"Wilkomir",
+    "count":118,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.25, 24.75",
+    "geonm_url":"https://www.geonames.org/593733/ukmerge.html",
+    "cnfdnc":3,
+    "resdn_alt":"WALKOMIR",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.2049,55.1904 ]
+    },
+    "properties": {
+    "lkrID":71,
+    "resdn":"Vitebsk",
+    "count":329,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.1904, 30.2049",
+    "geonm_url":"https://www.geonames.org/620127/vitebsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"WITEBSK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.87851,55.08392 ]
+    },
+    "properties": {
+    "lkrID":133,
+    "resdn":"Tilsit",
+    "count":104,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"55.08392, 21.87851",
+    "geonm_url":"https://www.geonames.org/490068/sovetsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.76416,55.07556 ]
+    },
+    "properties": {
+    "lkrID":92,
+    "resdn":"Georgenburg",
+    "count":178,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"55.07556, 22.76416",
+    "geonm_url":"https://www.geonames.org/598655/jurbarkas.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.90961,54.90272 ]
+    },
+    "properties": {
+    "lkrID":33,
+    "resdn":"Kovno",
+    "count":7915,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.90272, 23.90961",
+    "geonm_url":"https://www.geonames.org/598316/kaunas.html",
+    "cnfdnc":3,
+    "resdn_alt":"KOWNO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.85447,54.86768 ]
+    },
+    "properties": {
+    "lkrID":95,
+    "resdn":"Beresina",
+    "count":187,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.86768, 30.85447",
+    "geonm_url":"https://www.geonames.org/575210/bol-shaya-berezina.html",
+    "cnfdnc":2,
+    "resdn_alt":"BERESEN; BERESSIN",
+    "note":"locations in Smolensk and Bryansk"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.0401,54.7818 ]
+    },
+    "properties": {
+    "lkrID":99,
+    "resdn":"Smolensk",
+    "count":162,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.7818, 32.0401",
+    "geonm_url":"https://www.geonames.org/491687/smolensk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.2798,54.68916 ]
+    },
+    "properties": {
+    "lkrID":37,
+    "resdn":"Wilna",
+    "count":4114,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.68916, 25.2798",
+    "geonm_url":"https://www.geonames.org/593116/vilnius.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.82272,54.62858 ]
+    },
+    "properties": {
+    "lkrID":86,
+    "resdn":"Wirballen",
+    "count":201,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.62858, 22.82272",
+    "geonm_url":"https://www.geonames.org/593086/virbalis.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.92541,54.59682 ]
+    },
+    "properties": {
+    "lkrID":240,
+    "resdn":"Belfast",
+    "count":1,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"54.59682, -5.92541",
+    "geonm_url":"https://www.geonames.org/2655984/belfast.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.38208,54.58877 ]
+    },
+    "properties": {
+    "lkrID":100,
+    "resdn":"Akuly",
+    "count":160,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.58877, 32.38208",
+    "geonm_url":"https://www.geonames.org/7092473/akuly.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.35412,54.55991 ]
+    },
+    "properties": {
+    "lkrID":56,
+    "resdn":"Mariampol",
+    "count":550,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.55991, 23.35412",
+    "geonm_url":"https://www.geonames.org/597231/marijampole.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.27542,54.5293 ]
+    },
+    "properties": {
+    "lkrID":174,
+    "resdn":"Kaluga",
+    "count":57,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.5293, 36.27542",
+    "geonm_url":"https://www.geonames.org/553915/kaluga.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.3957,54.4798 ]
+    },
+    "properties": {
+    "lkrID":148,
+    "resdn":"Smorgon",
+    "count":89,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.4798, 26.3957",
+    "geonm_url":"https://www.geonames.org/621713/smarhon.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.936,54.421 ]
+    },
+    "properties": {
+    "lkrID":234,
+    "resdn":"Osmiany",
+    "count":57,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.421, 25.936",
+    "geonm_url":"https://www.geonames.org/630515/ashmyany.html",
+    "cnfdnc":3,
+    "resdn_alt":"OSCHMANY",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.505,54.2279 ]
+    },
+    "properties": {
+    "lkrID":220,
+    "resdn":"Borisow",
+    "count":27,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.2279, 28.505",
+    "geonm_url":"https://www.geonames.org/630376/barysaw.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.61822,54.19609 ]
+    },
+    "properties": {
+    "lkrID":166,
+    "resdn":"Tula",
+    "count":75,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.19609, 37.61822",
+    "geonm_url":"https://www.geonames.org/480562/tula.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.20476,54.11613 ]
+    },
+    "properties": {
+    "lkrID":182,
+    "resdn":"Krasnopol",
+    "count":50,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.11613, 23.20476",
+    "geonm_url":"https://www.geonames.org/767610/krasnopol.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.93087,54.11175 ]
+    },
+    "properties": {
+    "lkrID":34,
+    "resdn":"Suwalki",
+    "count":6364,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"54.11175, 22.93087",
+    "geonm_url":"https://www.geonames.org/757718/suwalki.html",
+    "cnfdnc":3,
+    "resdn_alt":"SUWALKY; SUWALK; SUWALKEN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.34698,54.10802 ]
+    },
+    "properties": {
+    "lkrID":150,
+    "resdn":"Sejny",
+    "count":86,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"54.10802, 23.34698",
+    "geonm_url":"https://www.geonames.org/759503/sejny.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.3449,53.9168 ]
+    },
+    "properties": {
+    "lkrID":62,
+    "resdn":"Mogilev",
+    "count":407,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.9168, 30.3449",
+    "geonm_url":"https://www.geonames.org/625665/mahilyow.html",
+    "cnfdnc":3,
+    "resdn_alt":"MOHILEW; MOGILEW; MOHILOW; MOHILNO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.56667,53.9 ]
+    },
+    "properties": {
+    "lkrID":39,
+    "resdn":"Minsk",
+    "count":2842,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.9, 27.56667",
+    "geonm_url":"https://www.geonames.org/625144/minsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.29972,53.88333 ]
+    },
+    "properties": {
+    "lkrID":124,
+    "resdn":"Lida",
+    "count":112,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.88333, 25.29972",
+    "geonm_url":"https://www.geonames.org/626081/lida.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.97979,53.84321 ]
+    },
+    "properties": {
+    "lkrID":73,
+    "resdn":"Augustowo",
+    "count":254,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.84321, 22.97979",
+    "geonm_url":"http://www.geonames.org/776597/augustow.html",
+    "cnfdnc":3,
+    "resdn_alt":"AVGUSTOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.33525,53.7446 ]
+    },
+    "properties": {
+    "lkrID":85,
+    "resdn":"Hull",
+    "count":190,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.7446, -0.33525",
+    "geonm_url":"https://www.geonames.org/2645425/kingston-upon-hull.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.8258,53.6884 ]
+    },
+    "properties": {
+    "lkrID":45,
+    "resdn":"Grodno",
+    "count":1617,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.6884, 23.8258",
+    "geonm_url":"https://www.geonames.org/627904/hrodna.html",
+    "cnfdnc":3,
+    "resdn_alt":"GRODNOW; GRODNY",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.45537,53.64728 ]
+    },
+    "properties": {
+    "lkrID":110,
+    "resdn":"Grajewo",
+    "count":151,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.64728, 22.45537",
+    "geonm_url":"https://www.geonames.org/771506/grajewo.html",
+    "cnfdnc":2,
+    "resdn_alt":"GRAJAVO; GRAJIWO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.8191,53.5942 ]
+    },
+    "properties": {
+    "lkrID":200,
+    "resdn":"Novogrudok",
+    "count":34,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.5942, 25.8191",
+    "geonm_url":"https://www.geonames.org/624785/novogrudok.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.99302,53.55073 ]
+    },
+    "properties": {
+    "lkrID":32,
+    "resdn":"Hamburg",
+    "count":13923,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.55073, 9.99302",
+    "geonm_url":"https://www.geonames.org/2911298/hamburg.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.55302,53.42894 ]
+    },
+    "properties": {
+    "lkrID":58,
+    "resdn":"Stettin",
+    "count":503,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.42894, 14.55302",
+    "geonm_url":"https://www.geonames.org/3083829/szczecin.html",
+    "cnfdnc":3,
+    "resdn_alt":"SLETTIN; SZCZECIN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.97794,53.41058 ]
+    },
+    "properties": {
+    "lkrID":81,
+    "resdn":"Liverpool",
+    "count":210,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.41058, -2.97794",
+    "geonm_url":"https://www.geonames.org/2644210/liverpool.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.37167,53.25209 ]
+    },
+    "properties": {
+    "lkrID":195,
+    "resdn":"Bryansk",
+    "count":52,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.25209, 34.37167",
+    "geonm_url":"https://www.geonames.org/571476/bryansk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.00464,53.20066 ]
+    },
+    "properties": {
+    "lkrID":231,
+    "resdn":"Penza",
+    "count":10,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.20066, 45.00464",
+    "geonm_url":"https://www.geonames.org/511565/penza.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.15,53.20007 ]
+    },
+    "properties": {
+    "lkrID":171,
+    "resdn":"Samara",
+    "count":65,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.20007, 50.15",
+    "geonm_url":"https://www.geonames.org/499099/samara.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.05935,53.17806 ]
+    },
+    "properties": {
+    "lkrID":43,
+    "resdn":"Lomze",
+    "count":2206,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.17806, 22.05935",
+    "geonm_url":"https://www.geonames.org/766027/lomza.html",
+    "cnfdnc":3,
+    "resdn_alt":"LOMZA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.2214,53.1384 ]
+    },
+    "properties": {
+    "lkrID":215,
+    "resdn":"Bobruisk",
+    "count":33,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.1384, 29.2214",
+    "geonm_url":"https://www.geonames.org/630468/babruysk.html",
+    "cnfdnc":3,
+    "resdn_alt":"BOBRICK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.16433,53.13333 ]
+    },
+    "properties": {
+    "lkrID":46,
+    "resdn":"Bialystock",
+    "count":1642,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.13333, 23.16433",
+    "geonm_url":"https://www.geonames.org/776069/bialystok.html",
+    "cnfdnc":3,
+    "resdn_alt":"BIALYSTOK; BIALISTOCK; BELSTOW; BEALUSTOCK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20.3841,53.11278 ]
+    },
+    "properties": {
+    "lkrID":145,
+    "resdn":"Mlawa",
+    "count":96,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.11278, 20.3841",
+    "geonm_url":"https://www.geonames.org/764634/mlawa.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.05381,53.11087 ]
+    },
+    "properties": {
+    "lkrID":142,
+    "resdn":"Dobrzyn",
+    "count":98,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.11087, 19.05381",
+    "geonm_url":"https://www.geonames.org/3098925/golub-dobrzyn.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.3163,53.0869 ]
+    },
+    "properties": {
+    "lkrID":164,
+    "resdn":"Slonim",
+    "count":79,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.0869, 25.3163",
+    "geonm_url":"https://www.geonames.org/621754/slonim.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.80717,53.07582 ]
+    },
+    "properties": {
+    "lkrID":49,
+    "resdn":"Bremen",
+    "count":779,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"53.07582, 8.80717",
+    "geonm_url":"https://www.geonames.org/2944388/bremen.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.40941,53.06603 ]
+    },
+    "properties": {
+    "lkrID":83,
+    "resdn":"Rypin",
+    "count":206,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.06603, 19.40941",
+    "geonm_url":"https://www.geonames.org/3086511/rypin.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.5597,53.0274 ]
+    },
+    "properties": {
+    "lkrID":90,
+    "resdn":"Slutsk",
+    "count":215,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"53.0274, 27.5597",
+    "geonm_url":"https://www.geonames.org/621741/slutsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.07849,52.96508 ]
+    },
+    "properties": {
+    "lkrID":201,
+    "resdn":"Orel",
+    "count":32,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.96508, 36.07849",
+    "geonm_url":"https://www.geonames.org/515012/orel.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.18647,52.76512 ]
+    },
+    "properties": {
+    "lkrID":172,
+    "resdn":"Bielsk",
+    "count":60,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.76512, 23.18647",
+    "geonm_url":"https://www.geonames.org/775986/bielsk-podlaski.html",
+    "cnfdnc":3,
+    "resdn_alt":"BELSK; BILSK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.44326,52.73169 ]
+    },
+    "properties": {
+    "lkrID":232,
+    "resdn":"Tambov",
+    "count":10,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.73169, 41.44326",
+    "geonm_url":"https://www.geonames.org/484646/tambov.html",
+    "cnfdnc":3,
+    "resdn_alt":"TAMBOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.0678,52.64817 ]
+    },
+    "properties": {
+    "lkrID":94,
+    "resdn":"Wloclawek",
+    "count":177,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.64817, 19.0678",
+    "geonm_url":"https://www.geonames.org/3081741/wloclawek.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.70638,52.54682 ]
+    },
+    "properties": {
+    "lkrID":36,
+    "resdn":"Plotzk",
+    "count":4378,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.54682, 19.70638",
+    "geonm_url":"https://www.geonames.org/3088825/plock.html",
+    "cnfdnc":3,
+    "resdn_alt":"PLOCK; PLOCH; PLOTZ; PLACK; PLOK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.41053,52.52437 ]
+    },
+    "properties": {
+    "lkrID":54,
+    "resdn":"Berlin",
+    "count":554,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"52.52437, 13.41053",
+    "geonm_url":"https://www.geonames.org/2950159/berlin.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.92993,52.40692 ]
+    },
+    "properties": {
+    "lkrID":87,
+    "resdn":"Posen",
+    "count":187,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"52.40692, 16.92993",
+    "geonm_url":"https://www.geonames.org/3088171/poznan.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.29639,52.29778 ]
+    },
+    "properties": {
+    "lkrID":185,
+    "resdn":"Irkutsk",
+    "count":48,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.29778, 104.29639",
+    "geonm_url":"https://www.geonames.org/2023469/irkutsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.36409,52.23064 ]
+    },
+    "properties": {
+    "lkrID":146,
+    "resdn":"Kutno",
+    "count":90,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.23064, 19.36409",
+    "geonm_url":"https://www.geonames.org/3094170/kutno.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.01178,52.22977 ]
+    },
+    "properties": {
+    "lkrID":35,
+    "resdn":"Warsaw",
+    "count":4666,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.22977, 21.01178",
+    "geonm_url":"https://www.geonames.org/756135/warsaw.html",
+    "cnfdnc":3,
+    "resdn_alt":"WASAW; WARSAR; WARSCHAU",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.25121,52.22338 ]
+    },
+    "properties": {
+    "lkrID":181,
+    "resdn":"Konin",
+    "count":51,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.22338, 18.25121",
+    "geonm_url":"https://www.geonames.org/3095321/konin.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.3564,52.2138 ]
+    },
+    "properties": {
+    "lkrID":104,
+    "resdn":"Kobrin",
+    "count":151,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.2138, 24.3564",
+    "geonm_url":"https://www.geonames.org/627145/kobryn.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.0951,52.1229 ]
+    },
+    "properties": {
+    "lkrID":88,
+    "resdn":"Pinsk",
+    "count":183,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.1229, 26.0951",
+    "geonm_url":"https://www.geonames.org/623549/pinsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.68775,52.09755 ]
+    },
+    "properties": {
+    "lkrID":52,
+    "resdn":"Brest Litovsk",
+    "count":666,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.09755, 23.68775",
+    "geonm_url":"https://www.geonames.org/629634/brest.html",
+    "cnfdnc":3,
+    "resdn_alt":"BREST",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 47.37993,52.04541 ]
+    },
+    "properties": {
+    "lkrID":248,
+    "resdn":"Volsk",
+    "count":15,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.04541, 47.37993",
+    "geonm_url":"https://www.geonames.org/472278/vol-sk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.11652,52.03238 ]
+    },
+    "properties": {
+    "lkrID":203,
+    "resdn":"Biala",
+    "count":34,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"52.03238, 23.11652",
+    "geonm_url":"https://www.geonames.org/776175/biala-podlaska.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.8025,52.01333 ]
+    },
+    "properties": {
+    "lkrID":197,
+    "resdn":"Nikolaev",
+    "count":112,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.97625, 31.99296",
+    "geonm_url":"https://www.geonames.org/700569/mykolayiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"NICKELAWA; NICKLOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.47988,51.95164 ]
+    },
+    "properties": {
+    "lkrID":218,
+    "resdn":"Rudny",
+    "count":20,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.95164, 19.47988",
+    "geonm_url":"https://www.geonames.org/3103343/biesiekierz-rudny.html",
+    "cnfdnc":1,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20.05211,51.94696 ]
+    },
+    "properties": {
+    "lkrID":82,
+    "resdn":"Makow",
+    "count":229,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.94696, 20.05211",
+    "geonm_url":"https://www.geonames.org/765442/makow.html",
+    "cnfdnc":1,
+    "resdn_alt":"MAKOVO",
+    "note":"two other possible locations"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.0988,51.7727 ]
+    },
+    "properties": {
+    "lkrID":246,
+    "resdn":"Orenburg",
+    "count":9,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.7727, 55.0988",
+    "geonm_url":"https://www.geonames.org/515003/orenburg.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.47395,51.77058 ]
+    },
+    "properties": {
+    "lkrID":63,
+    "resdn":"Lodz",
+    "count":391,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"51.77058, 19.47395",
+    "geonm_url":"https://www.geonames.org/3093133/lodz.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.09102,51.76109 ]
+    },
+    "properties": {
+    "lkrID":51,
+    "resdn":"Kalisch",
+    "count":718,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.76109, 18.09102",
+    "geonm_url":"https://www.geonames.org/3096880/kalisz.html",
+    "cnfdnc":3,
+    "resdn_alt":"KALICH",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.18735,51.73733 ]
+    },
+    "properties": {
+    "lkrID":206,
+    "resdn":"Kursk",
+    "count":29,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.73733, 36.18735",
+    "geonm_url":"https://www.geonames.org/538560/kursk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.1843,51.67204 ]
+    },
+    "properties": {
+    "lkrID":250,
+    "resdn":"Voronezh",
+    "count":17,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.67204, 39.1843",
+    "geonm_url":"https://www.geonames.org/472045/voronezh.html",
+    "cnfdnc":3,
+    "resdn_alt":"WORONESH",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 46.00861,51.54056 ]
+    },
+    "properties": {
+    "lkrID":53,
+    "resdn":"Saratov",
+    "count":630,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.54056, 46.00861",
+    "geonm_url":"https://www.geonames.org/498677/saratov.html",
+    "cnfdnc":3,
+    "resdn_alt":"SARATOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.12574,51.50853 ]
+    },
+    "properties": {
+    "lkrID":184,
+    "resdn":"London",
+    "count":49,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"51.50853, -0.12574",
+    "geonm_url":"https://www.geonames.org/2643743/london.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.28487,51.50551 ]
+    },
+    "properties": {
+    "lkrID":131,
+    "resdn":"Chernigov",
+    "count":122,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.50551, 31.28487",
+    "geonm_url":"https://www.geonames.org/710735/chernihiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"CZERNIGOW; CZARNIKOV",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.14714,51.40253 ]
+    },
+    "properties": {
+    "lkrID":198,
+    "resdn":"Radom",
+    "count":35,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.40253, 21.14714",
+    "geonm_url":"https://www.geonames.org/760778/radom.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.37129,51.33962 ]
+    },
+    "properties": {
+    "lkrID":123,
+    "resdn":"Leipzig",
+    "count":112,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"51.33962, 12.37129",
+    "geonm_url":"https://www.geonames.org/2879139/leipzig.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.56667,51.25 ]
+    },
+    "properties": {
+    "lkrID":106,
+    "resdn":"Lublin",
+    "count":136,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.25, 22.56667",
+    "geonm_url":"https://www.geonames.org/765876/lublin.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.20263,51.24032 ]
+    },
+    "properties": {
+    "lkrID":175,
+    "resdn":"Konotop",
+    "count":54,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.24032, 33.20263",
+    "geonm_url":"https://www.geonames.org/705135/konotop.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.40026,51.22047 ]
+    },
+    "properties": {
+    "lkrID":105,
+    "resdn":"Antwerp",
+    "count":140,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"51.22047, 4.40026",
+    "geonm_url":"https://www.geonames.org/2803138/antwerpen.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.03333,51.1 ]
+    },
+    "properties": {
+    "lkrID":151,
+    "resdn":"Breslau",
+    "count":85,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"51.1, 17.03333",
+    "geonm_url":"https://www.geonames.org/3081368/wroclaw.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.88688,51.04801 ]
+    },
+    "properties": {
+    "lkrID":209,
+    "resdn":"Nezhin",
+    "count":52,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.04801, 31.88688",
+    "geonm_url":"https://www.geonames.org/699942/nizhyn.html",
+    "cnfdnc":3,
+    "resdn_alt":"NIESEN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.0352,51.02286 ]
+    },
+    "properties": {
+    "lkrID":93,
+    "resdn":"Lipne",
+    "count":176,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"51.02286, 26.0352",
+    "geonm_url":"https://www.geonames.org/703019/lypne.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":"alternate locations in Rivne and Zhitomir"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.32364,50.85253 ]
+    },
+    "properties": {
+    "lkrID":196,
+    "resdn":"Wolinsk",
+    "count":36,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.85253, 24.32364",
+    "geonm_url":"https://www.geonames.org/689378/volodymyr-volynskyi.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.12409,50.79646 ]
+    },
+    "properties": {
+    "lkrID":134,
+    "resdn":"Czenstochow",
+    "count":124,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"50.79646, 19.12409",
+    "geonm_url":"https://www.geonames.org/3100946/czestochowa.html",
+    "cnfdnc":3,
+    "resdn_alt":"CZESTOCHOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.34244,50.75932 ]
+    },
+    "properties": {
+    "lkrID":183,
+    "resdn":"Lutsk",
+    "count":50,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.75932, 25.34244",
+    "geonm_url":"https://www.geonames.org/702569/lutsk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.47471,50.75104 ]
+    },
+    "properties": {
+    "lkrID":210,
+    "resdn":"Romny",
+    "count":27,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.75104, 33.47471",
+    "geonm_url":"https://www.geonames.org/695464/romny.html",
+    "cnfdnc":1,
+    "resdn_alt":"ROMAN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.22743,50.62308 ]
+    },
+    "properties": {
+    "lkrID":98,
+    "resdn":"Rovno",
+    "count":165,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.62308, 26.22743",
+    "geonm_url":"https://www.geonames.org/695594/rivne.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.5238,50.45466 ]
+    },
+    "properties": {
+    "lkrID":41,
+    "resdn":"Kiev",
+    "count":2368,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.45466, 30.5238",
+    "geonm_url":"https://www.geonames.org/703448/kyiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.51425,50.32942 ]
+    },
+    "properties": {
+    "lkrID":235,
+    "resdn":"Ostrog",
+    "count":9,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.32942, 26.51425",
+    "geonm_url":"https://www.geonames.org/698232/ostroh.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.67669,50.26487 ]
+    },
+    "properties": {
+    "lkrID":69,
+    "resdn":"Zytomir",
+    "count":312,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.26487, 28.67669",
+    "geonm_url":"https://www.geonames.org/686967/zhytomyr.html",
+    "cnfdnc":3,
+    "resdn_alt":"ZHITOMIR",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.72787,50.09864 ]
+    },
+    "properties": {
+    "lkrID":194,
+    "resdn":"Kremenets",
+    "count":50,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.09864, 25.72787",
+    "geonm_url":"https://www.geonames.org/704143/kremenets.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.15027,50.08791 ]
+    },
+    "properties": {
+    "lkrID":155,
+    "resdn":"Brody",
+    "count":84,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"50.08791, 25.15027",
+    "geonm_url":"https://www.geonames.org/711416/brody.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.93658,50.06143 ]
+    },
+    "properties": {
+    "lkrID":96,
+    "resdn":"Krakov",
+    "count":170,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"50.06143, 19.93658",
+    "geonm_url":"https://www.geonames.org/3094802/krakow.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.25272,49.98081 ]
+    },
+    "properties": {
+    "lkrID":137,
+    "resdn":"Kharkov",
+    "count":101,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.98081, 36.25272",
+    "geonm_url":"https://www.geonames.org/706483/kharkiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"CHARKOW",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.60144,49.89408 ]
+    },
+    "properties": {
+    "lkrID":74,
+    "resdn":"Berdichew",
+    "count":259,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.89408, 28.60144",
+    "geonm_url":"https://www.geonames.org/712441/berdychiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"BERDICHEV; BERDICZEW; BERDITSCHAW; BERDECZEN; BERDICZOWO",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.6772,49.86759 ]
+    },
+    "properties": {
+    "lkrID":60,
+    "resdn":"Kalwary",
+    "count":619,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.86759, 19.6772",
+    "geonm_url":"https://www.geonames.org/3096852/kalwaria-zebrzydowska.html",
+    "cnfdnc":2,
+    "resdn_alt":"KALVARY",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.02324,49.83826 ]
+    },
+    "properties": {
+    "lkrID":177,
+    "resdn":"Lemberg",
+    "count":56,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"49.83826, 24.02324",
+    "geonm_url":"https://www.geonames.org/702550/lviv.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.12851,49.8004 ]
+    },
+    "properties": {
+    "lkrID":193,
+    "resdn":"Belaya Tserkov",
+    "count":40,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.8004, 30.12851",
+    "geonm_url":"https://www.geonames.org/712165/bila-tserkva.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.76728,49.78498 ]
+    },
+    "properties": {
+    "lkrID":236,
+    "resdn":"Przemysl",
+    "count":9,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.78498, 22.76728",
+    "geonm_url":"https://www.geonames.org/761168/przemysl.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.35916,49.63278 ]
+    },
+    "properties": {
+    "lkrID":141,
+    "resdn":"Worms",
+    "count":100,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"49.63278, 8.35916",
+    "geonm_url":"https://www.geonames.org/2806142/worms.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.55367,49.58925 ]
+    },
+    "properties": {
+    "lkrID":89,
+    "resdn":"Poltava",
+    "count":188,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.58925, 34.55367",
+    "geonm_url":"https://www.geonames.org/696643/poltava.html",
+    "cnfdnc":3,
+    "resdn_alt":"POLTAWA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.59067,49.55404 ]
+    },
+    "properties": {
+    "lkrID":192,
+    "resdn":"Ternopol",
+    "count":42,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.55404, 25.59067",
+    "geonm_url":"https://www.geonames.org/691650/ternopil.html",
+    "cnfdnc":2,
+    "resdn_alt":"TARNOPOL",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.13886,49.35009 ]
+    },
+    "properties": {
+    "lkrID":72,
+    "resdn":"Neustadt",
+    "count":295,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"49.35009, 8.13886",
+    "geonm_url":"https://www.geonames.org/2864054/neustadt.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.42577,49.29208 ]
+    },
+    "properties": {
+    "lkrID":224,
+    "resdn":"Boryslaw",
+    "count":16,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.29208, 23.42577",
+    "geonm_url":"https://www.geonames.org/711669/boryslav.html",
+    "cnfdnc":2,
+    "resdn_alt":"BORYSLAWA",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.46871,49.2322 ]
+    },
+    "properties": {
+    "lkrID":180,
+    "resdn":"Vinnitsa",
+    "count":52,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.2322, 28.46871",
+    "geonm_url":"https://www.geonames.org/689558/vinnytsya.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.11692,49.19844 ]
+    },
+    "properties": {
+    "lkrID":167,
+    "resdn":"Landau",
+    "count":72,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"49.19844, 8.11692",
+    "geonm_url":"https://www.geonames.org/2881646/landau-in-der-pfalz.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":"others throughout Germany"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.40484,49.06253 ]
+    },
+    "properties": {
+    "lkrID":221,
+    "resdn":"Kremenchug",
+    "count":18,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"49.06253, 33.40484",
+    "geonm_url":"https://www.geonames.org/704147/kremenchuk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.3488,48.85341 ]
+    },
+    "properties": {
+    "lkrID":76,
+    "resdn":"Paris",
+    "count":214,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"48.85341, 2.3488",
+    "geonm_url":"https://www.geonames.org/2988507/paris.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.58516,48.67882 ]
+    },
+    "properties": {
+    "lkrID":80,
+    "resdn":"Kamenets",
+    "count":233,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"48.67882, 26.58516",
+    "geonm_url":"https://www.geonames.org/706950/kamyianets-podilskyy.html",
+    "cnfdnc":3,
+    "resdn_alt":"KAMENETZ; KAMENITZ",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.99983,48.59441 ]
+    },
+    "properties": {
+    "lkrID":226,
+    "resdn":"Bachmut",
+    "count":13,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"48.59441, 37.99983",
+    "geonm_url":"https://www.geonames.org/713174/bakhmut.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.74553,48.58392 ]
+    },
+    "properties": {
+    "lkrID":140,
+    "resdn":"Strassburg",
+    "count":99,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"48.58392, 7.74553",
+    "geonm_url":"https://www.geonames.org/2973783/strasbourg.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.26618,48.50834 ]
+    },
+    "properties": {
+    "lkrID":91,
+    "resdn":"Elisavetgrad",
+    "count":191,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"48.50834, 32.26618",
+    "geonm_url":"https://www.geonames.org/705812/kropyvnytskyy.html",
+    "cnfdnc":3,
+    "resdn_alt":"ELISABETHGRADE",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.48978,48.50555 ]
+    },
+    "properties": {
+    "lkrID":189,
+    "resdn":"Khotin",
+    "count":45,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"48.50555, 26.48978",
+    "geonm_url":"https://www.geonames.org/706244/khotyn.html",
+    "cnfdnc":3,
+    "resdn_alt":"CHOTIN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.04066,48.46664 ]
+    },
+    "properties": {
+    "lkrID":186,
+    "resdn":"Ekaterinoslav",
+    "count":47,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"48.46664, 35.04066",
+    "geonm_url":"https://www.geonames.org/709930/dnipro.html",
+    "cnfdnc":2,
+    "resdn_alt":"EKATERISNK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.57549,48.13743 ]
+    },
+    "properties": {
+    "lkrID":119,
+    "resdn":"Munchen",
+    "count":115,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"48.13743, 11.57549",
+    "geonm_url":"https://www.geonames.org/2867714/munich.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.62225,47.93596 ]
+    },
+    "properties": {
+    "lkrID":190,
+    "resdn":"Balta",
+    "count":71,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"47.93596, 29.62225",
+    "geonm_url":"https://www.geonames.org/712886/balta.html",
+    "cnfdnc":3,
+    "resdn_alt":"BALTO; BALTE",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.95711,47.71975 ]
+    },
+    "properties": {
+    "lkrID":237,
+    "resdn":"Ananow",
+    "count":8,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"47.71975, 29.95711",
+    "geonm_url":"https://www.geonames.org/713500/ananyiv.html",
+    "cnfdnc":3,
+    "resdn_alt":"ANANIEW; ANANEFF",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 38.9053,47.23627 ]
+    },
+    "properties": {
+    "lkrID":230,
+    "resdn":"Taganrog",
+    "count":11,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"47.23627, 38.9053",
+    "geonm_url":"http://www.geonames.org/484907/taganrog.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.6,47.16667 ]
+    },
+    "properties": {
+    "lkrID":216,
+    "resdn":"Jassy",
+    "count":21,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"47.16667, 27.6",
+    "geonm_url":"https://www.geonames.org/675810/iasi.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.81334,47.13521 ]
+    },
+    "properties": {
+    "lkrID":136,
+    "resdn":"Rohrbach",
+    "count":103,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"47.13521, 7.81334",
+    "geonm_url":"https://www.geonames.org/2658991/rohrbach.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.8575,47.00556 ]
+    },
+    "properties": {
+    "lkrID":70,
+    "resdn":"Kishinev",
+    "count":310,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"47.00556, 28.8575",
+    "geonm_url":"https://www.geonames.org/618426/chisinau.html",
+    "cnfdnc":3,
+    "resdn_alt":"KISHINEW; KISCHINEV",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.44744,46.94809 ]
+    },
+    "properties": {
+    "lkrID":154,
+    "resdn":"Berne",
+    "count":84,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"46.94809, 7.44744",
+    "geonm_url":"https://www.geonames.org/2661552/bern.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.62909,46.84274 ]
+    },
+    "properties": {
+    "lkrID":204,
+    "resdn":"Tiraspol",
+    "count":31,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.84274, 29.62909",
+    "geonm_url":"https://www.geonames.org/617239/tiraspol.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.47769,46.83156 ]
+    },
+    "properties": {
+    "lkrID":202,
+    "resdn":"Bendery",
+    "count":34,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.83156, 29.47769",
+    "geonm_url":"https://www.geonames.org/618577/bender.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.78815,46.75578 ]
+    },
+    "properties": {
+    "lkrID":239,
+    "resdn":"Berdyansk",
+    "count":5,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.75578, 36.78815",
+    "geonm_url":"https://www.geonames.org/712451/berdyansk.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.61458,46.63695 ]
+    },
+    "properties": {
+    "lkrID":97,
+    "resdn":"Kherson",
+    "count":173,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.63695, 32.61458",
+    "geonm_url":"https://www.geonames.org/706448/kherson.html",
+    "cnfdnc":3,
+    "resdn_alt":"CHERSON; CHERSIN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.74383,46.48572 ]
+    },
+    "properties": {
+    "lkrID":40,
+    "resdn":"Odessa",
+    "count":2702,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.48572, 30.74383",
+    "geonm_url":"https://www.geonames.org/698740/odessa.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.04076,46.34968 ]
+    },
+    "properties": {
+    "lkrID":223,
+    "resdn":"Astrakhan",
+    "count":21,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.34968, 48.04076",
+    "geonm_url":"https://www.geonames.org/580497/astrakhan.html",
+    "cnfdnc":3,
+    "resdn_alt":"ASBRACHAN; ASWACHAN",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.34827,46.19484 ]
+    },
+    "properties": {
+    "lkrID":219,
+    "resdn":"Akkerman",
+    "count":19,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"46.19484, 30.34827",
+    "geonm_url":"https://www.geonames.org/712160/bilhorod-dnistrovskyi.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.47542,45.35675 ]
+    },
+    "properties": {
+    "lkrID":178,
+    "resdn":"Kertch",
+    "count":52,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"45.35675, 36.47542",
+    "geonm_url":"https://www.geonames.org/706524/kerch.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.83751,45.35058 ]
+    },
+    "properties": {
+    "lkrID":238,
+    "resdn":"Ismail",
+    "count":9,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"45.35058, 28.83751",
+    "geonm_url":"https://www.geonames.org/707308/izmail.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.9734,45.0428 ]
+    },
+    "properties": {
+    "lkrID":229,
+    "resdn":"Stavropol",
+    "count":11,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"45.0428, 41.9734",
+    "geonm_url":"https://www.geonames.org/487846/stavropol.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.52134,44.60795 ]
+    },
+    "properties": {
+    "lkrID":179,
+    "resdn":"Sevastopol",
+    "count":52,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"44.60795, 33.52134",
+    "geonm_url":"https://www.geonames.org/694423/sevastopol.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.65177,43.74359 ]
+    },
+    "properties": {
+    "lkrID":225,
+    "resdn":"Mozdok",
+    "count":14,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"43.74359, 44.65177",
+    "geonm_url":"https://www.geonames.org/524736/mozdok.html",
+    "cnfdnc":2,
+    "resdn_alt":"MOSDOK",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.90647,43.0389 ]
+    },
+    "properties": {
+    "lkrID":170,
+    "resdn":"Millwaukee",
+    "count":68,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"43.0389, -87.90647",
+    "geonm_url":"https://www.geonames.org/5263045/milwaukee.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.05977,42.35843 ]
+    },
+    "properties": {
+    "lkrID":162,
+    "resdn":"Boston",
+    "count":79,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"42.35843, -71.05977",
+    "geonm_url":"https://www.geonames.org/4930956/boston.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.04575,42.33143 ]
+    },
+    "properties": {
+    "lkrID":158,
+    "resdn":"Detroit",
+    "count":82,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"42.33143, -83.04575",
+    "geonm_url":"https://www.geonames.org/4990729/detroit.html",
+    "cnfdnc":2,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.83368,41.69411 ]
+    },
+    "properties": {
+    "lkrID":213,
+    "resdn":"Tiflis",
+    "count":22,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"41.69411, 44.83368",
+    "geonm_url":"https://www.geonames.org/611717/tbilisi.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.97465,40.95842 ]
+    },
+    "properties": {
+    "lkrID":139,
+    "resdn":"Hazleton",
+    "count":101,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"40.95842, -75.97465",
+    "geonm_url":"https://www.geonames.org/5193011/hazleton.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.00597,40.71427 ]
+    },
+    "properties": {
+    "lkrID":47,
+    "resdn":"New York",
+    "count":1303,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"40.71427, -74.00597",
+    "geonm_url":"https://www.geonames.org/5128581/new-york-city.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.94958,40.6501 ]
+    },
+    "properties": {
+    "lkrID":59,
+    "resdn":"Brooklyn",
+    "count":471,
+    "sptl_unit":"town",
+    "tsar_trty":"no",
+    "geonm_crd":"40.6501, -73.94958",
+    "geonm_url":"https://www.geonames.org/5110302/brooklyn.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.89201,40.37767 ]
+    },
+    "properties": {
+    "lkrID":233,
+    "resdn":"Baku",
+    "count":9,
+    "sptl_unit":"town",
+    "tsar_trty":"yes",
+    "geonm_crd":"40.37767, 49.89201",
+    "geonm_url":"https://www.geonames.org/587084/baku.html",
+    "cnfdnc":3,
+    "resdn_alt":"",
+    "note":""
+    }
+  }
+]
+}

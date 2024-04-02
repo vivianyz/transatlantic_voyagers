@@ -1,0 +1,151 @@
+﻿routeID,ships,vygs,vygs_ship,itinry,port_arv
+1,1,1,1.0,Amsterdam-Baltimore,Baltimore
+2,18,186,10.3,Amsterdam-New York,New York
+3,8,25,3.1,Amsterdam & Bologne-New York,New York
+4,2,2,1.0,Antwerp-Boston,Boston
+5,2,2,1.0,Antwerp-New Orleans,New Orleans
+6,41,651,15.9,Antwerp-New York,New York
+7,7,41,5.9,Antwerp-Philadelphia,Philadelphia
+8,2,2,1.0,Antwerp & Southampton-New York,New York
+9,2,2,1.0,Antwerp & Stettin-New York,New York
+10,1,1,1.0,"Antwerp, Bordeaux & Havre-New Orleans",New Orleans
+11,8,17,2.1,Aspinwall-New York,New York
+12,5,11,2.2,"Aspinwall, Panama-New York",New York
+13,1,1,1.0,Baltic-Philadelphia,Philadelphia
+14,2,2,1.0,Barrow & Dublin-New York,New York
+15,2,2,1.0,Bermuda-New York,New York
+16,2,5,2.5,Bordeaux-New York,New York
+17,2,3,1.5,Boulogne-New York,New York
+18,13,215,16.5,Boulogne & Rotterdam-New York,New York
+19,45,364,8.1,Bremen-Baltimore,Baltimore
+20,16,18,1.1,Bremen-New Orleans,New Orleans
+21,134,995,7.4,Bremen-New York,New York
+22,2,2,1.0,Bremen-Philadelphia,Philadelphia
+23,4,5,1.3,Bremen & Bremerhaven-Baltimore,Baltimore
+24,6,6,1.0,Bremen & Bremerhaven-New York,New York
+25,1,2,2.0,Bremen & Cherbourg-New York,New York
+26,1,1,1.0,Bremen & Christiana-New York,New York
+27,1,1,1.0,Bremen & Geestemunde-New York,New York
+28,2,2,1.0,Bremen & Havre-New York,New York
+29,1,1,1.0,Bremen & Liverpool-New York,New York
+30,52,763,14.7,Bremen & Southampton-New York,New York
+31,1,1,1.0,"Bremen, Bremerhaven & Southampton-New York",New York
+32,2,3,1.5,"Bremen, Havana & Havre-New Orleans",New Orleans
+33,2,3,1.5,Bremerhaven-Baltimore,Baltimore
+34,2,2,1.0,Bremerhaven-New Orleans,New Orleans
+35,8,8,1.0,Bremerhaven-New York,New York
+36,2,3,1.5,Bremerhaven & Southampton-New York,New York
+37,2,2,1.0,Brest & Havre-New York,New York
+38,1,1,1.0,Campeche-New York,New York
+39,2,2,1.0,Cape Town-New York,New York
+40,1,1,1.0,Caribbean Ports-New York,New York
+41,6,9,1.5,Christiania & Copenhagen-New York,New York
+42,5,8,1.6,"Christiania, Christiansand & Copenhagen-New York",New York
+43,1,1,1.0,Christiansand & Stettin-New York,New York
+44,3,3,1.0,"Christiansand, Gothenburg & Helsingfors-New York",New York
+45,1,1,1.0,Cienfuegos-New York,New York
+46,4,9,2.3,Copenhagen-New York,New York
+47,2,2,1.0,Copenhagen & Stettin-New York,New York
+48,1,1,1.0,"Coruna, Hamburg, Havana, Santander & Southampton-New Orleans",New Orleans
+49,2,2,1.0,Curacao-New York,New York
+50,2,3,1.5,Curacao & Venezuela-New York,New York
+51,8,8,1.0,Cuxhaven-New York,New York
+52,1,3,3.0,Drogheda-New York,New York
+53,1,1,1.0,Falmouth & Hamburg-New York,New York
+54,2,4,2.0,Genoa & Gibraltar-New York,New York
+55,1,1,1.0,Genoa & Naples-New York,New York
+56,2,2,1.0,"Genoa, Gibraltar & Naples-New York",New York
+57,1,1,1.0,Gibraltar & Naples-New York,New York
+58,1,1,1.0,Gibraltar & Palermo-New York,New York
+59,3,3,1.0,Glasgow-Boston,Boston
+60,33,250,7.6,Glasgow-New York,New York
+61,3,3,1.0,Glasgow & Greenock-New York,New York
+62,1,1,1.0,Glasgow & Halifax-New York,New York
+63,1,1,1.0,Glasgow & Havre-New York,New York
+64,17,358,21.1,Glasgow & Larne-New York,New York
+65,2,2,1.0,Glasgow & Liverpool-Boston,Boston
+66,15,35,2.3,Glasgow & Londonderry-New York,New York
+67,8,12,1.5,Glasgow & Marseilles-New York,New York
+68,26,436,16.8,Glasgow & Moville-New York,New York
+69,1,1,1.0,Glasgow & Valencia-New York,New York
+70,1,1,1.0,"Glasgow, Killala & Moville-New York",New York
+71,1,1,1.0,"Glasgow, Moville & Galway-Boston",Boston
+72,4,4,1.0,Gothenburg-New York,New York
+73,5,14,2.8,Gothenburg & Stettin-New York,New York
+74,3,5,1.7,Greenock-New York,New York
+75,3,13,4.3,Greenock & Moville-New York,New York
+76,1,1,1.0,Greenwich-New York,New York
+77,2,2,1.0,Halifax & Liverpool-Baltimore,Baltimore
+78,1,1,1.0,Halifax & London-New York,New York
+79,1,1,1.0,"Halifax, Liverpool, New Foundland & St. Johns-Baltimore",Baltimore
+80,2,3,1.5,"Halifax, Liverpool, Queenstown & St. Johns-Baltimore",Baltimore
+81,7,19,2.7,Hamburg-Baltimore,Baltimore
+82,2,2,1.0,Hamburg-New Orleans,New Orleans
+83,126,1157,9.2,Hamburg-New York,New York
+84,1,1,1.0,Hamburg & Halifax-New York,New York
+85,45,886,19.7,Hamburg & Havre-New York,New York
+86,1,1,1.0,Hamburg & Newcastle-New York,New York
+87,18,187,10.4,Hamburg & Southampton-New York,New York
+88,2,2,1.0,"Hamburg, Cherbourg & Southampton-New York",New York
+89,2,2,1.0,"Hamburg, Cuxhaven, Cherbourg & Southampton-New York",New York
+90,1,1,1.0,"Hamburg, Havre & Cherburg-New York",New York
+91,4,4,1.0,"Hamburg, Havre & Plymouth-New York",New York
+92,3,3,1.0,Havana-New York,New York
+93,2,2,1.0,Havana & Mexican Ports-New York,New York
+94,14,14,1.0,Havre-New Orleans,New Orleans
+95,88,528,6.0,Havre-New York,New York
+96,6,9,1.5,Havre & London-New York,New York
+97,6,18,3.0,Havre & Plymouth-New York,New York
+98,1,1,1.0,Havre & Southampton-New York,New York
+99,2,2,1.0,Havre & Stettin-New York,New York
+100,1,1,1.0,Hull-New York,New York
+101,1,1,1.0,La Guaira & Puerto Cabello-New York,New York
+102,10,27,2.7,Liverpool-Baltimore,Baltimore
+103,16,122,7.6,Liverpool-Boston,Boston
+104,168,670,4.0,Liverpool-New York,New York
+105,17,121,7.1,Liverpool-Philadelphia,Philadelphia
+106,3,3,1.0,Liverpool & London-Boston,Boston
+107,1,1,1.0,Liverpool & London-New York,New York
+108,4,5,1.3,Liverpool & Queenstown-Baltimore,Baltimore
+109,12,55,4.6,Liverpool & Queenstown-Boston,Boston
+110,84,1454,17.3,Liverpool & Queenstown-New York,New York
+111,6,10,1.7,Liverpool & Queenstown-Philadelphia,Philadelphia
+112,60,290,4.8,London-New York,New York
+113,3,3,1.0,London & Plymouth-New York,New York
+114,1,1,1.0,London & Queenstown-Boston,Boston
+115,2,2,1.0,London & Queenstown-New York,New York
+116,1,1,1.0,Marahan-New York,New York
+117,1,1,1.0,Marseilles-New York,New York
+118,5,5,1.0,Marseilles & Naples-New York,New York
+119,1,1,1.0,Messina & Palermo-New York,New York
+120,1,1,1.0,"Messina, Naples, Palermo & Trieste-New York",New York
+121,3,3,1.0,Mexico (Verz Cruz)-New York,New York
+122,1,1,1.0,Moville-New York,New York
+123,2,2,1.0,Naples-New York,New York
+124,1,1,1.0,Naples & Hamburg-New York,New York
+125,1,1,1.0,"Naples, Hamburg & Southampton-New York",New York
+126,2,2,1.0,Palermo-New York,New York
+127,1,1,1.0,Panamaall-New Orleans,New Orleans
+128,3,4,1.3,Para-New York,New York
+129,1,1,1.0,Para & Rio De Janeiro-New York,New York
+130,1,1,1.0,Plymouth-New York,New York
+131,1,1,1.0,Point A Petro-New Orleans,New Orleans
+132,3,3,1.0,Queenstown-New York,New York
+133,7,8,1.1,Rio De Janeiro-New York,New York
+134,2,2,1.0,Rotterdam-Baltimore,Baltimore
+135,19,232,12.2,Rotterdam-New York,New York
+136,2,2,1.0,Savanilla-New York,New York
+137,15,207,13.8,Southampton-New York,New York
+138,1,1,1.0,St. Jago-New York,New York
+139,5,5,1.0,St. Thomas-New York,New York
+140,18,70,3.9,Stettin-New York,New York
+141,1,2,2.0,Stettin & Hamburg-New York,New York
+142,1,1,1.0,Stockholm-New York,New York
+143,3,21,7.0,Swinemunde-New York,New York
+144,1,1,1.0,Tampico-New York,New York
+145,1,1,1.0,Trinidad-New York,New York
+146,1,1,1.0,Unknown-Baltimore,Baltimore
+147,1,1,1.0,Unknown-Boston,Boston
+148,5,5,1.0,Unknown-New York,New York
+149,1,1,1.0,Vera Cruz-New Orleans,New Orleans
+150,1,1,1.0,Yarrow-New York,New York

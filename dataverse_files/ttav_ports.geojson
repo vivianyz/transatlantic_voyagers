@@ -1,0 +1,1331 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.88969,52.37403 ]
+    },
+    "properties": {
+    "portID":1,
+    "port":"Amsterdam",
+    "port_mdr":"Amsterdam",
+    "port_type":"departure",
+    "cntry_mdr":"The Netherlands",
+    "geonm_crd":"52.37403, 4.88969",
+    "geonm_url":"https://www.geonames.org/2759794/amsterdam.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.40026,51.22047 ]
+    },
+    "properties": {
+    "portID":2,
+    "port":"Antwerp",
+    "port_mdr":"Antwerp",
+    "port_type":"departure",
+    "cntry_mdr":"Belgium",
+    "geonm_crd":"51.22047, 4.40026",
+    "geonm_url":"https://www.geonames.org/2803138/antwerpen.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.90011,9.35451 ]
+    },
+    "properties": {
+    "portID":3,
+    "port":"Aspinwall, Colon",
+    "port_mdr":"Colón",
+    "port_type":"departure",
+    "cntry_mdr":"Panama",
+    "geonm_crd":"9.35451, -79.90011",
+    "geonm_url":"https://www.geonames.org/3712076/colon.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18,56 ]
+    },
+    "properties": {
+    "portID":4,
+    "port":"Baltic",
+    "port_mdr":"NA",
+    "port_type":"departure",
+    "cntry_mdr":"NA",
+    "geonm_crd":"56, 18",
+    "geonm_url":"https://www.geonames.org/2633321/baltic-sea.html",
+    "note":"centroid of the Baltic Sea"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.61219,39.29038 ]
+    },
+    "properties": {
+    "portID":5,
+    "port":"Baltimore",
+    "port_mdr":"Baltimore",
+    "port_type":"arrival",
+    "cntry_mdr":"United States",
+    "geonm_crd":"39.29038, -76.61219",
+    "geonm_url":"https://www.geonames.org/4347778/baltimore.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.22758,54.11094 ]
+    },
+    "properties": {
+    "portID":6,
+    "port":"Barrow",
+    "port_mdr":"Barrow-in-Furness",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"54.11094, -3.22758",
+    "geonm_url":"https://www.geonames.org/2656241/barrow-in-furness.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -64.78303,32.2949 ]
+    },
+    "properties": {
+    "portID":7,
+    "port":"Bermuda",
+    "port_mdr":"Hamilton",
+    "port_type":"departure",
+    "cntry_mdr":"Bermuda",
+    "geonm_crd":"32.2949, -64.78303",
+    "geonm_url":"https://www.geonames.org/3573197/hamilton.html",
+    "note":"Port ID based on https://www.ggarchives.com/OceanTravel/PortsOfCall/Bermuda.html"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.5805,44.84044 ]
+    },
+    "properties": {
+    "portID":8,
+    "port":"Bordeaux",
+    "port_mdr":"Bordeaux",
+    "port_type":"departure",
+    "cntry_mdr":"France",
+    "geonm_crd":"44.84044, -0.5805",
+    "geonm_url":"https://www.geonames.org/3031582/bordeaux.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.05977,42.35843 ]
+    },
+    "properties": {
+    "portID":9,
+    "port":"Boston",
+    "port_mdr":"Boston",
+    "port_type":"arrival",
+    "cntry_mdr":"United States",
+    "geonm_crd":"42.35843, -71.05977",
+    "geonm_url":"https://www.geonames.org/4930956/boston.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.61392,50.72571 ]
+    },
+    "properties": {
+    "portID":10,
+    "port":"Boulogne",
+    "port_mdr":"Boulogne-sur-Mer",
+    "port_type":"departure",
+    "cntry_mdr":"France",
+    "geonm_crd":"50.72571, 1.61392",
+    "geonm_url":"https://www.geonames.org/3031133/boulogne-sur-mer.html",
+    "note":"also \"BOLOGNE\""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.80717,53.07582 ]
+    },
+    "properties": {
+    "portID":11,
+    "port":"Bremen",
+    "port_mdr":"Bremen",
+    "port_type":"departure",
+    "cntry_mdr":"Germany",
+    "geonm_crd":"53.07582, 8.80717",
+    "geonm_url":"https://www.geonames.org/2944388/bremen.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.59298,53.53615 ]
+    },
+    "properties": {
+    "portID":12,
+    "port":"Bremerhaven",
+    "port_mdr":"Bremerhaven",
+    "port_type":"departure",
+    "cntry_mdr":"Germany",
+    "geonm_crd":"53.53615, 8.59298",
+    "geonm_url":"https://www.geonames.org/2944368/bremerhaven.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.48628,48.39029 ]
+    },
+    "properties": {
+    "portID":13,
+    "port":"Brest",
+    "port_mdr":"Brest",
+    "port_type":"departure",
+    "cntry_mdr":"France",
+    "geonm_crd":"48.39029, -4.48628",
+    "geonm_url":"https://www.geonames.org/3030300/brest.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.52554,19.84386 ]
+    },
+    "properties": {
+    "portID":14,
+    "port":"Campeche",
+    "port_mdr":"Campeche",
+    "port_type":"departure",
+    "cntry_mdr":"Mexico",
+    "geonm_crd":"19.84386, -90.52554",
+    "geonm_url":"https://www.geonames.org/3531732/campeche.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.42322,-33.92584 ]
+    },
+    "properties": {
+    "portID":15,
+    "port":"Cape Town",
+    "port_mdr":"Cape Town",
+    "port_type":"departure",
+    "cntry_mdr":"South Africa",
+    "geonm_crd":"-33.92584, 18.42322",
+    "geonm_url":"https://www.geonames.org/3369157/cape-town.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.00028,15.00028 ]
+    },
+    "properties": {
+    "portID":16,
+    "port":"Caribbean ports",
+    "port_mdr":"NA",
+    "port_type":"departure",
+    "cntry_mdr":"NA",
+    "geonm_crd":"15.00028, -75.00028",
+    "geonm_url":"https://www.geonames.org/4563233/caribbean-sea.html",
+    "note":"centroid of the Caribbean Sea"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.61636,49.63984 ]
+    },
+    "properties": {
+    "portID":17,
+    "port":"Cherbourg",
+    "port_mdr":"Cherbourg-Octeville",
+    "port_type":"interim",
+    "cntry_mdr":"France",
+    "geonm_crd":"49.63984, -1.61636",
+    "geonm_url":"https://www.geonames.org/3025466/cherbourg-octeville.html",
+    "note":"also \"Cherburg\""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.74609,59.91273 ]
+    },
+    "properties": {
+    "portID":18,
+    "port":"Christiania",
+    "port_mdr":"Oslo",
+    "port_type":"departure",
+    "cntry_mdr":"Norway",
+    "geonm_crd":"59.91273, 10.74609",
+    "geonm_url":"https://www.geonames.org/3143244/oslo.html",
+    "note":"also \"Christiana\""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.9956,58.14671 ]
+    },
+    "properties": {
+    "portID":19,
+    "port":"Christiansand",
+    "port_mdr":"Kristiansand",
+    "port_type":"departure",
+    "cntry_mdr":"Norway",
+    "geonm_crd":"58.14671, 7.9956",
+    "geonm_url":"https://www.geonames.org/3149318/kristiansand.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.4481,22.14681 ]
+    },
+    "properties": {
+    "portID":20,
+    "port":"Cienfuegos",
+    "port_mdr":"Cienfuegos",
+    "port_type":"departure",
+    "cntry_mdr":"Cuba",
+    "geonm_crd":"22.14681, -80.4481",
+    "geonm_url":"https://www.geonames.org/3564124/cienfuegos.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.56553,55.67594 ]
+    },
+    "properties": {
+    "portID":21,
+    "port":"Copenhagen",
+    "port_mdr":"Copenhagen",
+    "port_type":"departure",
+    "cntry_mdr":"Denmark",
+    "geonm_crd":"55.67594, 12.56553",
+    "geonm_url":"https://www.geonames.org/2618425/copenhagen.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.396,43.37135 ]
+    },
+    "properties": {
+    "portID":22,
+    "port":"Coruna",
+    "port_mdr":"A Coruña",
+    "port_type":"departure",
+    "cntry_mdr":"Spain",
+    "geonm_crd":"43.37135, -8.396",
+    "geonm_url":"https://www.geonames.org/3119841/a-coruna.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.88641,12.12246 ]
+    },
+    "properties": {
+    "portID":23,
+    "port":"Curacao",
+    "port_mdr":"Willemstad",
+    "port_type":"departure",
+    "cntry_mdr":"Curaçao",
+    "geonm_crd":"12.12246, -68.88641",
+    "geonm_url":"https://www.geonames.org/3513090/willemstad.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.69902,53.86828 ]
+    },
+    "properties": {
+    "portID":24,
+    "port":"Cuxhaven",
+    "port_mdr":"Cuxhaven",
+    "port_type":"departure",
+    "cntry_mdr":"Germany",
+    "geonm_crd":"53.86828, 8.69902",
+    "geonm_url":"https://www.geonames.org/2939658/cuxhaven.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.34778,53.71889 ]
+    },
+    "properties": {
+    "portID":25,
+    "port":"Drogheda",
+    "port_mdr":"Drogheda",
+    "port_type":"departure",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"53.71889, -6.34778",
+    "geonm_url":"https://www.geonames.org/2964661/drogheda.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.24889,53.33306 ]
+    },
+    "properties": {
+    "portID":26,
+    "port":"Dublin",
+    "port_mdr":"Dublin",
+    "port_type":"interim",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"53.33306, -6.24889",
+    "geonm_url":"https://www.geonames.org/2964574/dublin.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.07113,50.15441 ]
+    },
+    "properties": {
+    "portID":27,
+    "port":"Falmouth",
+    "port_mdr":"Falmouth",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"50.15441, -5.07113",
+    "geonm_url":"https://www.geonames.org/2649715/falmouth.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.05095,53.27245 ]
+    },
+    "properties": {
+    "portID":28,
+    "port":"Galway",
+    "port_mdr":"Galway",
+    "port_type":"interim",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"53.27245, -9.05095",
+    "geonm_url":"https://www.geonames.org/2964180/gaillimh.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.59446,53.53294 ]
+    },
+    "properties": {
+    "portID":29,
+    "port":"Geestemunde",
+    "port_mdr":"Geestemünde",
+    "port_type":"interim",
+    "cntry_mdr":"Germany",
+    "geonm_crd":"53.53294, 8.59446",
+    "geonm_url":"https://www.geonames.org/2922109/geestemuende.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.94439,44.40478 ]
+    },
+    "properties": {
+    "portID":30,
+    "port":"Genoa",
+    "port_mdr":"Genoa",
+    "port_type":"departure",
+    "cntry_mdr":"Italy",
+    "geonm_crd":"44.40478, 8.94439",
+    "geonm_url":"https://www.geonames.org/3176219/genoa.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.35257,36.14474 ]
+    },
+    "properties": {
+    "portID":31,
+    "port":"Gibraltar",
+    "port_mdr":"Gibraltar",
+    "port_type":"departure",
+    "cntry_mdr":"Gibraltar",
+    "geonm_crd":"36.14474, -5.35257",
+    "geonm_url":"https://www.geonames.org/2411585/gibraltar.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.25763,55.86515 ]
+    },
+    "properties": {
+    "portID":32,
+    "port":"Glasgow",
+    "port_mdr":"Glasgow",
+    "port_type":"departure",
+    "cntry_mdr":"Scotland",
+    "geonm_crd":"55.86515, -4.25763",
+    "geonm_url":"https://www.geonames.org/2648579/glasgow.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.96679,57.70716 ]
+    },
+    "properties": {
+    "portID":33,
+    "port":"Gothenburg",
+    "port_mdr":"Göteborg",
+    "port_type":"departure",
+    "cntry_mdr":"Sweden",
+    "geonm_crd":"57.70716, 11.96679",
+    "geonm_url":"https://www.geonames.org/2711537/goeteborg.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.76121,55.94838 ]
+    },
+    "properties": {
+    "portID":34,
+    "port":"Greenock",
+    "port_mdr":"Greenock",
+    "port_type":"departure",
+    "cntry_mdr":"Scotland",
+    "geonm_crd":"55.94838, -4.76121",
+    "geonm_url":"https://www.geonames.org/2647948/greenock.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.00041,51.47687 ]
+    },
+    "properties": {
+    "portID":35,
+    "port":"Greenwich",
+    "port_mdr":"Greenwich",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"51.47687, -0.00041",
+    "geonm_url":"https://www.geonames.org/6295636/royal-greenwich-observatory.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -63.57688,44.64269 ]
+    },
+    "properties": {
+    "portID":36,
+    "port":"Halifax",
+    "port_mdr":"Halifax",
+    "port_type":"departure",
+    "cntry_mdr":"Canada",
+    "geonm_crd":"44.64269, -63.57688",
+    "geonm_url":"https://www.geonames.org/6324729/halifax.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.99302,53.55073 ]
+    },
+    "properties": {
+    "portID":37,
+    "port":"Hamburg",
+    "port_mdr":"Hamburg",
+    "port_type":"departure",
+    "cntry_mdr":"Germany",
+    "geonm_crd":"53.55073, 9.99302",
+    "geonm_url":"https://www.geonames.org/2911298/hamburg.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.38304,23.13302 ]
+    },
+    "properties": {
+    "portID":38,
+    "port":"Havana",
+    "port_mdr":"Havana",
+    "port_type":"departure",
+    "cntry_mdr":"Cuba",
+    "geonm_crd":"23.13302, -82.38304",
+    "geonm_url":"https://www.geonames.org/3553478/havana.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.10785,49.49346 ]
+    },
+    "properties": {
+    "portID":39,
+    "port":"Havre",
+    "port_mdr":"Le Havre",
+    "port_type":"departure",
+    "cntry_mdr":"France",
+    "geonm_crd":"49.49346, 0.10785",
+    "geonm_url":"https://www.geonames.org/3003796/le-havre.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.93545,60.16952 ]
+    },
+    "properties": {
+    "portID":40,
+    "port":"Helsingfors",
+    "port_mdr":"Helsinki",
+    "port_type":"interim",
+    "cntry_mdr":"Finland",
+    "geonm_crd":"60.16952, 24.93545",
+    "geonm_url":"https://www.geonames.org/658225/helsinki.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.33525,53.7446 ]
+    },
+    "properties": {
+    "portID":41,
+    "port":"Hull",
+    "port_mdr":"Kingston-upon-Hull",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"53.7446, -0.33525",
+    "geonm_url":"https://www.geonames.org/2645425/kingston-upon-hull.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.2201,54.21165 ]
+    },
+    "properties": {
+    "portID":42,
+    "port":"Killala",
+    "port_mdr":"Killala",
+    "port_type":"interim",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"54.21165, -9.2201",
+    "geonm_url":"https://www.geonames.org/2963378/killala.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.93293,10.60156 ]
+    },
+    "properties": {
+    "portID":43,
+    "port":"La Guaira",
+    "port_mdr":"La Guaira",
+    "port_type":"departure",
+    "cntry_mdr":"Venezuela",
+    "geonm_crd":"10.60156, -66.93293",
+    "geonm_url":"https://www.geonames.org/3637721/la-guaira.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.83333,54.83333 ]
+    },
+    "properties": {
+    "portID":44,
+    "port":"Larne",
+    "port_mdr":"Larne",
+    "port_type":"interim",
+    "cntry_mdr":"Northern Ireland",
+    "geonm_crd":"54.83333, -5.83333",
+    "geonm_url":"https://www.geonames.org/2644850/larne-district.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.97794,53.41058 ]
+    },
+    "properties": {
+    "portID":45,
+    "port":"Liverpool",
+    "port_mdr":"Liverpool",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"53.41058, -2.97794",
+    "geonm_url":"https://www.geonames.org/2644210/liverpool.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.12574,51.50853 ]
+    },
+    "properties": {
+    "portID":46,
+    "port":"London",
+    "port_mdr":"London",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"51.50853, -0.12574",
+    "geonm_url":"https://www.geonames.org/2643743/london.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.30934,54.9981 ]
+    },
+    "properties": {
+    "portID":47,
+    "port":"Londonderry",
+    "port_mdr":"Derry",
+    "port_type":"interim",
+    "cntry_mdr":"Northern Ireland",
+    "geonm_crd":"54.9981, -7.30934",
+    "geonm_url":"https://www.geonames.org/2643736/derry.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.31485,31.07557 ]
+    },
+    "properties": {
+    "portID":48,
+    "port":"Marahan",
+    "port_mdr":"Umm al Maraḩān",
+    "port_type":"departure",
+    "cntry_mdr":"Libya",
+    "geonm_crd":"31.07557, 12.31485",
+    "geonm_url":"https://www.geonames.org/2209471/umm-al-marahan.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.38107,43.29695 ]
+    },
+    "properties": {
+    "portID":49,
+    "port":"Marseilles",
+    "port_mdr":"Marseille",
+    "port_type":"departure",
+    "cntry_mdr":"France",
+    "geonm_crd":"43.29695, 5.38107",
+    "geonm_url":"https://www.geonames.org/2995469/marseille.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.55256,38.19394 ]
+    },
+    "properties": {
+    "portID":50,
+    "port":"Messina",
+    "port_mdr":"Messina",
+    "port_type":"departure",
+    "cntry_mdr":"Italy",
+    "geonm_crd":"38.19394, 15.55256",
+    "geonm_url":"https://www.geonames.org/2524170/messina.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.03873,55.19153 ]
+    },
+    "properties": {
+    "portID":51,
+    "port":"Moville",
+    "port_mdr":"Moville",
+    "port_type":"departure",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"55.19153, -7.03873",
+    "geonm_url":"https://www.geonames.org/2962450/moville.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.26811,40.85216 ]
+    },
+    "properties": {
+    "portID":52,
+    "port":"Naples",
+    "port_mdr":"Napoli",
+    "port_type":"departure",
+    "cntry_mdr":"Italy",
+    "geonm_crd":"40.85216, 14.26811",
+    "geonm_url":"https://www.geonames.org/3172394/naples.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.07507,29.95465 ]
+    },
+    "properties": {
+    "portID":53,
+    "port":"New Orleans",
+    "port_mdr":"New Orleans",
+    "port_type":"arrival",
+    "cntry_mdr":"United States",
+    "geonm_crd":"29.95465, -90.07507",
+    "geonm_url":"https://www.geonames.org/4335045/new-orleans.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.00597,40.71427 ]
+    },
+    "properties": {
+    "portID":54,
+    "port":"New York",
+    "port_mdr":"New York",
+    "port_type":"arrival",
+    "cntry_mdr":"United States",
+    "geonm_crd":"40.71427, -74.00597",
+    "geonm_url":"https://www.geonames.org/5128581/new-york-city.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.61396,54.97328 ]
+    },
+    "properties": {
+    "portID":55,
+    "port":"Newcastle",
+    "port_mdr":"Newcastle upon Tyne",
+    "port_type":"interim",
+    "cntry_mdr":"England",
+    "geonm_crd":"54.97328, -1.61396",
+    "geonm_url":"https://www.geonames.org/2641673/newcastle-upon-tyne.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -52.70931,47.56494 ]
+    },
+    "properties": {
+    "portID":56,
+    "port":"Newfoundland",
+    "port_mdr":"St. John's",
+    "port_type":"interim",
+    "cntry_mdr":"Canada",
+    "geonm_crd":"47.56494, -52.70931",
+    "geonm_url":"https://www.geonames.org/6324733/st-john-s.html",
+    "note":"administrative seat"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.3636,38.1166 ]
+    },
+    "properties": {
+    "portID":57,
+    "port":"Palermo",
+    "port_mdr":"Palermo",
+    "port_type":"departure",
+    "cntry_mdr":"Italy",
+    "geonm_crd":"38.1166, 13.3636",
+    "geonm_url":"https://www.geonames.org/2523920/palermo.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.51973,8.9936 ]
+    },
+    "properties": {
+    "portID":58,
+    "port":"Panama",
+    "port_mdr":"Panama City",
+    "port_type":"departure",
+    "cntry_mdr":"Panama",
+    "geonm_crd":"8.9936, -79.51973",
+    "geonm_url":"https://www.geonames.org/3703443/panama.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -48.50444,-1.45583 ]
+    },
+    "properties": {
+    "portID":59,
+    "port":"Para",
+    "port_mdr":"Belém",
+    "port_type":"departure",
+    "cntry_mdr":"Brazil",
+    "geonm_crd":"-1.45583, -48.50444",
+    "geonm_url":"https://www.geonames.org/3405870/belem.html",
+    "note":"administrative seat of Pará"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.16362,39.95238 ]
+    },
+    "properties": {
+    "portID":60,
+    "port":"Philadelphia",
+    "port_mdr":"Philadelphia",
+    "port_type":"arrival",
+    "cntry_mdr":"United States",
+    "geonm_crd":"39.95238, -75.16362",
+    "geonm_url":"https://www.geonames.org/4560349/philadelphia.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.14305,50.37153 ]
+    },
+    "properties": {
+    "portID":61,
+    "port":"Plymouth",
+    "port_mdr":"Plymouth",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"50.37153, -4.14305",
+    "geonm_url":"https://www.geonames.org/2640194/plymouth.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.0125,10.47306 ]
+    },
+    "properties": {
+    "portID":62,
+    "port":"Puertocabello",
+    "port_mdr":"Puerto Cabello",
+    "port_type":"interim",
+    "cntry_mdr":"Venezuela",
+    "geonm_crd":"10.47306, -68.0125",
+    "geonm_url":"https://www.geonames.org/3629706/puerto-cabello.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.2948,51.85046 ]
+    },
+    "properties": {
+    "portID":63,
+    "port":"Queenstown",
+    "port_mdr":"Cobh",
+    "port_type":"departure",
+    "cntry_mdr":"Ireland",
+    "geonm_crd":"51.85046, -8.2948",
+    "geonm_url":"https://www.geonames.org/2965260/cobh.html",
+    "note":"Cobh was known as Queenstown from 1849 until 1920."
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -43.18223,-22.90642 ]
+    },
+    "properties": {
+    "portID":64,
+    "port":"Rio De Janeiro",
+    "port_mdr":"Rio de Janeiro",
+    "port_type":"departure",
+    "cntry_mdr":"Brazil",
+    "geonm_crd":"-22.90642, -43.18223",
+    "geonm_url":"https://www.geonames.org/3451190/rio-de-janeiro.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.47917,51.9225 ]
+    },
+    "properties": {
+    "portID":65,
+    "port":"Rotterdam",
+    "port_mdr":"Rotterdam",
+    "port_type":"departure",
+    "cntry_mdr":"The Netherlands",
+    "geonm_crd":"51.9225, 4.47917",
+    "geonm_url":"https://www.geonames.org/2747891/rotterdam.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.80444,43.46472 ]
+    },
+    "properties": {
+    "portID":66,
+    "port":"Santander ",
+    "port_mdr":"Santander ",
+    "port_type":"interim",
+    "cntry_mdr":"Spain",
+    "geonm_crd":"43.46472, -3.80444",
+    "geonm_url":"https://www.geonames.org/3109718/santander.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.91945,11.0359 ]
+    },
+    "properties": {
+    "portID":67,
+    "port":"Savanilla",
+    "port_mdr":"Sabanilla",
+    "port_type":"departure",
+    "cntry_mdr":"Colombia",
+    "geonm_crd":"11.0359, -74.91945",
+    "geonm_url":"https://www.geonames.org/3670458/sabanilla.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.40428,50.90395 ]
+    },
+    "properties": {
+    "portID":68,
+    "port":"Southampton",
+    "port_mdr":"Southampton",
+    "port_type":"departure",
+    "cntry_mdr":"England",
+    "geonm_crd":"50.90395, -1.40428",
+    "geonm_url":"https://www.geonames.org/2637487/southampton.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95742,17.99107 ]
+    },
+    "properties": {
+    "portID":69,
+    "port":"St. Jago",
+    "port_mdr":"Spanish Town",
+    "port_type":"departure",
+    "cntry_mdr":"Jamaica",
+    "geonm_crd":"17.99107, -76.95742",
+    "geonm_url":"https://www.geonames.org/3488465/spanish-town.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -64.9307,18.3419 ]
+    },
+    "properties": {
+    "portID":70,
+    "port":"St. Thomas",
+    "port_mdr":"Charlotte Amalie",
+    "port_type":"departure",
+    "cntry_mdr":"U. S. Virgin Islands",
+    "geonm_crd":"18.3419, -64.9307",
+    "geonm_url":"https://www.geonames.org/4795467/charlotte-amalie.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.55302,53.42894 ]
+    },
+    "properties": {
+    "portID":71,
+    "port":"Stettin",
+    "port_mdr":"Szczecin",
+    "port_type":"departure",
+    "cntry_mdr":"Poland",
+    "geonm_crd":"53.42894, 14.55302",
+    "geonm_url":"https://www.geonames.org/3083829/szczecin.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.06871,59.32938 ]
+    },
+    "properties": {
+    "portID":72,
+    "port":"Stockholm",
+    "port_mdr":"Stockholm",
+    "port_type":"departure",
+    "cntry_mdr":"Sweden",
+    "geonm_crd":"59.32938, 18.06871",
+    "geonm_url":"https://www.geonames.org/2673730/stockholm.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.24712,53.91053 ]
+    },
+    "properties": {
+    "portID":73,
+    "port":"Swinemunde",
+    "port_mdr":"Świnoujście",
+    "port_type":"departure",
+    "cntry_mdr":"Poland",
+    "geonm_crd":"53.91053, 14.24712",
+    "geonm_url":"https://www.geonames.org/3083955/swinoujscie.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.87777,22.28519 ]
+    },
+    "properties": {
+    "portID":74,
+    "port":"Tampico",
+    "port_mdr":"Tampico",
+    "port_type":"departure",
+    "cntry_mdr":"Mexico",
+    "geonm_crd":"22.28519, -97.87777",
+    "geonm_url":"https://www.geonames.org/3516355/tampico.html",
+    "note":"also \"Mexican ports\""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.77678,45.64953 ]
+    },
+    "properties": {
+    "portID":75,
+    "port":"Trieste",
+    "port_mdr":"Trieste",
+    "port_type":"interim",
+    "cntry_mdr":"Italy",
+    "geonm_crd":"45.64953, 13.77678",
+    "geonm_url":"https://www.geonames.org/3165185/trieste.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -61.51889,10.66668 ]
+    },
+    "properties": {
+    "portID":76,
+    "port":"Trinidad",
+    "port_mdr":"Port-of-Spain",
+    "port_type":"departure",
+    "cntry_mdr":"Trinidad and Tobago",
+    "geonm_crd":"10.66668, -61.51889",
+    "geonm_url":"https://www.geonames.org/3573890/port-of-spain.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.37739,39.46975 ]
+    },
+    "properties": {
+    "portID":77,
+    "port":"Valencia",
+    "port_mdr":"Valencia",
+    "port_type":"interim",
+    "cntry_mdr":"Spain",
+    "geonm_crd":"39.46975, -0.37739",
+    "geonm_url":"https://www.geonames.org/2509954/valencia.html",
+    "note":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.1429,19.18095 ]
+    },
+    "properties": {
+    "portID":78,
+    "port":"Vera Cruz",
+    "port_mdr":"Veracruz",
+    "port_type":"departure",
+    "cntry_mdr":"Mexico",
+    "geonm_crd":"19.18095, -96.1429",
+    "geonm_url":"https://www.geonames.org/3514783/veracruz.html",
+    "note":""
+    }
+  }
+]
+}
