@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Original Dataset</title>
+    <!-- Meta tags to prevent caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- Add any additional head elements here (e.g., CSS links) -->
+</head>
+<body>
+
+    <section id="original-dataset-overview">
+        <h1>Original Dataset Overview</h1>
+        <p>The dataset provided by the U.S. National Archives offers a large data corpus from the Russian Empire to the United States over six decades...</p>
+
+        <h2>The Tsar's Trans-Atlantic Voyagers</h2>
+        <p>This significant data collection allows for an in-depth study of migration patterns and contributes to historical knowledge...</p>
+
+        <!-- Feature List -->
+        <h3>Feature List</h3>
+        <ul>
+            <li>Over half a million passenger records for extensive analysis</li>
+            <li>Details of more than 150 voyages mapping the migratory routes</li>
+            <li>Documentation of 681 unique occupations providing insights into the social fabric</li>
+            <!-- Additional features can be listed here -->
+        </ul>
+
+        <!-- More content can be added here -->
+    </section>
+
+    <!-- Footer with Davis Center logo -->
+    <footer>
+        <img src="path-to-davis-center-logo.png" alt="Davis Center Logo" style="width:100px;">
+    </footer>
+
+</body>
+</html>
