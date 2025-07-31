@@ -491,7 +491,7 @@
                 document.getElementById('predictBtn').disabled = false;
 
                 // Show input summary
-                this.displayInputSummary(result.input);
+                this.displayInputSummary(result.input, result.migration_route);
 
                 // Show migration route map
                 this.displayMigrationRoute(result.migration_route);
@@ -500,8 +500,14 @@
                 this.displayPredictions(result.predictions);
             }
 
-            displayInputSummary(input) {
+            displayInputSummary(input, migrationRoute) {
                 const summaryContent = document.getElementById('summaryContent');
+                let originalPort = '';
+                let arrivalPort = '';
+                if (migrationRoute && Array.isArray(migrationRoute) && migrationRoute.length > 1) {
+                    originalPort = migrationRoute[0].name;
+                    arrivalPort = migrationRoute[migrationRoute.length - 1].name;
+                }
                 summaryContent.innerHTML = `
                     <div class="input-item">
                         <span class="label">Gender:</span>
@@ -527,6 +533,8 @@
                         <span class="label">Group Size:</span>
                         <span class="value">${input.group_size} passenger${input.group_size > 1 ? 's' : ''}</span>
                     </div>
+                    ${originalPort ? `<div class="input-item"><span class="label">Original Port:</span> <span class="value">${originalPort}</span></div>` : ''}
+                    ${arrivalPort ? `<div class="input-item"><span class="label">Arrival Port:</span> <span class="value">${arrivalPort}</span></div>` : ''}
                 `;
             }
 
