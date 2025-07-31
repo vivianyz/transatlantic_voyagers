@@ -246,6 +246,47 @@ def predict():
         
         predictions, confidences = result
         
+        # --- Migration Route Logic ---
+        # Load routes and ports data
+        import csv
+        routes = []
+        with open('dataverse_files/ttav_routes.csv', newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                routes.append(row)
+        ports = {}
+        with open('dataverse_files/ttav_ports.csv', newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                ports[row['port']] = {
+                    'name': row['port'],
+                    'lat': float(row['geonm_lat']),
+                    'lon': float(row['geonm_long'])
+                }
+        # Find the route for the predicted arrival port
+        predicted_port = predictions.get('port_arv', 'Unknown')
+        route_row = None
+        for r in routes:
+            if r['port_arv'] == predicted_port:
+                route_row = r
+                break
+        migration_route = []
+        if route_row:
+            # Parse the itinerary (itinry) field, which is a string like 'Amsterdam-Baltimore'
+            legs = route_row['itinry'].replace(' & ', ',').replace('"', '').replace("'", '').split('-')
+            # Split further on ',' for multi-port legs
+            ports_in_route = []
+            for leg in legs:
+                for p in leg.split(','):
+                    p = p.strip()
+                    if p and p not in ports_in_route:
+                        ports_in_route.append(p)
+            # Build migration_route as list of dicts with name, lat, lon
+            for p in ports_in_route:
+                if p in ports:
+                    migration_route.append(ports[p])
+        # --- End Migration Route Logic ---
+        
         # Format response
         response = {
             'input': {
@@ -277,7 +318,8 @@ def predict():
                     'value': predictions.get('port_arv', 'Unknown'),
                     'confidence': confidences.get('port_arv', 0.0)
                 }
-            }
+            },
+            'migration_route': migration_route
         }
         
         return jsonify(response)

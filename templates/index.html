@@ -290,6 +290,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2H1LG2Q6gG1zQp+gkG6Q1pQ5Q5Q5Q5Q5Q5Q5Q5Q=" crossorigin=""/>
 </head>
 <body>
     <div class="container">
@@ -373,7 +374,8 @@
                         <h3>📋 Input Summary</h3>
                         <div id="summaryContent"></div>
                     </div>
-
+                    <!-- Migration Route Map -->
+                    <div id="migrationMap" style="height: 350px; width: 100%; margin-bottom: 30px; display: none;"></div>
                     <div class="predictions-grid" id="predictionsGrid">
                         <!-- Prediction cards will be inserted here -->
                     </div>
@@ -387,6 +389,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j6kG1zQp+gkG6Q1pQ5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q=" crossorigin=""></script>
     <script>
         class PassengerPredictor {
             constructor() {
@@ -490,6 +493,9 @@
                 // Show input summary
                 this.displayInputSummary(result.input);
 
+                // Show migration route map
+                this.displayMigrationRoute(result.migration_route);
+
                 // Show predictions
                 this.displayPredictions(result.predictions);
             }
@@ -573,6 +579,45 @@
                         <div class="confidence-text">${(card.confidence * 100).toFixed(1)}% confidence</div>
                     </div>
                 `).join('');
+            }
+
+            displayMigrationRoute(route) {
+                const mapDiv = document.getElementById('migrationMap');
+                if (!route || !Array.isArray(route) || route.length < 2) {
+                    mapDiv.style.display = 'none';
+                    if (window.migrationMapInstance) {
+                        window.migrationMapInstance.remove();
+                        window.migrationMapInstance = null;
+                    }
+                    return;
+                }
+                mapDiv.style.display = 'block';
+                // Remove previous map instance if exists
+                if (window.migrationMapInstance) {
+                    window.migrationMapInstance.remove();
+                }
+                // Center map on the midpoint of the route
+                const lats = route.map(p => p.lat);
+                const lons = route.map(p => p.lon);
+                const avgLat = lats.reduce((a, b) => a + b, 0) / lats.length;
+                const avgLon = lons.reduce((a, b) => a + b, 0) / lons.length;
+                const map = L.map('migrationMap').setView([avgLat, avgLon], 3);
+                window.migrationMapInstance = map;
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 8,
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+                // Plot ports as markers
+                route.forEach((port, idx) => {
+                    L.marker([port.lat, port.lon]).addTo(map)
+                        .bindPopup(`<b>${port.name}</b>${idx === 0 ? ' (Departure)' : (idx === route.length - 1 ? ' (Arrival)' : '')}`)
+                        .openPopup();
+                });
+                // Draw polyline for the route
+                const latlngs = route.map(port => [port.lat, port.lon]);
+                L.polyline(latlngs, {color: 'blue', weight: 4, opacity: 0.7}).addTo(map);
+                // Fit bounds
+                map.fitBounds(latlngs, {padding: [30, 30]});
             }
 
             formatGender(gender) {
