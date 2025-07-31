@@ -285,6 +285,9 @@ def predict():
             for p in ports_in_route:
                 if p in ports:
                     migration_route.append(ports[p])
+        # Only return migration_route if it has at least 2 ports (valid route)
+        if len(migration_route) < 2:
+            migration_route = []
         # --- End Migration Route Logic ---
         
         # Format response
