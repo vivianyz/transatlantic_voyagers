@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans-Atlantic Voyagers Passenger Predictor - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .header .description {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 600px;
+        }
+
+        .input-section {
+            padding: 40px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .results-section {
+            padding: 40px;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group select:focus, .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .predict-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .predict-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .input-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .input-summary h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .input-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+        }
+
+        .input-item .label {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .input-item .value {
+            color: #2c3e50;
+        }
+
+        .predictions-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .prediction-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .prediction-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .prediction-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .prediction-icon {
+            font-size: 1.5rem;
+        }
+
+        .prediction-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .prediction-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .confidence-bar {
+            background: #e9ecef;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+
+        .confidence-text {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: right;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .demo-note {
+            background: #fff3cd;
+            border: 2px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .input-section {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚢 Trans-Atlantic Voyagers</h1>
+            <div class="subtitle">Passenger Prediction System</div>
+            <div class="description">
+                Predict passenger characteristics based on historical migration data from the Russian Empire to the USA (1834-1897)
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="demo-note">
+                    <strong>Demo Mode:</strong> This is a demonstration of the web interface. In the full version, this connects to a machine learning backend.
+                </div>
+                
+                <h2 class="section-title">
+                    📝 Passenger Information
+                </h2>
+
+                <form id="passengerForm">
+                    <div class="form-group">
+                        <label for="gender">🚹🚺 Gender</label>
+                        <select id="gender" name="sex" required>
+                            <option value="">Select gender...</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="U">Unknown</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ageRange">🎂 Age Range</label>
+                        <select id="ageRange" name="age_range" required>
+                            <option value="">Select age range...</option>
+                            <option value="Child">Child (0-18)</option>
+                            <option value="Young Adult">Young Adult (19-30)</option>
+                            <option value="Adult">Adult (31-45)</option>
+                            <option value="Middle Age">Middle Age (46-60)</option>
+                            <option value="Senior">Senior (60+)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation">💼 Occupation</label>
+                        <select id="occupation" name="occID" required>
+                            <option value="">Select occupation...</option>
+                            <option value="210">LABORER</option>
+                            <option value="681">FAMILY RELATIONSHIP DATA</option>
+                            <option value="342">FARMER</option>
+                            <option value="156">MERCHANT</option>
+                            <option value="89">CARPENTER</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">📅 Year of Departure</label>
+                        <input type="number" id="year" name="arv_yr" min="1834" max="1897" placeholder="Enter year (1834-1897)" value="1890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="residence">🏠 Original Residence</label>
+                        <select id="residence" name="lkrID" required>
+                            <option value="">Select residence...</option>
+                            <option value="1">Russia</option>
+                            <option value="2">Poland</option>
+                            <option value="3">Lithuania</option>
+                            <option value="4">Ukraine</option>
+                            <option value="5">Belarus</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groupSize">👥 Travel Group Size</label>
+                        <select id="groupSize" name="travel_grp_size" required>
+                            <option value="">Select group size...</option>
+                            <option value="1">1 passenger</option>
+                            <option value="2">2 passengers</option>
+                            <option value="3">3 passengers</option>
+                            <option value="4">4 passengers</option>
+                            <option value="5">5 passengers</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="predict-btn" id="predictBtn">
+                        🔮 Predict Passenger Characteristics
+                    </button>
+                </form>
+            </div>
+
+            <div class="results-section">
+                <h2 class="section-title">
+                    🎯 Prediction Results
+                </h2>
+
+                <div id="results" style="display: none;">
+                    <div class="input-summary" id="inputSummary">
+                        <h3>📋 Input Summary</h3>
+                        <div id="summaryContent"></div>
+                    </div>
+
+                    <div class="predictions-grid" id="predictionsGrid">
+                        <!-- Prediction cards will be inserted here -->
+                    </div>
+                </div>
+
+                <div style="text-align: center; color: #666; padding: 40px;">
+                    <p>🔮 Fill out the form and click "Predict" to see passenger characteristics predictions based on historical data and machine learning models.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with historical data from "The Tsar's Trans-Atlantic Voyagers" dataset • 
+            Using machine learning and hierarchical clustering for predictions
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('passengerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Show demo predictions
+            showDemoResults(data);
+        });
+
+        function showDemoResults(data) {
+            // Display input summary
+            const summaryContent = document.getElementById('summaryContent');
+            summaryContent.innerHTML = `
+                <div class="input-item">
+                    <span class="label">Gender:</span>
+                    <span class="value">${formatGender(data.sex)}</span>
+                </div>
+                <div class="input-item">
+                    <span class="label">Age Range:</span>
+                    <span class="value">${data.age_range}</span>
+                </div>
+                <div class="input-item">
+                    <span class="label">Occupation:</span>
+                    <span class="value">${getOccupationName(data.occID)}</span>
+                </div>
+                <div class="input-item">
+                    <span class="label">Year:</span>
+                    <span class="value">${data.arv_yr}</span>
+                </div>
+                <div class="input-item">
+                    <span class="label">Residence:</span>
+                    <span class="value">${getResidenceName(data.lkrID)}</span>
+                </div>
+                <div class="input-item">
+                    <span class="label">Group Size:</span>
+                    <span class="value">${data.travel_grp_size} passenger${data.travel_grp_size > 1 ? 's' : ''}</span>
+                </div>
+            `;
+
+            // Generate demo predictions based on input
+            const predictions = generateDemoPredictions(data);
+            
+            const predictionsGrid = document.getElementById('predictionsGrid');
+            predictionsGrid.innerHTML = predictions.map(card => `
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <span class="prediction-icon">${card.icon}</span>
+                        <span class="prediction-title">${card.title}</span>
+                    </div>
+                    <div class="prediction-value">${card.value}</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${card.confidence * 100}%"></div>
+                    </div>
+                    <div class="confidence-text">${(card.confidence * 100).toFixed(1)}% confidence</div>
+                </div>
+            `).join('');
+
+            document.getElementById('results').style.display = 'block';
+        }
+
+        function generateDemoPredictions(data) {
+            // Simple rule-based demo predictions
+            const predictions = [
+                {
+                    icon: '📚',
+                    title: 'Literacy',
+                    value: data.arv_yr > 1880 ? 'Literate' : 'Unknown',
+                    confidence: data.arv_yr > 1880 ? 0.85 : 0.60
+                },
+                {
+                    icon: '👨‍👩‍👧‍👦',
+                    title: 'Family Role',
+                    value: data.sex === 'F' && parseInt(data.travel_grp_size) > 2 ? 'WIFE' : 
+                           data.sex === 'M' && parseInt(data.travel_grp_size) > 2 ? 'HUSBAND' : 'not given',
+                    confidence: parseInt(data.travel_grp_size) > 2 ? 0.92 : 0.78
+                },
+                {
+                    icon: '🚢',
+                    title: 'Passage Type',
+                    value: data.occID === '156' ? 'cabin' : 'steerage',
+                    confidence: data.occID === '156' ? 0.88 : 0.96
+                },
+                {
+                    icon: '💼',
+                    title: 'Occupation Group',
+                    value: data.occID === '210' ? 'Agriculture' : 
+                           data.occID === '681' ? 'No occupation' : 
+                           data.occID === '342' ? 'Agriculture' : 
+                           data.occID === '156' ? 'Commerce' : 'Skilled trades',
+                    confidence: 0.89
+                },
+                {
+                    icon: '🏙️',
+                    title: 'Arrival Port',
+                    value: 'New York',
+                    confidence: 0.94
+                }
+            ];
+
+            return predictions;
+        }
+
+        function formatGender(gender) {
+            const genderMap = {
+                'M': 'Male',
+                'F': 'Female',
+                'U': 'Unknown'
+            };
+            return genderMap[gender] || gender;
+        }
+
+        function getOccupationName(occID) {
+            const occupations = {
+                '210': 'LABORER',
+                '681': 'FAMILY RELATIONSHIP DATA',
+                '342': 'FARMER',
+                '156': 'MERCHANT',
+                '89': 'CARPENTER'
+            };
+            return occupations[occID] || 'Unknown';
+        }
+
+        function getResidenceName(lkrID) {
+            const residences = {
+                '1': 'Russia',
+                '2': 'Poland',
+                '3': 'Lithuania',
+                '4': 'Ukraine',
+                '5': 'Belarus'
+            };
+            return residences[lkrID] || 'Unknown';
+        }
+    </script>
+</body>
+</html>

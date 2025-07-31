@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans-Atlantic Voyagers Passenger Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .header .description {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 600px;
+        }
+
+        .input-section {
+            padding: 40px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .results-section {
+            padding: 40px;
+            background: white;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group select:focus, .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .predict-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .predict-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .predict-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results {
+            display: none;
+        }
+
+        .input-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .input-summary h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .input-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px 0;
+        }
+
+        .input-item .label {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .input-item .value {
+            color: #2c3e50;
+        }
+
+        .predictions-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .prediction-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .prediction-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .prediction-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .prediction-icon {
+            font-size: 1.5rem;
+        }
+
+        .prediction-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .prediction-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .confidence-bar {
+            background: #e9ecef;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+
+        .confidence-text {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: right;
+        }
+
+        .error {
+            background: #fff5f5;
+            border: 2px solid #fed7d7;
+            color: #c53030;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .input-section {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚢 Trans-Atlantic Voyagers</h1>
+            <div class="subtitle">Passenger Prediction System</div>
+            <div class="description">
+                Predict passenger characteristics based on historical migration data from the Russian Empire to the USA (1834-1897)
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2 class="section-title">
+                    📝 Passenger Information
+                </h2>
+
+                <form id="passengerForm">
+                    <div class="form-group">
+                        <label for="gender">🚹🚺 Gender</label>
+                        <select id="gender" name="sex" required>
+                            <option value="">Select gender...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ageRange">🎂 Age Range</label>
+                        <select id="ageRange" name="age_range" required>
+                            <option value="">Select age range...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation">💼 Occupation</label>
+                        <select id="occupation" name="occID" required>
+                            <option value="">Select occupation...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">📅 Year of Departure</label>
+                        <input type="number" id="year" name="arv_yr" min="1834" max="1897" placeholder="Enter year (1834-1897)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="residence">🏠 Original Residence</label>
+                        <select id="residence" name="lkrID" required>
+                            <option value="">Select residence...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groupSize">👥 Travel Group Size</label>
+                        <select id="groupSize" name="travel_grp_size" required>
+                            <option value="">Select group size...</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="predict-btn" id="predictBtn">
+                        🔮 Predict Passenger Characteristics
+                    </button>
+                </form>
+            </div>
+
+            <div class="results-section">
+                <h2 class="section-title">
+                    🎯 Prediction Results
+                </h2>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <div>Making predictions...</div>
+                </div>
+
+                <div class="error" id="error">
+                    <strong>Error:</strong> <span id="errorMessage"></span>
+                </div>
+
+                <div class="results" id="results">
+                    <div class="input-summary" id="inputSummary">
+                        <h3>📋 Input Summary</h3>
+                        <div id="summaryContent"></div>
+                    </div>
+
+                    <div class="predictions-grid" id="predictionsGrid">
+                        <!-- Prediction cards will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with historical data from "The Tsar's Trans-Atlantic Voyagers" dataset • 
+            Using machine learning and hierarchical clustering for predictions
+        </div>
+    </div>
+
+    <script>
+        class PassengerPredictor {
+            constructor() {
+                this.form = document.getElementById('passengerForm');
+                this.loadOptions();
+                this.bindEvents();
+            }
+
+            async loadOptions() {
+                try {
+                    const response = await fetch('/api/options');
+                    const options = await response.json();
+                    
+                    this.populateSelect('gender', options.genders);
+                    this.populateSelect('ageRange', options.age_ranges);
+                    this.populateSelect('occupation', options.occupations);
+                    this.populateSelect('residence', options.residences);
+                    this.populateSelect('groupSize', options.group_sizes);
+                    
+                } catch (error) {
+                    console.error('Error loading options:', error);
+                    this.showError('Failed to load form options. Please refresh the page.');
+                }
+            }
+
+            populateSelect(elementId, options) {
+                const select = document.getElementById(elementId);
+                options.forEach(option => {
+                    const optionElement = document.createElement('option');
+                    optionElement.value = option.value;
+                    optionElement.textContent = option.label;
+                    select.appendChild(optionElement);
+                });
+            }
+
+            bindEvents() {
+                this.form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.makePrediction();
+                });
+            }
+
+            async makePrediction() {
+                const formData = new FormData(this.form);
+                const data = {};
+                
+                for (let [key, value] of formData.entries()) {
+                    if (key === 'occID' || key === 'arv_yr' || key === 'lkrID' || key === 'travel_grp_size') {
+                        data[key] = parseInt(value);
+                    } else {
+                        data[key] = value;
+                    }
+                }
+
+                this.showLoading();
+
+                try {
+                    const response = await fetch('/api/predict', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(result.error || 'Prediction failed');
+                    }
+
+                    this.showResults(result);
+
+                } catch (error) {
+                    console.error('Prediction error:', error);
+                    this.showError(error.message);
+                }
+            }
+
+            showLoading() {
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('results').style.display = 'none';
+                document.getElementById('error').style.display = 'none';
+                document.getElementById('predictBtn').disabled = true;
+            }
+
+            showError(message) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('results').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('errorMessage').textContent = message;
+                document.getElementById('predictBtn').disabled = false;
+            }
+
+            showResults(result) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'none';
+                document.getElementById('results').style.display = 'block';
+                document.getElementById('predictBtn').disabled = false;
+
+                // Show input summary
+                this.displayInputSummary(result.input);
+
+                // Show predictions
+                this.displayPredictions(result.predictions);
+            }
+
+            displayInputSummary(input) {
+                const summaryContent = document.getElementById('summaryContent');
+                summaryContent.innerHTML = `
+                    <div class="input-item">
+                        <span class="label">Gender:</span>
+                        <span class="value">${this.formatGender(input.gender)}</span>
+                    </div>
+                    <div class="input-item">
+                        <span class="label">Age Range:</span>
+                        <span class="value">${input.age_range}</span>
+                    </div>
+                    <div class="input-item">
+                        <span class="label">Occupation:</span>
+                        <span class="value">${input.occupation}</span>
+                    </div>
+                    <div class="input-item">
+                        <span class="label">Year:</span>
+                        <span class="value">${input.year}</span>
+                    </div>
+                    <div class="input-item">
+                        <span class="label">Residence:</span>
+                        <span class="value">${input.residence}</span>
+                    </div>
+                    <div class="input-item">
+                        <span class="label">Group Size:</span>
+                        <span class="value">${input.group_size} passenger${input.group_size > 1 ? 's' : ''}</span>
+                    </div>
+                `;
+            }
+
+            displayPredictions(predictions) {
+                const predictionsGrid = document.getElementById('predictionsGrid');
+                
+                const predictionCards = [
+                    {
+                        icon: '📚',
+                        title: 'Literacy',
+                        value: predictions.literacy.value,
+                        confidence: predictions.literacy.confidence
+                    },
+                    {
+                        icon: '👨‍👩‍👧‍👦',
+                        title: 'Family Role',
+                        value: predictions.family_role.value,
+                        confidence: predictions.family_role.confidence
+                    },
+                    {
+                        icon: '🚢',
+                        title: 'Passage Type',
+                        value: predictions.passage_type.value,
+                        confidence: predictions.passage_type.confidence
+                    },
+                    {
+                        icon: '💼',
+                        title: 'Occupation Group',
+                        value: predictions.occupation_group.value,
+                        confidence: predictions.occupation_group.confidence
+                    },
+                    {
+                        icon: '🏙️',
+                        title: 'Arrival Port',
+                        value: predictions.arrival_port.value,
+                        confidence: predictions.arrival_port.confidence
+                    }
+                ];
+
+                predictionsGrid.innerHTML = predictionCards.map(card => `
+                    <div class="prediction-card">
+                        <div class="prediction-header">
+                            <span class="prediction-icon">${card.icon}</span>
+                            <span class="prediction-title">${card.title}</span>
+                        </div>
+                        <div class="prediction-value">${card.value}</div>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" style="width: ${card.confidence * 100}%"></div>
+                        </div>
+                        <div class="confidence-text">${(card.confidence * 100).toFixed(1)}% confidence</div>
+                    </div>
+                `).join('');
+            }
+
+            formatGender(gender) {
+                const genderMap = {
+                    'M': 'Male',
+                    'F': 'Female',
+                    'U': 'Unknown'
+                };
+                return genderMap[gender] || gender;
+            }
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            new PassengerPredictor();
+        });
+    </script>
+</body>
+</html>
