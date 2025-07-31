@@ -1,0 +1,55 @@
+TRANS-ATLANTIC VOYAGERS UNIFIED DATASET
+Column Documentation
+==================================================
+
+Total Records: 527,394
+Total Columns: 47
+
+COLUMNS:
+  1. ID                        | int64      |   527394 non-null |   0.0% missing
+  2. MID                       | int64      |   527394 non-null |   0.0% missing
+  3. travel_grpID              | object     |   527394 non-null |   0.0% missing
+  4. ln                        | object     |   527393 non-null |   0.0% missing
+  5. fn                        | object     |   527393 non-null |   0.0% missing
+  6. age                       | float64    |   522009 non-null |   1.0% missing
+  7. sex                       | object     |   527394 non-null |   0.0% missing
+  8. litr                      | object     |   527394 non-null |   0.0% missing
+  9. occID                     | int64      |   527394 non-null |   0.0% missing
+ 10. fam_role                  | object     |   527394 non-null |   0.0% missing
+ 11. pasg                      | object     |   527394 non-null |   0.0% missing
+ 12. goal                      | object     |   527394 non-null |   0.0% missing
+ 13. condtn                    | object     |   527394 non-null |   0.0% missing
+ 14. lres                      | object     |   527394 non-null |   0.0% missing
+ 15. lkrID                     | int64      |   527394 non-null |   0.0% missing
+ 16. arv_date                  | object     |   527394 non-null |   0.0% missing
+ 17. arv_yr                    | int64      |   527394 non-null |   0.0% missing
+ 18. routeID                   | int64      |   527394 non-null |   0.0% missing
+ 19. shipID                    | int64      |   527394 non-null |   0.0% missing
+ 20. q_psgrs                   | int64      |   527394 non-null |   0.0% missing
+ 21. avg_crss                  | int64      |   527394 non-null |   0.0% missing
+ 22. travel_grp                | object     |   526505 non-null |   0.2% missing
+ 23. travel_grp_size           | float64    |   526505 non-null |   0.2% missing
+ 24. occ_nm                    | object     |   527394 non-null |   0.0% missing
+ 25. occ_ctg                   | object     |   527394 non-null |   0.0% missing
+ 26. occ_grp                   | object     |   465958 non-null |  11.6% missing
+ 27. resdn                     | object     |   105048 non-null |  80.1% missing
+ 28. count                     | float64    |   105048 non-null |  80.1% missing
+ 29. sptl_unit                 | object     |   105048 non-null |  80.1% missing
+ 30. tsar_trty                 | object     |   105048 non-null |  80.1% missing
+ 31. geonm_crd                 | object     |   105048 non-null |  80.1% missing
+ 32. geonm_lat                 | object     |   105048 non-null |  80.1% missing
+ 33. geonm_long                | object     |   105048 non-null |  80.1% missing
+ 34. geonm_url                 | object     |   105048 non-null |  80.1% missing
+ 35. cnfdnc                    | float64    |   105048 non-null |  80.1% missing
+ 36. resdn_alt                 | object     |    53827 non-null |  89.8% missing
+ 37. note                      | object     |     4617 non-null |  99.1% missing
+ 38. ships                     | int64      |   527394 non-null |   0.0% missing
+ 39. vygs                      | int64      |   527394 non-null |   0.0% missing
+ 40. vygs_ship                 | float64    |   527394 non-null |   0.0% missing
+ 41. itinry                    | object     |   527394 non-null |   0.0% missing
+ 42. port_arv                  | object     |   527394 non-null |   0.0% missing
+ 43. ship                      | object     |   527394 non-null |   0.0% missing
+ 44. vygs_ship.1               | int64      |   527394 non-null |   0.0% missing
+ 45. start_yr                  | int64      |   527394 non-null |   0.0% missing
+ 46. end_yr                    | int64      |   527394 non-null |   0.0% missing
+ 47. sail_yrs                  | int64      |   527394 non-null |   0.0% missing
