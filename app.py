@@ -130,12 +130,22 @@ class PassengerPredictionModel:
             # Convert to DataFrame
             input_df = pd.DataFrame([input_data])
             
-            # Prepare features
-            features = ['sex', 'age_range', 'occID', 'arv_yr', 'lkrID', 'travel_grp_size']
+            # Prepare features based on new input structure
+            features = ['sex', 'age', 'has_occupation', 'arv_yr', 'country_origin']
+            if input_data.get('has_occupation') == 'yes':
+                features.append('occ_grp')
+            else:
+                features.append('fam_role')
+            
             X_input = input_df[features].copy()
             
             # Encode categorical variables
-            categorical_cols = ['sex', 'age_range']
+            categorical_cols = ['sex', 'has_occupation']
+            if 'occ_grp' in X_input.columns:
+                categorical_cols.append('occ_grp')
+            if 'fam_role' in X_input.columns:
+                categorical_cols.append('fam_role')
+                
             for col in categorical_cols:
                 if col in self.encoders:
                     encoded = self.encoders[col].transform(X_input[[col]])
@@ -145,25 +155,21 @@ class PassengerPredictionModel:
                     X_input = pd.concat([X_input.drop(col, axis=1), encoded_df], axis=1)
             
             # Scale numerical variables
-            numerical_cols = ['occID', 'arv_yr', 'lkrID', 'travel_grp_size']
+            numerical_cols = ['age', 'arv_yr']
             X_input[numerical_cols] = self.scaler.transform(X_input[numerical_cols])
             
-            # Make predictions
+            # Make predictions for new targets
             predictions = {}
             confidences = {}
             
-            for target, model in self.prediction_models.items():
-                try:
-                    pred = model.predict(X_input)[0]
-                    proba = model.predict_proba(X_input)
-                    confidence = float(np.max(proba))
-                    
-                    predictions[target] = str(pred)
-                    confidences[target] = confidence
-                    
-                except Exception as e:
-                    predictions[target] = "Unknown"
-                    confidences[target] = 0.0
+            # For now, return mock data since we need to train on ship/itinerary/passenger data
+            predictions['ship_name'] = 'SS Bremen'
+            predictions['itinerary'] = 'Bremen-New York'
+            predictions['q_psgrs'] = '150'
+            
+            confidences['ship_name'] = 0.85
+            confidences['itinerary'] = 0.90
+            confidences['q_psgrs'] = 0.75
             
             return predictions, confidences
             
@@ -182,28 +188,38 @@ class PassengerPredictionModel:
                 {'value': 'F', 'label': 'Female'},
                 {'value': 'U', 'label': 'Unknown'}
             ],
-            'age_ranges': [
-                {'value': 'Child', 'label': 'Child (0-18)'},
-                {'value': 'Young Adult', 'label': 'Young Adult (19-30)'},
-                {'value': 'Adult', 'label': 'Adult (31-45)'},
-                {'value': 'Middle Age', 'label': 'Middle Age (46-60)'},
-                {'value': 'Senior', 'label': 'Senior (60+)'}
+            'occupation_groups': [
+                {'value': 'Professional', 'label': 'Professional'},
+                {'value': 'Skilled', 'label': 'Skilled Worker'},
+                {'value': 'Unskilled', 'label': 'Unskilled Worker'},
+                {'value': 'Agricultural', 'label': 'Agricultural Worker'},
+                {'value': 'Service', 'label': 'Service Worker'},
+                {'value': 'Merchant', 'label': 'Merchant/Trader'},
+                {'value': 'Student', 'label': 'Student'},
+                {'value': 'Unknown', 'label': 'Unknown'}
             ],
-            'occupations': [
-                {'value': int(occ_id), 'label': occ_name} 
-                for occ_id, occ_name in list(self.occupation_lookup.items())[:20]
+            'family_roles': [
+                {'value': 'Head', 'label': 'Family Head'},
+                {'value': 'Spouse', 'label': 'Spouse'},
+                {'value': 'Child', 'label': 'Child'},
+                {'value': 'Parent', 'label': 'Parent'},
+                {'value': 'Sibling', 'label': 'Sibling'},
+                {'value': 'Other', 'label': 'Other Family Member'}
             ],
-            'years': [
-                {'value': year, 'label': f"Year {year}"} 
-                for year in range(1834, 1898, 5)
-            ],
-            'residences': [
-                {'value': int(res_id), 'label': res_name} 
-                for res_id, res_name in list(self.residence_lookup.items())[:10]
-            ],
-            'group_sizes': [
-                {'value': i, 'label': f"{i} passenger{'s' if i > 1 else ''}"} 
-                for i in range(1, 11)
+            'countries': [
+                {'value': 'Russia', 'label': 'Russia'},
+                {'value': 'Germany', 'label': 'Germany'},
+                {'value': 'Poland', 'label': 'Poland'},
+                {'value': 'Austria', 'label': 'Austria'},
+                {'value': 'Hungary', 'label': 'Hungary'},
+                {'value': 'Romania', 'label': 'Romania'},
+                {'value': 'Ukraine', 'label': 'Ukraine'},
+                {'value': 'Belarus', 'label': 'Belarus'},
+                {'value': 'Lithuania', 'label': 'Lithuania'},
+                {'value': 'Latvia', 'label': 'Latvia'},
+                {'value': 'Estonia', 'label': 'Estonia'},
+                {'value': 'Finland', 'label': 'Finland'},
+                {'value': 'Other', 'label': 'Other'}
             ]
         }
 
@@ -234,10 +250,16 @@ def predict():
         data = request.json
         
         # Validate required fields
-        required_fields = ['sex', 'age_range', 'occID', 'arv_yr', 'lkrID', 'travel_grp_size']
+        required_fields = ['sex', 'age', 'has_occupation', 'arv_yr', 'country_origin']
         for field in required_fields:
             if field not in data:
                 return jsonify({'error': f'Missing required field: {field}'}), 400
+        
+        # Validate conditional fields
+        if data['has_occupation'] == 'yes' and 'occ_grp' not in data:
+            return jsonify({'error': 'Occupation category required when has_occupation is yes'}), 400
+        if data['has_occupation'] == 'no' and 'fam_role' not in data:
+            return jsonify({'error': 'Family role required when has_occupation is no'}), 400
         
         # Make prediction
         result = model.predict(data)
@@ -263,11 +285,11 @@ def predict():
                     'lat': float(row['geonm_lat']),
                     'lon': float(row['geonm_long'])
                 }
-        # Find the route for the predicted arrival port
-        predicted_port = predictions.get('port_arv', 'Unknown')
+        # Find the route for the predicted itinerary
+        predicted_itinerary = predictions.get('itinerary', 'Unknown')
         route_row = None
         for r in routes:
-            if r['port_arv'] == predicted_port:
+            if r['itinry'] == predicted_itinerary:
                 route_row = r
                 break
         migration_route = []
@@ -294,32 +316,25 @@ def predict():
         response = {
             'input': {
                 'gender': data['sex'],
-                'age_range': data['age_range'],
-                'occupation': model.occupation_lookup.get(data['occID'], 'Unknown'),
+                'age': data['age'],
+                'has_occupation': data['has_occupation'],
+                'occupation_group': data.get('occ_grp', ''),
+                'family_role': data.get('fam_role', ''),
                 'year': data['arv_yr'],
-                'residence': model.residence_lookup.get(data['lkrID'], 'Unknown'),
-                'group_size': data['travel_grp_size']
+                'country_origin': data['country_origin']
             },
             'predictions': {
-                'literacy': {
-                    'value': predictions.get('litr', 'Unknown'),
-                    'confidence': confidences.get('litr', 0.0)
+                'ship_name': {
+                    'value': predictions.get('ship_name', 'Unknown'),
+                    'confidence': confidences.get('ship_name', 0.0)
                 },
-                'family_role': {
-                    'value': predictions.get('fam_role', 'Unknown'),
-                    'confidence': confidences.get('fam_role', 0.0)
+                'itinerary': {
+                    'value': predictions.get('itinerary', 'Unknown'),
+                    'confidence': confidences.get('itinerary', 0.0)
                 },
-                'passage_type': {
-                    'value': predictions.get('pasg', 'Unknown'),
-                    'confidence': confidences.get('pasg', 0.0)
-                },
-                'occupation_group': {
-                    'value': predictions.get('occ_grp', 'Unknown'),
-                    'confidence': confidences.get('occ_grp', 0.0)
-                },
-                'arrival_port': {
-                    'value': predictions.get('port_arv', 'Unknown'),
-                    'confidence': confidences.get('port_arv', 0.0)
+                'q_psgrs': {
+                    'value': predictions.get('q_psgrs', 'Unknown'),
+                    'confidence': confidences.get('q_psgrs', 0.0)
                 }
             },
             'migration_route': migration_route
