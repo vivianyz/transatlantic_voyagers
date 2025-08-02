@@ -66,7 +66,7 @@ def main():
             has_occupation=False,
             arv_yr=1885,
             country_of_origin='RUSSIA',
-            family_role='Wife'
+            family_role='WIFE'
         )
         
         print(f"✅ Generated: {passenger2['gender']} age {passenger2['age']}")
@@ -92,7 +92,7 @@ def main():
             has_occupation=False,
             arv_yr=1890,
             country_of_origin='GERMANY',
-            family_role='Son'
+            family_role='SON'
         )
         
         print(f"✅ Generated: {passenger3['gender']} age {passenger3['age']}")
