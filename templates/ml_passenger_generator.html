@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-Enhanced Passenger Data Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .radio-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 5px 15px rgba(149, 165, 166, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .results-section {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 30px;
+            display: none;
+        }
+
+        .results-section.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+        }
+
+        .result-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .result-status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        .status-success {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+
+        .status-error {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .result-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .result-item h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-item p {
+            color: #34495e;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .voyage-details {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .voyage-details h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .voyage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .error-message {
+            background: #fadbd8;
+            color: #e74c3c;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .info-box {
+            background: #d6eaf8;
+            color: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+
+        .ml-info-box {
+            background: #e8f5e8;
+            color: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .stats-box {
+            background: #e8f5e8;
+            color: #2c3e50;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .stat-label {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+
+        .cluster-info {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .voyage-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 ML-Enhanced Passenger Generator</h1>
+            <p>Trans-Atlantic Voyagers with Machine Learning Clustering (1834-1897)</p>
+        </div>
+
+        <div class="content">
+            <div class="info-box">
+                <strong>📋 Instructions:</strong> Enter the passenger criteria below to generate realistic passenger data using ML clustering algorithms. The system uses K-means clustering to find similar passengers and voyages.
+            </div>
+
+            <div class="ml-info-box">
+                <strong>🧠 Machine Learning Features:</strong>
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>K-means clustering for passenger segmentation</li>
+                    <li>Cluster-based voyage selection</li>
+                    <li>Age-appropriate occupation/family role logic</li>
+                    <li>Real historical data integration</li>
+                </ul>
+            </div>
+
+            <div class="stats-box">
+                <strong>📊 ML Cluster Statistics:</strong>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="passenger-clusters">-</div>
+                        <div class="stat-label">Passenger Clusters</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="voyage-clusters">-</div>
+                        <div class="stat-label">Voyage Clusters</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-passengers">-</div>
+                        <div class="stat-label">Total Passengers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-ships">-</div>
+                        <div class="stat-label">Total Ships</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>📝 Passenger Information</h2>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="gender">Gender *</label>
+                        <select id="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="M">Male (M)</option>
+                            <option value="F">Female (F)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" min="0" max="100" placeholder="Enter age (0-100)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year of Travel *</label>
+                        <input type="number" id="year" min="1834" max="1897" placeholder="Enter year (1834-1897)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country of Origin *</label>
+                        <input type="text" id="country" placeholder="Enter country (e.g., POLAND)" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Occupation Status *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="has-occupation" name="occupation" value="true" required onchange="toggleOccupationFields()">
+                            <label for="has-occupation">Has Occupation</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="no-occupation" name="occupation" value="false" required onchange="toggleOccupationFields()">
+                            <label for="no-occupation">No Occupation (Family Role)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="occupation-group-section" class="form-group" style="display: none;">
+                    <label for="occupation-group">Occupation Group *</label>
+                    <select id="occupation-group" required>
+                        <option value="">Select Occupation Group</option>
+                    </select>
+                </div>
+
+                <div id="family-role-section" class="form-group" style="display: none;">
+                    <label for="family-role">Family Role *</label>
+                    <select id="family-role" required>
+                        <option value="">Select Family Role</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" id="generate-btn" onclick="generatePassenger()">🤖 Generate ML-Enhanced Passenger Data</button>
+                    <button class="btn btn-secondary" onclick="clearForm()">🗑️ Clear Form</button>
+                </div>
+            </div>
+
+            <div id="results" class="results-section">
+                <div id="loading" class="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Generating passenger data using ML clustering...</p>
+                </div>
+                
+                <div id="error-container"></div>
+                <div id="success-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let availableOptions = null;
+        let clusterStats = null;
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAvailableOptions();
+            loadClusterStatistics();
+            setDefaultValues();
+        });
+
+        async function loadAvailableOptions() {
+            try {
+                const response = await fetch('/api/options');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    availableOptions = data;
+                    updateStats(data);
+                    populateOccupationGroups();
+                    populateFamilyRoles();
+                } else {
+                    console.error('Failed to load options:', data.error);
+                }
+            } catch (error) {
+                console.error('Error loading options:', error);
+            }
+        }
+
+        async function loadClusterStatistics() {
+            try {
+                const response = await fetch('/api/clusters');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    clusterStats = data;
+                    updateClusterStats(data);
+                } else {
+                    console.error('Failed to load cluster statistics:', data.error);
+                }
+            } catch (error) {
+                console.error('Error loading cluster statistics:', error);
+            }
+        }
+
+        function updateStats(data) {
+            document.getElementById('total-passengers').textContent = '527,394';
+            document.getElementById('total-ships').textContent = '781';
+        }
+
+        function updateClusterStats(data) {
+            document.getElementById('passenger-clusters').textContent = data.passengerClusters;
+            document.getElementById('voyage-clusters').textContent = data.voyageClusters;
+        }
+
+        function setDefaultValues() {
+            document.getElementById('year').value = '1890';
+            document.getElementById('country').value = 'POLAND';
+        }
+
+        function toggleOccupationFields() {
+            const hasOccupation = document.getElementById('has-occupation').checked;
+            const occupationSection = document.getElementById('occupation-group-section');
+            const familyRoleSection = document.getElementById('family-role-section');
+            const occupationSelect = document.getElementById('occupation-group');
+            const familyRoleSelect = document.getElementById('family-role');
+
+            if (hasOccupation) {
+                // Show occupation dropdown, hide family role
+                occupationSection.style.display = 'block';
+                familyRoleSection.style.display = 'none';
+                occupationSelect.required = true;
+                familyRoleSelect.required = false;
+                familyRoleSelect.value = '';
+            } else {
+                // Show family role dropdown, hide occupation
+                occupationSection.style.display = 'none';
+                familyRoleSection.style.display = 'block';
+                occupationSelect.required = false;
+                familyRoleSelect.required = true;
+                occupationSelect.value = '';
+            }
+        }
+
+        function populateOccupationGroups() {
+            if (!availableOptions) return;
+            
+            const occupationSelect = document.getElementById('occupation-group');
+            occupationSelect.innerHTML = '<option value="">Select Occupation Group</option>';
+            
+            // Filter out 'No occupation' since user has occupation
+            const occupationGroups = availableOptions.occupationGroups.filter(occ => occ !== 'No occupation');
+            
+            occupationGroups.forEach(occupation => {
+                const option = document.createElement('option');
+                option.value = occupation;
+                option.textContent = occupation;
+                occupationSelect.appendChild(option);
+            });
+        }
+
+        function populateFamilyRoles() {
+            if (!availableOptions) return;
+            
+            const familyRoleSelect = document.getElementById('family-role');
+            familyRoleSelect.innerHTML = '<option value="">Select Family Role</option>';
+            
+            availableOptions.familyRoles.forEach(role => {
+                const option = document.createElement('option');
+                option.value = role;
+                option.textContent = role;
+                familyRoleSelect.appendChild(option);
+            });
+        }
+
+        async function generatePassenger() {
+            const formData = getFormData();
+            if (!validateForm(formData)) {
+                return;
+            }
+
+            showLoading();
+            disableButtons(true);
+            
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+                
+                if (response.ok) {
+                    displayResults(data);
+                } else {
+                    showError(data.error || 'Failed to generate passenger data');
+                }
+            } catch (error) {
+                showError('Network error: ' + error.message);
+            } finally {
+                hideLoading();
+                disableButtons(false);
+            }
+        }
+
+        function getFormData() {
+            const occupation = document.querySelector('input[name="occupation"]:checked');
+            const hasOccupation = occupation ? occupation.value === 'true' : null;
+            
+            let formData = {
+                gender: document.getElementById('gender').value,
+                age: parseInt(document.getElementById('age').value),
+                year: parseInt(document.getElementById('year').value),
+                country: document.getElementById('country').value,
+                hasOccupation: hasOccupation
+            };
+
+            // Add occupation group or family role based on selection
+            if (hasOccupation) {
+                formData.occupationGroup = document.getElementById('occupation-group').value;
+            } else {
+                formData.familyRole = document.getElementById('family-role').value;
+            }
+
+            return formData;
+        }
+
+        function validateForm(data) {
+            const errors = [];
+
+            if (!data.gender) errors.push('Gender is required');
+            if (!data.age || data.age < 0 || data.age > 100) errors.push('Age must be between 0 and 100');
+            if (!data.year || data.year < 1834 || data.year > 1897) errors.push('Year must be between 1834 and 1897');
+            if (!data.country) errors.push('Country of origin is required');
+            if (data.hasOccupation === null) errors.push('Please select occupation status');
+
+            // Validate occupation group or family role based on selection
+            if (data.hasOccupation === true) {
+                if (!data.occupationGroup) errors.push('Please select an occupation group');
+            } else if (data.hasOccupation === false) {
+                if (!data.familyRole) errors.push('Please select a family role');
+            }
+
+            if (errors.length > 0) {
+                showError(errors.join('<br>'));
+                return false;
+            }
+
+            return true;
+        }
+
+        function displayResults(data) {
+            hideLoading();
+            
+            const resultsContainer = document.getElementById('success-container');
+            resultsContainer.innerHTML = `
+                <div class="result-card">
+                    <div class="result-header">
+                        <div class="result-title">🤖 ML-Enhanced Passenger Data</div>
+                        <div class="result-status status-success">SUCCESS</div>
+                    </div>
+                    
+                    <div class="cluster-info">
+                        <strong>🧠 ML Clustering Applied:</strong> This passenger was generated using K-means clustering to find similar demographic patterns and voyage characteristics.
+                    </div>
+                    
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <h4>Gender</h4>
+                            <p>${data.gender}</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Age</h4>
+                            <p>${data.age}</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Has Occupation</h4>
+                            <p>${data.has_occupation ? 'Yes' : 'No'}</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>${data.has_occupation ? 'Occupation Group' : 'Family Role'}</h4>
+                            <p>${data.has_occupation ? data.occupation_group : data.family_role}</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Year of Travel</h4>
+                            <p>${data.arv_yr}</p>
+                        </div>
+                        <div class="result-item">
+                            <h4>Country of Origin</h4>
+                            <p>${data.country_of_origin}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="voyage-details">
+                        <h3>🚢 Cluster-Based Voyage Details</h3>
+                        <div class="voyage-grid">
+                            <div class="result-item">
+                                <h4>Ship Name</h4>
+                                <p>${data.ship_name}</p>
+                            </div>
+                            <div class="result-item">
+                                <h4>Itinerary</h4>
+                                <p>${data.itinerary}</p>
+                            </div>
+                            <div class="result-item">
+                                <h4>Number of Passengers</h4>
+                                <p>${data.q_psgrs}</p>
+                            </div>
+                            <div class="result-item">
+                                <h4>Port of Arrival</h4>
+                                <p>${data.port_arrival}</p>
+                            </div>
+                            <div class="result-item">
+                                <h4>Voyage ID</h4>
+                                <p>${data.voyage_id}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="travel-group-details" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                        <h3>👥 Travel Group Prediction</h3>
+                        <div class="travel-group-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 15px;">
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Predicted Group Size</h4>
+                                <p style="font-size: 1.5em; font-weight: bold;">${data.travel_group_size}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Confidence Level</h4>
+                                <p style="text-transform: capitalize;">${data.prediction_confidence}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Average Group Size</h4>
+                                <p>${data.travel_group_stats.avg_group_size.toFixed(1)}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Group Size Range</h4>
+                                <p>${data.travel_group_stats.min_group_size} - ${data.travel_group_stats.max_group_size}</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <strong>📊 Travel Pattern:</strong> ${data.travel_pattern_description}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('results').classList.add('show');
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('success-container').innerHTML = '';
+            document.getElementById('error-container').innerHTML = '';
+            document.getElementById('results').classList.add('show');
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function showError(message) {
+            hideLoading();
+            document.getElementById('error-container').innerHTML = `
+                <div class="error-message">
+                    <strong>❌ Error:</strong> ${message}
+                </div>
+            `;
+            document.getElementById('success-container').innerHTML = '';
+            document.getElementById('results').classList.add('show');
+        }
+
+        function disableButtons(disabled) {
+            document.getElementById('generate-btn').disabled = disabled;
+        }
+
+        function clearForm() {
+            document.getElementById('gender').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('year').value = '';
+            document.getElementById('country').value = '';
+            document.querySelectorAll('input[name="occupation"]').forEach(radio => radio.checked = false);
+            document.getElementById('occupation-group').value = '';
+            document.getElementById('family-role').value = '';
+            document.getElementById('occupation-group-section').style.display = 'none';
+            document.getElementById('family-role-section').style.display = 'none';
+            document.getElementById('results').classList.remove('show');
+            setDefaultValues();
+        }
+    </script>
+</body>
+</html>
