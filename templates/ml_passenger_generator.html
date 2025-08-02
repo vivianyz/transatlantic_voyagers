@@ -451,18 +451,20 @@
                     </div>
                 </div>
 
-                <div id="occupation-group-section" class="form-group" style="display: none;">
+                <div id="occupation-group-section" class="form-group" style="display: none; background: #e8f5e8; padding: 15px; border-radius: 8px; border-left: 4px solid #27ae60;">
                     <label for="occupation-group">Occupation Group *</label>
                     <select id="occupation-group" required>
                         <option value="">Select Occupation Group</option>
                     </select>
+                    <small style="color: #27ae60;">📋 Select your occupation category</small>
                 </div>
 
-                <div id="family-role-section" class="form-group" style="display: none;">
+                <div id="family-role-section" class="form-group" style="display: none; background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107;">
                     <label for="family-role">Family Role *</label>
                     <select id="family-role" required>
                         <option value="">Select Family Role</option>
                     </select>
+                    <small style="color: #856404;">👨‍👩‍👧‍👦 Select your family relationship</small>
                 </div>
 
                 <div style="margin-top: 30px;">
@@ -545,14 +547,20 @@
         }
 
         function toggleOccupationFields() {
+            console.log('toggleOccupationFields called');
             const hasOccupation = document.getElementById('has-occupation').checked;
             const occupationSection = document.getElementById('occupation-group-section');
             const familyRoleSection = document.getElementById('family-role-section');
             const occupationSelect = document.getElementById('occupation-group');
             const familyRoleSelect = document.getElementById('family-role');
 
+            console.log('hasOccupation:', hasOccupation);
+            console.log('occupationSection:', occupationSection);
+            console.log('familyRoleSection:', familyRoleSection);
+
             if (hasOccupation) {
                 // Show occupation dropdown, hide family role
+                console.log('Showing occupation dropdown');
                 occupationSection.style.display = 'block';
                 familyRoleSection.style.display = 'none';
                 occupationSelect.required = true;
@@ -560,6 +568,7 @@
                 familyRoleSelect.value = '';
             } else {
                 // Show family role dropdown, hide occupation
+                console.log('Showing family role dropdown');
                 occupationSection.style.display = 'none';
                 familyRoleSection.style.display = 'block';
                 occupationSelect.required = false;
@@ -814,6 +823,24 @@
             document.getElementById('family-role-section').style.display = 'none';
             document.getElementById('results').classList.remove('show');
             setDefaultValues();
+        }
+
+        // Test function to manually trigger dropdowns
+        function testDropdowns() {
+            console.log('Testing dropdowns...');
+            console.log('Available options:', availableOptions);
+            console.log('Occupation groups:', availableOptions?.occupationGroups);
+            console.log('Family roles:', availableOptions?.familyRoles);
+            
+            // Test occupation dropdown
+            const occupationSelect = document.getElementById('occupation-group');
+            console.log('Occupation select:', occupationSelect);
+            console.log('Occupation options:', occupationSelect?.options);
+            
+            // Test family role dropdown
+            const familyRoleSelect = document.getElementById('family-role');
+            console.log('Family role select:', familyRoleSelect);
+            console.log('Family role options:', familyRoleSelect?.options);
         }
     </script>
 </body>
