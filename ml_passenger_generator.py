@@ -376,6 +376,65 @@ class MLPassengerGenerator:
         }
         
         return passenger_data
+
+    def generate_passenger_data_with_selections(self, gender, age, has_occupation, arv_yr, country_of_origin, occupation_group=None, family_role=None):
+        """
+        Generate passenger data using ML clustering with user-selected occupation/family role
+        
+        Args:
+            gender (str): 'M' or 'F'
+            age (int): Age of passenger
+            has_occupation (bool): Whether the passenger has an occupation
+            arv_yr (int): Year of arrival
+            country_of_origin (str): Country of origin
+            occupation_group (str): User-selected occupation group (if has occupation)
+            family_role (str): User-selected family role (if no occupation)
+            
+        Returns:
+            dict: Generated passenger data
+        """
+        # Validate inputs
+        if gender not in ['M', 'F']:
+            raise ValueError("Gender must be 'M' or 'F'")
+        
+        if age < 0 or age > 100:
+            raise ValueError("Age must be between 0 and 100")
+        
+        if arv_yr not in self.get_available_years():
+            raise ValueError(f"Year {arv_yr} not available in dataset")
+        
+        # Validate occupation/family role selections
+        if has_occupation:
+            if not occupation_group:
+                raise ValueError("Occupation group is required when has occupation is true")
+            if occupation_group not in self.occupation_groups:
+                raise ValueError(f"Invalid occupation group: {occupation_group}")
+        else:
+            if not family_role:
+                raise ValueError("Family role is required when has occupation is false")
+            if family_role not in self.family_roles:
+                raise ValueError(f"Invalid family role: {family_role}")
+        
+        # Get cluster-based voyage
+        selected_voyage = self.get_cluster_based_voyage(age, gender, arv_yr)
+        
+        # Generate passenger data with user selections
+        passenger_data = {
+            'gender': gender,
+            'age': age,
+            'has_occupation': has_occupation,
+            'occupation_group': occupation_group if has_occupation else 'No occupation',
+            'family_role': family_role if not has_occupation else None,
+            'arv_yr': arv_yr,
+            'country_of_origin': country_of_origin,
+            'ship_name': selected_voyage['ship'],
+            'itinerary': selected_voyage['itinry'],
+            'q_psgrs': selected_voyage['q_psgrs'],
+            'port_arrival': selected_voyage['port_arv'],
+            'voyage_id': selected_voyage['MID']
+        }
+        
+        return passenger_data
     
     def get_available_years(self):
         """Get available years from the dataset"""

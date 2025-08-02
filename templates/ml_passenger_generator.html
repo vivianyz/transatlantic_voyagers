@@ -441,14 +441,28 @@
                     <label>Occupation Status *</label>
                     <div class="radio-group">
                         <div class="radio-option">
-                            <input type="radio" id="has-occupation" name="occupation" value="true" required>
-                            <label for="has-occupation">Has Occupation (will select from occupation groups)</label>
+                            <input type="radio" id="has-occupation" name="occupation" value="true" required onchange="toggleOccupationFields()">
+                            <label for="has-occupation">Has Occupation</label>
                         </div>
                         <div class="radio-option">
-                            <input type="radio" id="no-occupation" name="occupation" value="false" required>
-                            <label for="no-occupation">No Occupation (will select family role)</label>
+                            <input type="radio" id="no-occupation" name="occupation" value="false" required onchange="toggleOccupationFields()">
+                            <label for="no-occupation">No Occupation (Family Role)</label>
                         </div>
                     </div>
+                </div>
+
+                <div id="occupation-group-section" class="form-group" style="display: none;">
+                    <label for="occupation-group">Occupation Group *</label>
+                    <select id="occupation-group" required>
+                        <option value="">Select Occupation Group</option>
+                    </select>
+                </div>
+
+                <div id="family-role-section" class="form-group" style="display: none;">
+                    <label for="family-role">Family Role *</label>
+                    <select id="family-role" required>
+                        <option value="">Select Family Role</option>
+                    </select>
                 </div>
 
                 <div style="margin-top: 30px;">
@@ -489,6 +503,8 @@
                 if (response.ok) {
                     availableOptions = data;
                     updateStats(data);
+                    populateOccupationGroups();
+                    populateFamilyRoles();
                 } else {
                     console.error('Failed to load options:', data.error);
                 }
@@ -528,6 +544,61 @@
             document.getElementById('country').value = 'POLAND';
         }
 
+        function toggleOccupationFields() {
+            const hasOccupation = document.getElementById('has-occupation').checked;
+            const occupationSection = document.getElementById('occupation-group-section');
+            const familyRoleSection = document.getElementById('family-role-section');
+            const occupationSelect = document.getElementById('occupation-group');
+            const familyRoleSelect = document.getElementById('family-role');
+
+            if (hasOccupation) {
+                // Show occupation dropdown, hide family role
+                occupationSection.style.display = 'block';
+                familyRoleSection.style.display = 'none';
+                occupationSelect.required = true;
+                familyRoleSelect.required = false;
+                familyRoleSelect.value = '';
+            } else {
+                // Show family role dropdown, hide occupation
+                occupationSection.style.display = 'none';
+                familyRoleSection.style.display = 'block';
+                occupationSelect.required = false;
+                familyRoleSelect.required = true;
+                occupationSelect.value = '';
+            }
+        }
+
+        function populateOccupationGroups() {
+            if (!availableOptions) return;
+            
+            const occupationSelect = document.getElementById('occupation-group');
+            occupationSelect.innerHTML = '<option value="">Select Occupation Group</option>';
+            
+            // Filter out 'No occupation' since user has occupation
+            const occupationGroups = availableOptions.occupationGroups.filter(occ => occ !== 'No occupation');
+            
+            occupationGroups.forEach(occupation => {
+                const option = document.createElement('option');
+                option.value = occupation;
+                option.textContent = occupation;
+                occupationSelect.appendChild(option);
+            });
+        }
+
+        function populateFamilyRoles() {
+            if (!availableOptions) return;
+            
+            const familyRoleSelect = document.getElementById('family-role');
+            familyRoleSelect.innerHTML = '<option value="">Select Family Role</option>';
+            
+            availableOptions.familyRoles.forEach(role => {
+                const option = document.createElement('option');
+                option.value = role;
+                option.textContent = role;
+                familyRoleSelect.appendChild(option);
+            });
+        }
+
         async function generatePassenger() {
             const formData = getFormData();
             if (!validateForm(formData)) {
@@ -563,13 +634,24 @@
 
         function getFormData() {
             const occupation = document.querySelector('input[name="occupation"]:checked');
-            return {
+            const hasOccupation = occupation ? occupation.value === 'true' : null;
+            
+            let formData = {
                 gender: document.getElementById('gender').value,
                 age: parseInt(document.getElementById('age').value),
                 year: parseInt(document.getElementById('year').value),
                 country: document.getElementById('country').value,
-                hasOccupation: occupation ? occupation.value === 'true' : null
+                hasOccupation: hasOccupation
             };
+
+            // Add occupation group or family role based on selection
+            if (hasOccupation) {
+                formData.occupationGroup = document.getElementById('occupation-group').value;
+            } else {
+                formData.familyRole = document.getElementById('family-role').value;
+            }
+
+            return formData;
         }
 
         function validateForm(data) {
@@ -580,6 +662,13 @@
             if (!data.year || data.year < 1834 || data.year > 1897) errors.push('Year must be between 1834 and 1897');
             if (!data.country) errors.push('Country of origin is required');
             if (data.hasOccupation === null) errors.push('Please select occupation status');
+
+            // Validate occupation group or family role based on selection
+            if (data.hasOccupation === true) {
+                if (!data.occupationGroup) errors.push('Please select an occupation group');
+            } else if (data.hasOccupation === false) {
+                if (!data.familyRole) errors.push('Please select a family role');
+            }
 
             if (errors.length > 0) {
                 showError(errors.join('<br>'));
@@ -694,6 +783,10 @@
             document.getElementById('year').value = '';
             document.getElementById('country').value = '';
             document.querySelectorAll('input[name="occupation"]').forEach(radio => radio.checked = false);
+            document.getElementById('occupation-group').value = '';
+            document.getElementById('family-role').value = '';
+            document.getElementById('occupation-group-section').style.display = 'none';
+            document.getElementById('family-role-section').style.display = 'none';
             document.getElementById('results').classList.remove('show');
             setDefaultValues();
         }

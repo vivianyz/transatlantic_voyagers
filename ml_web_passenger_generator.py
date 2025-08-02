@@ -45,18 +45,28 @@ def generate_passenger():
         has_occupation = data.get('hasOccupation')
         arv_yr = data.get('year')
         country_of_origin = data.get('country')
+        occupation_group = data.get('occupationGroup')
+        family_role = data.get('familyRole')
         
         # Validate required fields
         if not all([gender, age is not None, has_occupation is not None, arv_yr, country_of_origin]):
             return jsonify({'error': 'All fields are required'}), 400
         
-        # Generate passenger data using ML clustering
-        passenger_data = generator.generate_passenger_data(
+        # Validate occupation/family role based on selection
+        if has_occupation and not occupation_group:
+            return jsonify({'error': 'Occupation group is required when has occupation is true'}), 400
+        if not has_occupation and not family_role:
+            return jsonify({'error': 'Family role is required when has occupation is false'}), 400
+        
+        # Generate passenger data using ML clustering with user selections
+        passenger_data = generator.generate_passenger_data_with_selections(
             gender=gender,
             age=age,
             has_occupation=has_occupation,
             arv_yr=arv_yr,
-            country_of_origin=country_of_origin
+            country_of_origin=country_of_origin,
+            occupation_group=occupation_group,
+            family_role=family_role
         )
         
         # Convert numpy types to native Python types for JSON serialization
