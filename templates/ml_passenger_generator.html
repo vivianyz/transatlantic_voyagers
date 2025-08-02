@@ -745,6 +745,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="travel-group-details" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                        <h3>👥 Travel Group Prediction</h3>
+                        <div class="travel-group-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 15px;">
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Predicted Group Size</h4>
+                                <p style="font-size: 1.5em; font-weight: bold;">${data.travel_group_size}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Confidence Level</h4>
+                                <p style="text-transform: capitalize;">${data.prediction_confidence}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Average Group Size</h4>
+                                <p>${data.travel_group_stats.avg_group_size.toFixed(1)}</p>
+                            </div>
+                            <div class="result-item" style="background: rgba(255,255,255,0.1); border-left: 4px solid #f39c12;">
+                                <h4>Group Size Range</h4>
+                                <p>${data.travel_group_stats.min_group_size} - ${data.travel_group_stats.max_group_size}</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                            <strong>📊 Travel Pattern:</strong> ${data.travel_pattern_description}
+                        </div>
+                    </div>
                 </div>
             `;
 

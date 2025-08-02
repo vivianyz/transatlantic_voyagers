@@ -418,6 +418,15 @@ class MLPassengerGenerator:
         # Get cluster-based voyage
         selected_voyage = self.get_cluster_based_voyage(age, gender, arv_yr)
         
+        # Predict travel group size
+        travel_group_info = self.predict_travel_group_size(
+            age=age,
+            gender=gender,
+            has_occupation=has_occupation,
+            family_role=family_role if not has_occupation else None,
+            occupation_group=occupation_group if has_occupation else None
+        )
+        
         # Generate passenger data with user selections
         passenger_data = {
             'gender': gender,
@@ -431,7 +440,16 @@ class MLPassengerGenerator:
             'itinerary': selected_voyage['itinry'],
             'q_psgrs': selected_voyage['q_psgrs'],
             'port_arrival': selected_voyage['port_arv'],
-            'voyage_id': selected_voyage['MID']
+            'voyage_id': selected_voyage['MID'],
+            'travel_group_size': travel_group_info['predicted_group_size'],
+            'travel_group_stats': {
+                'avg_group_size': travel_group_info['avg_group_size'],
+                'median_group_size': travel_group_info['median_group_size'],
+                'max_group_size': travel_group_info['max_group_size'],
+                'min_group_size': travel_group_info['min_group_size']
+            },
+            'prediction_confidence': travel_group_info['confidence'],
+            'travel_pattern_description': travel_group_info['travel_pattern']
         }
         
         return passenger_data
@@ -479,6 +497,187 @@ class MLPassengerGenerator:
         print(f"Port of Arrival: {passenger_data['port_arrival']}")
         print(f"Voyage ID: {passenger_data['voyage_id']}")
         print("="*60)
+
+    def predict_travel_group_size(self, age, gender, has_occupation, family_role=None, occupation_group=None):
+        """
+        Predict travel group size based on passenger characteristics and historical patterns
+        
+        Args:
+            age (int): Age of passenger
+            gender (str): Gender of passenger
+            has_occupation (bool): Whether passenger has occupation
+            family_role (str): Family role (if no occupation)
+            occupation_group (str): Occupation group (if has occupation)
+            
+        Returns:
+            dict: Predicted travel group information
+        """
+        # Analyze historical travel patterns
+        similar_passengers = self.passengers_with_voyages[
+            (self.passengers_with_voyages['age'].between(age-5, age+5)) &
+            (self.passengers_with_voyages['sex'] == gender)
+        ]
+        
+        if len(similar_passengers) == 0:
+            # Fallback to broader search
+            similar_passengers = self.passengers_with_voyages[
+                (self.passengers_with_voyages['sex'] == gender)
+            ]
+        
+        # Calculate travel group statistics
+        if len(similar_passengers) > 0:
+            # Get travel group sizes for similar passengers
+            travel_groups = similar_passengers.groupby('MID').size()
+            
+            avg_group_size = travel_groups.mean()
+            median_group_size = travel_groups.median()
+            max_group_size = travel_groups.max()
+            min_group_size = travel_groups.min()
+            
+            # Predict based on family role patterns
+            if not has_occupation and family_role:
+                family_patterns = self.analyze_family_travel_patterns(family_role, age, gender)
+                predicted_size = family_patterns.get('avg_group_size', avg_group_size)
+            else:
+                # For working passengers, typically travel alone or in small groups
+                if has_occupation and occupation_group:
+                    work_patterns = self.analyze_occupation_travel_patterns(occupation_group, age, gender)
+                    predicted_size = work_patterns.get('avg_group_size', avg_group_size)
+                else:
+                    predicted_size = avg_group_size
+            
+            # Ensure reasonable bounds
+            predicted_size = max(1, min(predicted_size, max_group_size))
+            
+            return {
+                'predicted_group_size': int(predicted_size),
+                'avg_group_size': float(avg_group_size),
+                'median_group_size': float(median_group_size),
+                'max_group_size': int(max_group_size),
+                'min_group_size': int(min_group_size),
+                'confidence': self.calculate_prediction_confidence(similar_passengers, age, gender),
+                'travel_pattern': self.get_travel_pattern_description(age, gender, has_occupation, family_role, occupation_group)
+            }
+        else:
+            # Fallback values
+            return {
+                'predicted_group_size': 1,
+                'avg_group_size': 1.0,
+                'median_group_size': 1.0,
+                'max_group_size': 1,
+                'min_group_size': 1,
+                'confidence': 'low',
+                'travel_pattern': 'Individual traveler (estimated)'
+            }
+    
+    def analyze_family_travel_patterns(self, family_role, age, gender):
+        """Analyze travel patterns for specific family roles"""
+        # Find passengers with similar family roles
+        similar_family = self.passengers_with_voyages[
+            (self.passengers_with_voyages['fam_role'] == family_role) &
+            (self.passengers_with_voyages['age'].between(age-10, age+10)) &
+            (self.passengers_with_voyages['sex'] == gender)
+        ]
+        
+        if len(similar_family) > 0:
+            # Calculate group sizes for this family role
+            family_groups = similar_family.groupby('MID').size()
+            
+            return {
+                'avg_group_size': family_groups.mean(),
+                'median_group_size': family_groups.median(),
+                'max_group_size': family_groups.max(),
+                'min_group_size': family_groups.min()
+            }
+        else:
+            # Fallback to general family patterns
+            family_patterns = self.passengers_with_voyages[
+                (self.passengers_with_voyages['fam_role'].isin(['Head', 'Wife', 'Husband', 'Son', 'Daughter']))
+            ]
+            
+            if len(family_patterns) > 0:
+                family_groups = family_patterns.groupby('MID').size()
+                return {
+                    'avg_group_size': family_groups.mean(),
+                    'median_group_size': family_groups.median(),
+                    'max_group_size': family_groups.max(),
+                    'min_group_size': family_groups.min()
+                }
+            else:
+                return {'avg_group_size': 3.0}  # Default family size
+    
+    def analyze_occupation_travel_patterns(self, occupation_group, age, gender):
+        """Analyze travel patterns for specific occupation groups"""
+        # Find passengers with similar occupations
+        similar_workers = self.passengers_with_voyages.merge(
+            self.occupations[self.occupations['occ_grp'] == occupation_group], 
+            on='occID', how='inner'
+        )
+        
+        similar_workers = similar_workers[
+            (similar_workers['age'].between(age-10, age+10)) &
+            (similar_workers['sex'] == gender)
+        ]
+        
+        if len(similar_workers) > 0:
+            # Calculate group sizes for this occupation
+            work_groups = similar_workers.groupby('MID').size()
+            
+            return {
+                'avg_group_size': work_groups.mean(),
+                'median_group_size': work_groups.median(),
+                'max_group_size': work_groups.max(),
+                'min_group_size': work_groups.min()
+            }
+        else:
+            # Fallback to general working patterns
+            work_patterns = self.passengers_with_voyages.merge(
+                self.occupations[self.occupations['occ_grp'] != 'No occupation'], 
+                on='occID', how='inner'
+            )
+            
+            if len(work_patterns) > 0:
+                work_groups = work_patterns.groupby('MID').size()
+                return {
+                    'avg_group_size': work_groups.mean(),
+                    'median_group_size': work_groups.median(),
+                    'max_group_size': work_groups.max(),
+                    'min_group_size': work_groups.min()
+                }
+            else:
+                return {'avg_group_size': 1.5}  # Default worker group size
+    
+    def calculate_prediction_confidence(self, similar_passengers, age, gender):
+        """Calculate confidence level for travel group prediction"""
+        sample_size = len(similar_passengers)
+        
+        if sample_size >= 100:
+            return 'high'
+        elif sample_size >= 50:
+            return 'medium'
+        elif sample_size >= 10:
+            return 'low'
+        else:
+            return 'very_low'
+    
+    def get_travel_pattern_description(self, age, gender, has_occupation, family_role, occupation_group):
+        """Get descriptive text about travel patterns"""
+        if has_occupation:
+            if age < 25:
+                return f"Young working {gender.lower()} in {occupation_group.lower()} - typically travels alone or with 1-2 colleagues"
+            elif age < 50:
+                return f"Adult working {gender.lower()} in {occupation_group.lower()} - may travel alone or with family"
+            else:
+                return f"Experienced worker in {occupation_group.lower()} - typically travels alone"
+        else:
+            if family_role in ['Head', 'Husband', 'Wife']:
+                return f"Family {family_role.lower()} - likely traveling with 2-5 family members"
+            elif family_role in ['Son', 'Daughter', 'Child']:
+                return f"Family {family_role.lower()} - traveling with parents and possibly siblings"
+            elif family_role == 'Servant':
+                return f"Servant - may travel with employer's family or alone"
+            else:
+                return f"Family member ({family_role.lower()}) - typical family group size"
 
 def main():
     """Main function to demonstrate the ML-enhanced passenger generator"""
